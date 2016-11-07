@@ -24,6 +24,12 @@ namespace FolderHmi
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            new Forms.Folder().ShowDialog();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            new OpcManager();
         }
     }
 }

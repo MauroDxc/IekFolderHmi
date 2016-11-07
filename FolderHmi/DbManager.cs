@@ -18,8 +18,7 @@ namespace FolderHmi
             {
                 conn.Close();
             }
-            string connStr = String.Format("server={0};user id={1}; password={2}; database=iekfolder; pooling=false",
-                "localhost", "root", "password");
+            string connStr = String.Format("server={0};user id={1}; password={2}; database=iekfolder; pooling=false", "localhost", "root", "password");
             try
             {
                 conn = new MySqlConnection(connStr);
