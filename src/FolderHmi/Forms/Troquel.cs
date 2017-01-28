@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace FolderHmi.Forms
 {
-    public partial class Slotter : Form
+    public partial class Troquel : Form
     {
-        public Slotter()
+        public Troquel()
         {
             InitializeComponent();
         }
-        
     }
 }

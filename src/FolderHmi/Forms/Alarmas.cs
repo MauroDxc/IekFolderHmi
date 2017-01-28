@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace FolderHmi.Forms
 {
-    public partial class Clientes : Form
+    public partial class Alarmas : Form
     {
-        public Clientes()
+        public Alarmas()
         {
             InitializeComponent();
         }
 
-        private void Clientes_Load(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = DbManager.GetDataTable("SELECT * FROM cliente ORDER BY nombre");
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

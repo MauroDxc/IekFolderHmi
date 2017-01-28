@@ -72,11 +72,29 @@
   <ItemGroup>
     <Compile Include="AppStatics.cs" />
     <Compile Include="DbManager.cs" />
+    <Compile Include="Forms\Alarmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alarmas.Designer.cs">
+      <DependentUpon>Alarmas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bosquejo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bosquejo.Designer.cs">
+      <DependentUpon>Bosquejo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuraciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuraciones.Designer.cs">
+      <DependentUpon>Configuraciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Folder.cs">
       <SubType>Form</SubType>
@@ -96,6 +114,12 @@
     <Compile Include="Forms\Slotter.Designer.cs">
       <DependentUpon>Slotter.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Troquel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Troquel.Designer.cs">
+      <DependentUpon>Troquel.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,8 +131,17 @@
     <Compile Include="OpcManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Alarmas.resx">
+      <DependentUpon>Alarmas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bosquejo.resx">
+      <DependentUpon>Bosquejo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuraciones.resx">
+      <DependentUpon>Configuraciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Folder.resx">
       <DependentUpon>Folder.cs</DependentUpon>
@@ -118,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Slotter.resx">
       <DependentUpon>Slotter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Troquel.resx">
+      <DependentUpon>Troquel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWin.resx">
       <DependentUpon>MainWin.cs</DependentUpon>
@@ -130,6 +166,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -146,6 +183,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="resources\edit-clear.png" />
+    <None Include="resources\emblem-important.png" />
     <Content Include="resources\images\iek.ico" />
     <Content Include="resources\images\iek.png" />
     <Content Include="resources\images\imgFolder.png" />
@@ -153,6 +192,12 @@
     <Content Include="resources\images\open.png" />
     <Content Include="resources\images\play.png" />
     <Content Include="resources\images\save.ico" />
+    <None Include="resources\view-refresh.png" />
+    <None Include="resources\system-log-out1.png" />
+    <None Include="resources\system-log-out.png" />
+    <None Include="resources\x-office-document-template.png" />
+    <None Include="resources\software-update-urgent.png" />
+    <None Include="resources\preferences-system.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
