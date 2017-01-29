@@ -34,10 +34,26 @@ namespace FolderHmi
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool SetForegroundWindow(IntPtr hWnd);
         String PersonalFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+        private OpcManager _opcManager = new OpcManager();
 
         public MainWin()
         {
             InitializeComponent();
+            _opcManager.DataChanged += _opcManager_DataChanged;
+        }
+
+        private void _opcManager_DataChanged(object sender, Objects.OpcItemEventArgs e)
+        {
+            int index;
+            for (index = 1; index < AppStatics.HandleList.Length; index++)
+            {
+                if (e.ItemHandle == (int)AppStatics.HandleList.GetValue(index))
+                {
+                    break;
+                }
+            }
+            TextBox t = (TextBox)Controls.Find(AppStatics.TagList.GetValue(index) + "", true).FirstOrDefault();
+            t.Text = e.ItemValue + "";
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -61,11 +77,11 @@ namespace FolderHmi
         }
 
         private void full_maximize(object sender, EventArgs e)
-        {   
+        {
             // First, Hide the taskbar
 
             int hWnd = FindWindow("Shell_TrayWnd", "");
-            ShowWindow(hWnd, SW_HIDE);
+            ShowWindow(hWnd, SW_SHOW);
 
             // Then, format and size the window. 
             // Important: Borderstyle -must- be first, 
@@ -145,5 +161,37 @@ namespace FolderHmi
             Form a = new Forms.Slotter();
             a.ShowDialog();
         }
+
+        private void textBox20_TextChanged(object sender, EventArgs e)
+        {
+            AppStatics.ValueList.SetValue(0.0, 1);
+            //_opcManager.Write(1);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            Form a = new Forms.Ordenes();
+            a.FormClosing += A_FormClosing;
+            a.ShowDialog();
+        }
+
+        private void A_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            for (int i = 0; i < AppStatics.OrderValueList.Length; i++)
+            {
+                Tag t = (Tag)AppStatics.OrderValueList.GetValue(i);
+                TextBox tx = (TextBox)(Controls.Find(t.Objetivo.Name, true)[0]);
+                tx.Text = "" + t.Value;
+                for (int j = 1; j < AppStatics.TagList.Length; j++)
+                {
+                    if (tx.Tag == AppStatics.TagList.GetValue(j))
+                    {
+                        AppStatics.ValueList.SetValue(t.Value,j);
+                        _opcManager.Write(j);
+                    }
+                }
+            }
+        }
+
     }
 }

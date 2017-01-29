@@ -39,12 +39,12 @@
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.RegF = new System.Windows.Forms.TextBox();
+            this.RegE = new System.Windows.Forms.TextBox();
+            this.CuelloD = new System.Windows.Forms.TextBox();
+            this.CuelloC = new System.Windows.Forms.TextBox();
+            this.CuelloB = new System.Windows.Forms.TextBox();
+            this.CuelloA = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
@@ -58,52 +58,52 @@
             this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.RegFMov = new System.Windows.Forms.TextBox();
+            this.RegEMov = new System.Windows.Forms.TextBox();
+            this.CuelloDMov = new System.Windows.Forms.TextBox();
+            this.CuelloCMov = new System.Windows.Forms.TextBox();
+            this.CuelloBMov = new System.Windows.Forms.TextBox();
+            this.CuelloAMov = new System.Windows.Forms.TextBox();
             this.label52 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.RegFObj = new System.Windows.Forms.TextBox();
+            this.RegEObj = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.CuelloDObj = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.CuelloCObj = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.CuelloBObj = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.CuelloAObj = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BrazoB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.BrazoBMov = new System.Windows.Forms.TextBox();
+            this.BrazoBObj = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.BrazoA = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.BrazoAMov = new System.Windows.Forms.TextBox();
+            this.BrazoAObj = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.BrazoAp = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.BrazoApMov = new System.Windows.Forms.TextBox();
+            this.BrazoApObj = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.LargoCaja = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.LargoCajaMov = new System.Windows.Forms.TextBox();
+            this.LargoCajaObj = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button15 = new System.Windows.Forms.Button();
@@ -253,71 +253,71 @@
             this.label72.TabIndex = 116;
             this.label72.Text = "Actual";
             // 
-            // textBox21
+            // RegF
             // 
-            this.textBox21.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.Location = new System.Drawing.Point(628, 401);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.ReadOnly = true;
-            this.textBox21.Size = new System.Drawing.Size(120, 29);
-            this.textBox21.TabIndex = 115;
-            this.textBox21.Text = "x";
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.RegF.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegF.Location = new System.Drawing.Point(628, 401);
+            this.RegF.Name = "RegF";
+            this.RegF.ReadOnly = true;
+            this.RegF.Size = new System.Drawing.Size(120, 29);
+            this.RegF.TabIndex = 115;
+            this.RegF.Text = "x";
+            this.RegF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox22
+            // RegE
             // 
-            this.textBox22.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox22.Location = new System.Drawing.Point(628, 337);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.ReadOnly = true;
-            this.textBox22.Size = new System.Drawing.Size(120, 29);
-            this.textBox22.TabIndex = 114;
-            this.textBox22.Text = "x";
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.RegE.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegE.Location = new System.Drawing.Point(628, 337);
+            this.RegE.Name = "RegE";
+            this.RegE.ReadOnly = true;
+            this.RegE.Size = new System.Drawing.Size(120, 29);
+            this.RegE.TabIndex = 114;
+            this.RegE.Text = "x";
+            this.RegE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox23
+            // CuelloD
             // 
-            this.textBox23.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(628, 273);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.ReadOnly = true;
-            this.textBox23.Size = new System.Drawing.Size(120, 29);
-            this.textBox23.TabIndex = 112;
-            this.textBox23.Text = "x";
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CuelloD.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuelloD.Location = new System.Drawing.Point(628, 273);
+            this.CuelloD.Name = "CuelloD";
+            this.CuelloD.ReadOnly = true;
+            this.CuelloD.Size = new System.Drawing.Size(120, 29);
+            this.CuelloD.TabIndex = 112;
+            this.CuelloD.Text = "x";
+            this.CuelloD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox24
+            // CuelloC
             // 
-            this.textBox24.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox24.Location = new System.Drawing.Point(628, 209);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.ReadOnly = true;
-            this.textBox24.Size = new System.Drawing.Size(120, 29);
-            this.textBox24.TabIndex = 111;
-            this.textBox24.Text = "x";
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CuelloC.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuelloC.Location = new System.Drawing.Point(628, 209);
+            this.CuelloC.Name = "CuelloC";
+            this.CuelloC.ReadOnly = true;
+            this.CuelloC.Size = new System.Drawing.Size(120, 29);
+            this.CuelloC.TabIndex = 111;
+            this.CuelloC.Text = "x";
+            this.CuelloC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox25
+            // CuelloB
             // 
-            this.textBox25.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox25.Location = new System.Drawing.Point(628, 145);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.ReadOnly = true;
-            this.textBox25.Size = new System.Drawing.Size(120, 29);
-            this.textBox25.TabIndex = 110;
-            this.textBox25.Text = "x";
-            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CuelloB.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuelloB.Location = new System.Drawing.Point(628, 145);
+            this.CuelloB.Name = "CuelloB";
+            this.CuelloB.ReadOnly = true;
+            this.CuelloB.Size = new System.Drawing.Size(120, 29);
+            this.CuelloB.TabIndex = 110;
+            this.CuelloB.Text = "x";
+            this.CuelloB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox26
+            // CuelloA
             // 
-            this.textBox26.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox26.Location = new System.Drawing.Point(628, 81);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.ReadOnly = true;
-            this.textBox26.Size = new System.Drawing.Size(120, 29);
-            this.textBox26.TabIndex = 109;
-            this.textBox26.Text = "x";
-            this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CuelloA.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuelloA.Location = new System.Drawing.Point(628, 81);
+            this.CuelloA.Name = "CuelloA";
+            this.CuelloA.ReadOnly = true;
+            this.CuelloA.Size = new System.Drawing.Size(120, 29);
+            this.CuelloA.TabIndex = 109;
+            this.CuelloA.Text = "x";
+            this.CuelloA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label65
             // 
@@ -462,71 +462,72 @@
             this.label53.TabIndex = 96;
             this.label53.Text = "Mover a";
             // 
-            // textBox15
+            // RegFMov
             // 
-            this.textBox15.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(1022, 401);
-            this.textBox15.MaxLength = 7;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(120, 29);
-            this.textBox15.TabIndex = 71;
-            this.textBox15.Text = "x";
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.RegFMov.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegFMov.Location = new System.Drawing.Point(1022, 401);
+            this.RegFMov.MaxLength = 7;
+            this.RegFMov.Name = "RegFMov";
+            this.RegFMov.Size = new System.Drawing.Size(120, 29);
+            this.RegFMov.TabIndex = 71;
+            this.RegFMov.Text = "x";
+            this.RegFMov.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox16
+            // RegEMov
             // 
-            this.textBox16.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(1022, 337);
-            this.textBox16.MaxLength = 7;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(120, 29);
-            this.textBox16.TabIndex = 69;
-            this.textBox16.Text = "x";
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.RegEMov.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegEMov.Location = new System.Drawing.Point(1022, 337);
+            this.RegEMov.MaxLength = 7;
+            this.RegEMov.Name = "RegEMov";
+            this.RegEMov.Size = new System.Drawing.Size(120, 29);
+            this.RegEMov.TabIndex = 69;
+            this.RegEMov.Text = "x";
+            this.RegEMov.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox17
+            // CuelloDMov
             // 
-            this.textBox17.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(1022, 273);
-            this.textBox17.MaxLength = 7;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(120, 29);
-            this.textBox17.TabIndex = 67;
-            this.textBox17.Text = "x";
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CuelloDMov.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuelloDMov.Location = new System.Drawing.Point(1022, 273);
+            this.CuelloDMov.MaxLength = 7;
+            this.CuelloDMov.Name = "CuelloDMov";
+            this.CuelloDMov.Size = new System.Drawing.Size(120, 29);
+            this.CuelloDMov.TabIndex = 67;
+            this.CuelloDMov.Text = "x";
+            this.CuelloDMov.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox18
+            // CuelloCMov
             // 
-            this.textBox18.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(1022, 209);
-            this.textBox18.MaxLength = 7;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(120, 29);
-            this.textBox18.TabIndex = 66;
-            this.textBox18.Text = "x";
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CuelloCMov.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuelloCMov.Location = new System.Drawing.Point(1022, 209);
+            this.CuelloCMov.MaxLength = 7;
+            this.CuelloCMov.Name = "CuelloCMov";
+            this.CuelloCMov.Size = new System.Drawing.Size(120, 29);
+            this.CuelloCMov.TabIndex = 66;
+            this.CuelloCMov.Text = "x";
+            this.CuelloCMov.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox19
+            // CuelloBMov
             // 
-            this.textBox19.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(1022, 145);
-            this.textBox19.MaxLength = 7;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(120, 29);
-            this.textBox19.TabIndex = 65;
-            this.textBox19.Text = "x";
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CuelloBMov.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuelloBMov.Location = new System.Drawing.Point(1022, 145);
+            this.CuelloBMov.MaxLength = 7;
+            this.CuelloBMov.Name = "CuelloBMov";
+            this.CuelloBMov.Size = new System.Drawing.Size(120, 29);
+            this.CuelloBMov.TabIndex = 65;
+            this.CuelloBMov.Text = "x";
+            this.CuelloBMov.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox20
+            // CuelloAMov
             // 
-            this.textBox20.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(1022, 81);
-            this.textBox20.MaxLength = 7;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(120, 29);
-            this.textBox20.TabIndex = 64;
-            this.textBox20.Text = "x";
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CuelloAMov.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuelloAMov.Location = new System.Drawing.Point(1022, 81);
+            this.CuelloAMov.MaxLength = 7;
+            this.CuelloAMov.Name = "CuelloAMov";
+            this.CuelloAMov.Size = new System.Drawing.Size(120, 29);
+            this.CuelloAMov.TabIndex = 64;
+            this.CuelloAMov.Text = "x";
+            this.CuelloAMov.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CuelloAMov.TextChanged += new System.EventHandler(this.textBox20_TextChanged);
             // 
             // label52
             // 
@@ -539,27 +540,27 @@
             this.label52.TabIndex = 88;
             this.label52.Text = "Objetivo";
             // 
-            // textBox2
+            // RegFObj
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(831, 401);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(120, 29);
-            this.textBox2.TabIndex = 123;
-            this.textBox2.Text = "x";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.RegFObj.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegFObj.Location = new System.Drawing.Point(831, 401);
+            this.RegFObj.Name = "RegFObj";
+            this.RegFObj.ReadOnly = true;
+            this.RegFObj.Size = new System.Drawing.Size(120, 29);
+            this.RegFObj.TabIndex = 123;
+            this.RegFObj.Text = "x";
+            this.RegFObj.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox14
+            // RegEObj
             // 
-            this.textBox14.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(831, 337);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(120, 29);
-            this.textBox14.TabIndex = 113;
-            this.textBox14.Text = "x";
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.RegEObj.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegEObj.Location = new System.Drawing.Point(831, 337);
+            this.RegEObj.Name = "RegEObj";
+            this.RegEObj.ReadOnly = true;
+            this.RegEObj.Size = new System.Drawing.Size(120, 29);
+            this.RegEObj.TabIndex = 113;
+            this.RegEObj.Text = "x";
+            this.RegEObj.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label51
             // 
@@ -573,16 +574,16 @@
             this.label51.Text = "Registro F";
             this.label51.Click += new System.EventHandler(this.label51_Click);
             // 
-            // textBox13
+            // CuelloDObj
             // 
-            this.textBox13.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(831, 273);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(120, 29);
-            this.textBox13.TabIndex = 127;
-            this.textBox13.Text = "x";
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CuelloDObj.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuelloDObj.Location = new System.Drawing.Point(831, 273);
+            this.CuelloDObj.Name = "CuelloDObj";
+            this.CuelloDObj.ReadOnly = true;
+            this.CuelloDObj.Size = new System.Drawing.Size(120, 29);
+            this.CuelloDObj.TabIndex = 127;
+            this.CuelloDObj.Text = "x";
+            this.CuelloDObj.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label49
             // 
@@ -595,16 +596,16 @@
             this.label49.TabIndex = 79;
             this.label49.Text = "Registro E";
             // 
-            // textBox12
+            // CuelloCObj
             // 
-            this.textBox12.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(831, 209);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(120, 29);
-            this.textBox12.TabIndex = 126;
-            this.textBox12.Text = "x";
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CuelloCObj.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuelloCObj.Location = new System.Drawing.Point(831, 209);
+            this.CuelloCObj.Name = "CuelloCObj";
+            this.CuelloCObj.ReadOnly = true;
+            this.CuelloCObj.Size = new System.Drawing.Size(120, 29);
+            this.CuelloCObj.TabIndex = 126;
+            this.CuelloCObj.Text = "x";
+            this.CuelloCObj.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label48
             // 
@@ -617,16 +618,16 @@
             this.label48.TabIndex = 75;
             this.label48.Text = "Cuello D";
             // 
-            // textBox11
+            // CuelloBObj
             // 
-            this.textBox11.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(831, 145);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(120, 29);
-            this.textBox11.TabIndex = 125;
-            this.textBox11.Text = "x";
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CuelloBObj.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuelloBObj.Location = new System.Drawing.Point(831, 145);
+            this.CuelloBObj.Name = "CuelloBObj";
+            this.CuelloBObj.ReadOnly = true;
+            this.CuelloBObj.Size = new System.Drawing.Size(120, 29);
+            this.CuelloBObj.TabIndex = 125;
+            this.CuelloBObj.Text = "x";
+            this.CuelloBObj.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label47
             // 
@@ -639,16 +640,16 @@
             this.label47.TabIndex = 72;
             this.label47.Text = "Cuello C";
             // 
-            // textBox10
+            // CuelloAObj
             // 
-            this.textBox10.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(831, 81);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(120, 29);
-            this.textBox10.TabIndex = 124;
-            this.textBox10.Text = "x";
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CuelloAObj.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuelloAObj.Location = new System.Drawing.Point(831, 81);
+            this.CuelloAObj.Name = "CuelloAObj";
+            this.CuelloAObj.ReadOnly = true;
+            this.CuelloAObj.Size = new System.Drawing.Size(120, 29);
+            this.CuelloAObj.TabIndex = 124;
+            this.CuelloAObj.Text = "x";
+            this.CuelloAObj.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label46
             // 
@@ -683,16 +684,16 @@
             this.label2.TabIndex = 136;
             this.label2.Text = "mm";
             // 
-            // textBox1
+            // BrazoB
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(628, 529);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(120, 29);
-            this.textBox1.TabIndex = 135;
-            this.textBox1.Text = "x";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BrazoB.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrazoB.Location = new System.Drawing.Point(628, 529);
+            this.BrazoB.Name = "BrazoB";
+            this.BrazoB.ReadOnly = true;
+            this.BrazoB.Size = new System.Drawing.Size(120, 29);
+            this.BrazoB.TabIndex = 135;
+            this.BrazoB.Text = "x";
+            this.BrazoB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
@@ -716,27 +717,27 @@
             this.label4.TabIndex = 133;
             this.label4.Text = "mm";
             // 
-            // textBox3
+            // BrazoBMov
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(1022, 529);
-            this.textBox3.MaxLength = 7;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(120, 29);
-            this.textBox3.TabIndex = 128;
-            this.textBox3.Text = "x";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BrazoBMov.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrazoBMov.Location = new System.Drawing.Point(1022, 529);
+            this.BrazoBMov.MaxLength = 7;
+            this.BrazoBMov.Name = "BrazoBMov";
+            this.BrazoBMov.Size = new System.Drawing.Size(120, 29);
+            this.BrazoBMov.TabIndex = 128;
+            this.BrazoBMov.Text = "x";
+            this.BrazoBMov.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox4
+            // BrazoBObj
             // 
-            this.textBox4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(831, 529);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(120, 29);
-            this.textBox4.TabIndex = 137;
-            this.textBox4.Text = "x";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BrazoBObj.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrazoBObj.Location = new System.Drawing.Point(831, 529);
+            this.BrazoBObj.Name = "BrazoBObj";
+            this.BrazoBObj.ReadOnly = true;
+            this.BrazoBObj.Size = new System.Drawing.Size(120, 29);
+            this.BrazoBObj.TabIndex = 137;
+            this.BrazoBObj.Text = "x";
+            this.BrazoBObj.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label5
             // 
@@ -761,16 +762,16 @@
             this.label6.TabIndex = 146;
             this.label6.Text = "mm";
             // 
-            // textBox5
+            // BrazoA
             // 
-            this.textBox5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(628, 465);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(120, 29);
-            this.textBox5.TabIndex = 145;
-            this.textBox5.Text = "x";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BrazoA.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrazoA.Location = new System.Drawing.Point(628, 465);
+            this.BrazoA.Name = "BrazoA";
+            this.BrazoA.ReadOnly = true;
+            this.BrazoA.Size = new System.Drawing.Size(120, 29);
+            this.BrazoA.TabIndex = 145;
+            this.BrazoA.Text = "x";
+            this.BrazoA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label7
             // 
@@ -794,27 +795,27 @@
             this.label8.TabIndex = 143;
             this.label8.Text = "mm";
             // 
-            // textBox6
+            // BrazoAMov
             // 
-            this.textBox6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(1022, 465);
-            this.textBox6.MaxLength = 7;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(120, 29);
-            this.textBox6.TabIndex = 138;
-            this.textBox6.Text = "x";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BrazoAMov.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrazoAMov.Location = new System.Drawing.Point(1022, 465);
+            this.BrazoAMov.MaxLength = 7;
+            this.BrazoAMov.Name = "BrazoAMov";
+            this.BrazoAMov.Size = new System.Drawing.Size(120, 29);
+            this.BrazoAMov.TabIndex = 138;
+            this.BrazoAMov.Text = "x";
+            this.BrazoAMov.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox7
+            // BrazoAObj
             // 
-            this.textBox7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(831, 465);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(120, 29);
-            this.textBox7.TabIndex = 147;
-            this.textBox7.Text = "x";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BrazoAObj.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrazoAObj.Location = new System.Drawing.Point(831, 465);
+            this.BrazoAObj.Name = "BrazoAObj";
+            this.BrazoAObj.ReadOnly = true;
+            this.BrazoAObj.Size = new System.Drawing.Size(120, 29);
+            this.BrazoAObj.TabIndex = 147;
+            this.BrazoAObj.Text = "x";
+            this.BrazoAObj.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label9
             // 
@@ -839,16 +840,17 @@
             this.label10.TabIndex = 156;
             this.label10.Text = "mm";
             // 
-            // textBox8
+            // BrazoAp
             // 
-            this.textBox8.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(628, 593);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(120, 29);
-            this.textBox8.TabIndex = 155;
-            this.textBox8.Text = "x";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BrazoAp.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrazoAp.Location = new System.Drawing.Point(628, 593);
+            this.BrazoAp.Name = "BrazoAp";
+            this.BrazoAp.ReadOnly = true;
+            this.BrazoAp.Size = new System.Drawing.Size(120, 29);
+            this.BrazoAp.TabIndex = 155;
+            this.BrazoAp.Tag = "Channel1.PLC_FOLDER.POS_BRAZO_GM";
+            this.BrazoAp.Text = "x";
+            this.BrazoAp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label11
             // 
@@ -872,27 +874,28 @@
             this.label12.TabIndex = 153;
             this.label12.Text = "mm";
             // 
-            // textBox9
+            // BrazoApMov
             // 
-            this.textBox9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(1022, 593);
-            this.textBox9.MaxLength = 7;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(120, 29);
-            this.textBox9.TabIndex = 148;
-            this.textBox9.Text = "x";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BrazoApMov.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrazoApMov.Location = new System.Drawing.Point(1022, 593);
+            this.BrazoApMov.MaxLength = 7;
+            this.BrazoApMov.Name = "BrazoApMov";
+            this.BrazoApMov.Size = new System.Drawing.Size(120, 29);
+            this.BrazoApMov.TabIndex = 148;
+            this.BrazoApMov.Tag = "Channel1.PLC_FOLDER.NPOS_BRAZO_GM";
+            this.BrazoApMov.Text = "x";
+            this.BrazoApMov.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox27
+            // BrazoApObj
             // 
-            this.textBox27.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox27.Location = new System.Drawing.Point(831, 593);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.ReadOnly = true;
-            this.textBox27.Size = new System.Drawing.Size(120, 29);
-            this.textBox27.TabIndex = 157;
-            this.textBox27.Text = "x";
-            this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BrazoApObj.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrazoApObj.Location = new System.Drawing.Point(831, 593);
+            this.BrazoApObj.Name = "BrazoApObj";
+            this.BrazoApObj.ReadOnly = true;
+            this.BrazoApObj.Size = new System.Drawing.Size(120, 29);
+            this.BrazoApObj.TabIndex = 157;
+            this.BrazoApObj.Text = "x";
+            this.BrazoApObj.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label13
             // 
@@ -917,16 +920,17 @@
             this.label14.TabIndex = 166;
             this.label14.Text = "mm";
             // 
-            // textBox28
+            // LargoCaja
             // 
-            this.textBox28.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox28.Location = new System.Drawing.Point(628, 657);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.ReadOnly = true;
-            this.textBox28.Size = new System.Drawing.Size(120, 29);
-            this.textBox28.TabIndex = 165;
-            this.textBox28.Text = "x";
-            this.textBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.LargoCaja.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LargoCaja.Location = new System.Drawing.Point(628, 657);
+            this.LargoCaja.Name = "LargoCaja";
+            this.LargoCaja.ReadOnly = true;
+            this.LargoCaja.Size = new System.Drawing.Size(120, 29);
+            this.LargoCaja.TabIndex = 165;
+            this.LargoCaja.Tag = "Channel1.PLC_FOLDER.POS_BRAZO_CDR";
+            this.LargoCaja.Text = "x";
+            this.LargoCaja.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label15
             // 
@@ -950,27 +954,28 @@
             this.label16.TabIndex = 163;
             this.label16.Text = "mm";
             // 
-            // textBox29
+            // LargoCajaMov
             // 
-            this.textBox29.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox29.Location = new System.Drawing.Point(1022, 657);
-            this.textBox29.MaxLength = 7;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(120, 29);
-            this.textBox29.TabIndex = 158;
-            this.textBox29.Text = "x";
-            this.textBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.LargoCajaMov.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LargoCajaMov.Location = new System.Drawing.Point(1022, 657);
+            this.LargoCajaMov.MaxLength = 7;
+            this.LargoCajaMov.Name = "LargoCajaMov";
+            this.LargoCajaMov.Size = new System.Drawing.Size(120, 29);
+            this.LargoCajaMov.TabIndex = 158;
+            this.LargoCajaMov.Tag = "Channel1.PLC_FOLDER.NPOS_BRAZO_CDR";
+            this.LargoCajaMov.Text = "x";
+            this.LargoCajaMov.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox30
+            // LargoCajaObj
             // 
-            this.textBox30.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox30.Location = new System.Drawing.Point(831, 657);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.ReadOnly = true;
-            this.textBox30.Size = new System.Drawing.Size(120, 29);
-            this.textBox30.TabIndex = 167;
-            this.textBox30.Text = "x";
-            this.textBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.LargoCajaObj.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LargoCajaObj.Location = new System.Drawing.Point(831, 657);
+            this.LargoCajaObj.Name = "LargoCajaObj";
+            this.LargoCajaObj.ReadOnly = true;
+            this.LargoCajaObj.Size = new System.Drawing.Size(120, 29);
+            this.LargoCajaObj.TabIndex = 167;
+            this.LargoCajaObj.Text = "x";
+            this.LargoCajaObj.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label17
             // 
@@ -999,6 +1004,7 @@
             this.button15.TabIndex = 170;
             this.button15.Text = "Cargar";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button17
             // 
@@ -1406,41 +1412,41 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox28);
+            this.Controls.Add(this.LargoCaja);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.textBox30);
+            this.Controls.Add(this.LargoCajaMov);
+            this.Controls.Add(this.LargoCajaObj);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.BrazoAp);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox27);
+            this.Controls.Add(this.BrazoApMov);
+            this.Controls.Add(this.BrazoApObj);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.BrazoA);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.BrazoAMov);
+            this.Controls.Add(this.BrazoAObj);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.BrazoB);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.BrazoBMov);
+            this.Controls.Add(this.BrazoBObj);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
@@ -1452,12 +1458,12 @@
             this.Controls.Add(this.label70);
             this.Controls.Add(this.label71);
             this.Controls.Add(this.label72);
-            this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.textBox26);
+            this.Controls.Add(this.RegF);
+            this.Controls.Add(this.RegE);
+            this.Controls.Add(this.CuelloD);
+            this.Controls.Add(this.CuelloC);
+            this.Controls.Add(this.CuelloB);
+            this.Controls.Add(this.CuelloA);
             this.Controls.Add(this.label65);
             this.Controls.Add(this.label64);
             this.Controls.Add(this.label63);
@@ -1471,23 +1477,23 @@
             this.Controls.Add(this.label55);
             this.Controls.Add(this.label54);
             this.Controls.Add(this.label53);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox20);
+            this.Controls.Add(this.RegFMov);
+            this.Controls.Add(this.RegEMov);
+            this.Controls.Add(this.CuelloDMov);
+            this.Controls.Add(this.CuelloCMov);
+            this.Controls.Add(this.CuelloBMov);
+            this.Controls.Add(this.CuelloAMov);
             this.Controls.Add(this.label52);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.RegFObj);
+            this.Controls.Add(this.RegEObj);
             this.Controls.Add(this.label51);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.CuelloDObj);
             this.Controls.Add(this.label49);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.CuelloCObj);
             this.Controls.Add(this.label48);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.CuelloBObj);
             this.Controls.Add(this.label47);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.CuelloAObj);
             this.Controls.Add(this.label46);
             this.Controls.Add(this.label45);
             this.Controls.Add(this.button51);
@@ -1542,12 +1548,12 @@
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox RegF;
+        private System.Windows.Forms.TextBox RegE;
+        private System.Windows.Forms.TextBox CuelloD;
+        private System.Windows.Forms.TextBox CuelloC;
+        private System.Windows.Forms.TextBox CuelloB;
+        private System.Windows.Forms.TextBox CuelloA;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label63;
@@ -1561,23 +1567,23 @@
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox RegFMov;
+        private System.Windows.Forms.TextBox RegEMov;
+        private System.Windows.Forms.TextBox CuelloDMov;
+        private System.Windows.Forms.TextBox CuelloCMov;
+        private System.Windows.Forms.TextBox CuelloBMov;
+        private System.Windows.Forms.TextBox CuelloAMov;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox RegFObj;
+        private System.Windows.Forms.TextBox RegEObj;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox CuelloDObj;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox CuelloCObj;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox CuelloBObj;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox CuelloAObj;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Button button51;
@@ -1599,41 +1605,41 @@
         private System.Windows.Forms.Button button35;
         private System.Windows.Forms.Button button34;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox BrazoB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox BrazoBMov;
+        private System.Windows.Forms.TextBox BrazoBObj;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox BrazoA;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox BrazoAMov;
+        private System.Windows.Forms.TextBox BrazoAObj;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox BrazoAp;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox BrazoApMov;
+        private System.Windows.Forms.TextBox BrazoApObj;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox LargoCaja;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.TextBox LargoCajaMov;
+        private System.Windows.Forms.TextBox LargoCajaObj;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;

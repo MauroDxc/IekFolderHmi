@@ -12,6 +12,8 @@ namespace FolderHmi.Forms
 {
     public partial class Slotter : Form
     {
+        DbManager _db = new DbManager();
+
         public Slotter()
         {
             InitializeComponent();
@@ -24,7 +26,19 @@ namespace FolderHmi.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            _db.insert("caja",
+                "'" + textBox4.Text + "','"
+                + textBox1.Text + "'," +
+                "''," +
+                "1," +
+                numericUpDown7.Value + "," +
+                "''," + 
+                numericUpDown1.Value + "," +
+                numericUpDown2.Value + "," +
+                numericUpDown3.Value + "," +
+                numericUpDown4.Value + "," +
+                numericUpDown5.Value + "," +
+                numericUpDown6.Value );
         }
     }
 }

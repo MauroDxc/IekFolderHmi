@@ -32,7 +32,7 @@ namespace FolderHmi
             }
         }
 
-        public static DataTable GetDataTable(string cmd)
+        public DataTable GetDataTable(string cmd)
         {
             Connect();
             DataTable data = new DataTable();
@@ -65,6 +65,7 @@ namespace FolderHmi
             }
 
         }
+        
 
     }
 }

@@ -19,7 +19,7 @@ namespace FolderHmi.Forms
 
         private void Clientes_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = DbManager.GetDataTable("SELECT * FROM cliente ORDER BY nombre");
+            dataGridView1.DataSource = new DbManager().GetDataTable("SELECT * FROM cliente ORDER BY nombre");
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)

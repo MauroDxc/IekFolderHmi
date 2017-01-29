@@ -9,6 +9,6 @@ namespace FolderHmi.Objects
     public class OpcItemEventArgs
     {
         public int ItemHandle { get; set; }
-        public double ItemValue { get; set; }
+        public object ItemValue { get; set; }
     }
 }
