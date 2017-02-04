@@ -40,20 +40,27 @@ namespace FolderHmi
         {
             InitializeComponent();
             _opcManager.DataChanged += _opcManager_DataChanged;
+            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloA, CuelloAMov, CuelloAObj), 0);
+            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloB, CuelloBMov, CuelloBObj), 1);
+            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloC, CuelloCMov, CuelloCObj), 2);
+            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloD, CuelloDMov, CuelloDObj), 3);
+            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), RegE, RegEMov, RegEObj), 4);
+            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), RegF, RegFMov, RegFObj), 5);
+            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_LO, BrazoLoMov, NPOS_BRAZO_LO), 6);
+            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_LT, BrazoLtMov, NPOS_BRAZO_LT), 7);
+            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_GM, BrazoGmMov, NPOS_BRAZO_GM), 8);
+            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_CDR, BrazoCdrMov, NPOS_BRAZO_CDR), 9);
+
         }
 
         private void _opcManager_DataChanged(object sender, Objects.OpcItemEventArgs e)
         {
-            int index;
-            for (index = 1; index < AppStatics.HandleList.Length; index++)
+            
+            TextBox t = (TextBox)Controls.Find(((string)AppStatics.TagList.GetValue(e.ItemHandle)).Replace("CHANNEL1.PLC_FOLDER.", ""), true).FirstOrDefault();
+            if (t != null)
             {
-                if (e.ItemHandle == (int)AppStatics.HandleList.GetValue(index))
-                {
-                    break;
-                }
+                t.Text = e.ItemValue + "";
             }
-            TextBox t = (TextBox)Controls.Find(AppStatics.TagList.GetValue(index) + "", true).FirstOrDefault();
-            t.Text = e.ItemValue + "";
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -177,21 +184,29 @@ namespace FolderHmi
 
         private void A_FormClosing(object sender, FormClosingEventArgs e)
         {
-            for (int i = 0; i < AppStatics.OrderValueList.Length; i++)
+            for (int i = 0; i < AppStatics.CachedTags.Length; i++)
             {
-                Tag t = (Tag)AppStatics.OrderValueList.GetValue(i);
+                Tag t = (Tag)AppStatics.CachedTags.GetValue(i);
                 TextBox tx = (TextBox)(Controls.Find(t.Objetivo.Name, true)[0]);
                 tx.Text = "" + t.Value;
                 for (int j = 1; j < AppStatics.TagList.Length; j++)
                 {
                     if (tx.Tag == AppStatics.TagList.GetValue(j))
                     {
-                        AppStatics.ValueList.SetValue(t.Value,j);
+                        AppStatics.ValueList.SetValue(t.Value, j);
                         _opcManager.Write(j);
                     }
                 }
             }
         }
 
+        private void actionButton_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            int index = int.Parse(btn.Tag.ToString().Split(',')[0]);
+            int action = int.Parse(btn.Tag.ToString().Split(',')[1]);
+            AppStatics.ValueList.SetValue(action, index);
+            _opcManager.Write(index);
+        }
     }
 }

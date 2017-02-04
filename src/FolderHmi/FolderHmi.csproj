@@ -131,6 +131,7 @@
     <Compile Include="OpcManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tag.cs" />
     <EmbeddedResource Include="Forms\Alarmas.resx">
       <DependentUpon>Alarmas.cs</DependentUpon>
     </EmbeddedResource>

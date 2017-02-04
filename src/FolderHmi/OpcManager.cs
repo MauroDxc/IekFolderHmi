@@ -415,16 +415,23 @@ namespace FolderHmi
             Objects.OpcItemEventArgs e = new Objects.OpcItemEventArgs();
             for (int i = 1; i <= ClientHandles.Length; i++)
             {
+                if (ItemValues.GetValue(i) == null) continue;
                 e.ItemHandle = (int)ClientHandles.GetValue(i);
-                if (ItemValues.GetValue(i).GetType() == typeof(bool))
+                if (typeof(double) == ItemValues.GetValue(i).GetType())
                 {
-                    if (typeof(double) == ItemValues.GetValue(i).GetType())
-                    {
-                        e.ItemValue = ItemValues.GetValue(i) != null ? (bool)ItemValues.GetValue(i) : false;
-                    }
-                    else if (typeof(bool) == ItemValues.GetValue(i).GetType())
-                    {
-                    }
+                    e.ItemValue = ItemValues.GetValue(i) != null ? (double)ItemValues.GetValue(i) : 0.0;
+                }
+                else if (typeof(bool) == ItemValues.GetValue(i).GetType())
+                {
+                    e.ItemValue = ItemValues.GetValue(i) != null ? (bool)ItemValues.GetValue(i) : false;
+                }
+                else if (typeof(byte) == ItemValues.GetValue(i).GetType())
+                {
+                    e.ItemValue = ItemValues.GetValue(i) != null ? (byte)ItemValues.GetValue(i) : new Byte();
+                }
+                else if (typeof(string) == ItemValues.GetValue(i).GetType())
+                {
+                    e.ItemValue = ItemValues.GetValue(i) != null ? (string)ItemValues.GetValue(i) : "";
                 }
                 DataChanged(this, e);
             }

@@ -31,16 +31,16 @@ namespace FolderHmi.Forms
             decimal v5 = (decimal)dataGridView1.SelectedRows[0].Cells[8].Value;
             decimal v6 = (decimal)dataGridView1.SelectedRows[0].Cells[9].Value;
 
-            AppStatics.OrderValueList.SetValue(v5 - v3, 0);                         //Cuello A
-            AppStatics.OrderValueList.SetValue(v3, 1);                              //Cuello B                             
-            AppStatics.OrderValueList.SetValue(v4, 2);                              //Cuello C
-            AppStatics.OrderValueList.SetValue(v6 - v4, 3);                         //Cuello D
-            AppStatics.OrderValueList.SetValue(0, 4);                               //Registro E
-            AppStatics.OrderValueList.SetValue(v1, 5);                              //Registro F
-            AppStatics.OrderValueList.SetValue(v4, 6);                              //Brazo A
-            AppStatics.OrderValueList.SetValue(v3, 7);                              //Brazo B
-            AppStatics.OrderValueList.SetValue(v5 - AppStatics.ApBrazo, 8);         //Brazo Ap
-            AppStatics.OrderValueList.SetValue(v1 + v2 + v3, 9);                    //Largo Ceja
+            ((Tag)AppStatics.CachedTags.GetValue(0)).Value = v5 - v3;                         //Cuello A
+            ((Tag)AppStatics.CachedTags.GetValue(1)).Value = v3;                              //Cuello B                             
+            ((Tag)AppStatics.CachedTags.GetValue(2)).Value = v4;                              //Cuello C
+            ((Tag)AppStatics.CachedTags.GetValue(3)).Value = v6 - v4;                         //Cuello D
+            ((Tag)AppStatics.CachedTags.GetValue(4)).Value = 0;                               //Registro E
+            ((Tag)AppStatics.CachedTags.GetValue(5)).Value = v1;                              //Registro F
+            ((Tag)AppStatics.CachedTags.GetValue(6)).Value = v4;                              //Brazo A
+            ((Tag)AppStatics.CachedTags.GetValue(7)).Value = v3;                              //Brazo B
+            ((Tag)AppStatics.CachedTags.GetValue(8)).Value = v5 - AppStatics.ApBrazo;         //Brazo Ap
+            ((Tag)AppStatics.CachedTags.GetValue(9)).Value = v1 + v2 + v3;                    //Largo Ceja
 
             Close();
         }
