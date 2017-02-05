@@ -12,6 +12,7 @@ namespace FolderHmi
     class OpcManager
     {
         public event OpcDataChanged DataChanged;
+        public static OpcManager Instance = new OpcManager();
         OPCServer _OPCServer;
 
         public enum CanonicalDataTypes
@@ -28,7 +29,7 @@ namespace FolderHmi
             CanonDtString = 8,
         }
 
-        public OpcManager()
+        private OpcManager()
         {
             try
             {
@@ -38,6 +39,7 @@ namespace FolderHmi
             catch (Exception ex)
             {
                 _OPCServer = null;
+                throw;
             }
             try
             {
@@ -51,6 +53,7 @@ namespace FolderHmi
             catch (Exception ex)
             {
                 _OPCServer = null;
+                throw;
 
             }
             try
@@ -74,6 +77,7 @@ namespace FolderHmi
             catch (Exception ex)
             {
                 _OPCServer = null;
+                throw;
 
             }
         }
@@ -424,6 +428,7 @@ namespace FolderHmi
                 else if (typeof(bool) == ItemValues.GetValue(i).GetType())
                 {
                     e.ItemValue = ItemValues.GetValue(i) != null ? (bool)ItemValues.GetValue(i) : false;
+                    e.IsFault = (bool)e.ItemValue && (e.ItemHandle <= 9 && e.ItemHandle >= 6);
                 }
                 else if (typeof(byte) == ItemValues.GetValue(i).GetType())
                 {

@@ -16,8 +16,7 @@ using OPCAutomation;
 using System.Diagnostics;
 using System.IO;
 using Microsoft.Win32;
-
-
+using System.Resources;
 
 namespace FolderHmi
 {
@@ -34,28 +33,41 @@ namespace FolderHmi
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool SetForegroundWindow(IntPtr hWnd);
         String PersonalFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-        private OpcManager _opcManager = new OpcManager();
 
         public MainWin()
         {
             InitializeComponent();
-            _opcManager.DataChanged += _opcManager_DataChanged;
+            try
+            {
+                OpcManager.Instance.DataChanged += _opcManager_DataChanged;
+
+            }
+            catch (Exception)
+            {
+                connectBtn.Image = new Bitmap(FolderHmi.Properties.Resources.light_off);
+                MessageBox.Show("OpcManager offline!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloA, CuelloAMov, CuelloAObj), 0);
             AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloB, CuelloBMov, CuelloBObj), 1);
             AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloC, CuelloCMov, CuelloCObj), 2);
             AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloD, CuelloDMov, CuelloDObj), 3);
             AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), RegE, RegEMov, RegEObj), 4);
             AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), RegF, RegFMov, RegFObj), 5);
-            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_LO, BrazoLoMov, NPOS_BRAZO_LO), 6);
-            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_LT, BrazoLtMov, NPOS_BRAZO_LT), 7);
-            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_GM, BrazoGmMov, NPOS_BRAZO_GM), 8);
-            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_CDR, BrazoCdrMov, NPOS_BRAZO_CDR), 9);
+            //AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_LO, BrazoLoMov, NPOS_BRAZO_LO), 6);
+            //AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_LT, BrazoLtMov, NPOS_BRAZO_LT), 7);
+            //AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_GM, BrazoGmMov, NPOS_BRAZO_GM), 8);
+            //AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_CDR, BrazoCdrMov, NPOS_BRAZO_CDR), 9);
 
         }
 
         private void _opcManager_DataChanged(object sender, Objects.OpcItemEventArgs e)
         {
-            
+            if (e.IsFault)
+            {
+                string tag = (string)AppStatics.TagList.GetValue(e.ItemHandle);
+                DateTime date = DateTime.Now;
+                DbManager.Insert("faults", "0,'" + tag + "','" + date.ToString("yyyy-MM-dd hh:mm") + "',1");
+            }
             TextBox t = (TextBox)Controls.Find(((string)AppStatics.TagList.GetValue(e.ItemHandle)).Replace("CHANNEL1.PLC_FOLDER.", ""), true).FirstOrDefault();
             if (t != null)
             {
@@ -75,7 +87,6 @@ namespace FolderHmi
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            new OpcManager();
         }
 
         private void MainWin_Load(object sender, EventArgs e)
@@ -178,11 +189,11 @@ namespace FolderHmi
         private void button15_Click(object sender, EventArgs e)
         {
             Form a = new Forms.Ordenes();
-            a.FormClosing += A_FormClosing;
+            a.FormClosing += Ordenes_FormClosing;
             a.ShowDialog();
         }
 
-        private void A_FormClosing(object sender, FormClosingEventArgs e)
+        private void Ordenes_FormClosing(object sender, FormClosingEventArgs e)
         {
             for (int i = 0; i < AppStatics.CachedTags.Length; i++)
             {
@@ -194,7 +205,7 @@ namespace FolderHmi
                     if (tx.Tag == AppStatics.TagList.GetValue(j))
                     {
                         AppStatics.ValueList.SetValue(t.Value, j);
-                        _opcManager.Write(j);
+                        OpcManager.Instance.Write(j);
                     }
                 }
             }
@@ -206,7 +217,21 @@ namespace FolderHmi
             int index = int.Parse(btn.Tag.ToString().Split(',')[0]);
             int action = int.Parse(btn.Tag.ToString().Split(',')[1]);
             AppStatics.ValueList.SetValue(action, index);
-            _opcManager.Write(index);
+            OpcManager.Instance.Write(index);
+        }
+
+        private void numUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            NumericUpDown nud = (NumericUpDown)sender;
+            int index = int.Parse(nud.Tag.ToString().Split(',')[0]);
+            decimal action = nud.Value;
+            AppStatics.ValueList.SetValue(action, index);
+            OpcManager.Instance.Write(index);
+        }
+
+        private void connectBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

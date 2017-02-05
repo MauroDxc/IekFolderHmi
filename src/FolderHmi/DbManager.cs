@@ -12,7 +12,7 @@ namespace FolderHmi
     class DbManager
     {
         private static MySqlConnection conn;
-        String sconnection = "server=localhost;User Id=root;password=password;Persist Security Info=True;database=iekfolder";
+        private static String sconnection = "server=localhost;User Id=root;password=password;Persist Security Info=True;database=iekfolder";
 
         private static void Connect()
         {
@@ -32,7 +32,7 @@ namespace FolderHmi
             }
         }
 
-        public DataTable GetDataTable(string cmd)
+        public static DataTable GetDataTable(string cmd)
         {
             Connect();
             DataTable data = new DataTable();
@@ -43,7 +43,7 @@ namespace FolderHmi
 
         }
 
-        public bool insert(String tabla, String datos)
+        public static bool Insert(String tabla, String datos)
         {
             try
             {
@@ -54,7 +54,6 @@ namespace FolderHmi
                 myConnection.Open();
                 myCommand.ExecuteNonQuery();
                 myCommand.Connection.Close();
-                MessageBox.Show("Valor agregado", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return true;
             }
             catch (MySqlException e)

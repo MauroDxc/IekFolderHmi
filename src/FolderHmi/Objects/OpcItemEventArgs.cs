@@ -10,5 +10,6 @@ namespace FolderHmi.Objects
     {
         public int ItemHandle { get; set; }
         public object ItemValue { get; set; }
+        public bool IsFault { get; set; }
     }
 }

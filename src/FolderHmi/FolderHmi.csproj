@@ -184,6 +184,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="resources\light_off.png" />
+    <Content Include="resources\light_on.png" />
     <None Include="resources\edit-clear.png" />
     <None Include="resources\emblem-important.png" />
     <Content Include="resources\images\iek.ico" />

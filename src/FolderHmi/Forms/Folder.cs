@@ -12,12 +12,10 @@ namespace FolderHmi.Forms
 {
     public partial class Folder : Form
     {
-        OpcManager _OpcManager = new OpcManager();
-
         public Folder()
         {
             InitializeComponent();
-            _OpcManager.DataChanged += _OpcManager_DataChanged;
+            OpcManager.Instance.DataChanged += _OpcManager_DataChanged;
         }
 
         private void Folder_Load(object sender, EventArgs e)
