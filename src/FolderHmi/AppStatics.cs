@@ -10,11 +10,6 @@ namespace FolderHmi
     class AppStatics
     {
         public static string OPCServerName = "KEPware.KEPServerEx.V5";
-        public static int TagCount = 55;
-        public static Array ItemServerHandles;
-        public static OPCGroup _OPCGroup;
-        public static Array ItemServerErrors;
-        public static int[] OPCItemIsArray = new int[TagCount];
         public static Array TagList = new string[] {
             "",
             "Channel1.PLC_FOLDER.CALIBRAR_D120",
@@ -32,7 +27,7 @@ namespace FolderHmi
             "Channel1.PLC_FOLDER.EN_ETHERNET_D121",
             "Channel1.PLC_FOLDER.EN_ETHERNET_D122",
             "Channel1.PLC_FOLDER.EN_ETHERNET_D123", //15
-            "Channel1.PLC_FOLDER.EN_HSC", 
+            "Channel1.PLC_FOLDER.EN_HSC",
             "Channel1.PLC_FOLDER.END_BRAZO_CDR",
             "Channel1.PLC_FOLDER.END_BRAZO_GM",
             "Channel1.PLC_FOLDER.END_BRAZO_LO",
@@ -72,16 +67,95 @@ namespace FolderHmi
             "Channel1.PLC_FOLDER.V_MIN",
             "Channel1.PLC_FOLDER.V_MIN_BAND",
             "Channel1.PLC_FOLDER.VALOR_CERO", //55
+
+            "Channel1.PLC_FOLDER.C_FAULT_D110",
+            "Channel1.PLC_FOLDER.C_FAULT_D111",
+            "Channel1.PLC_FOLDER.C_FAULT_D112",
+            "Channel1.PLC_FOLDER.C_FAULT_D114",
+            "Channel1.PLC_FOLDER.C_FAULT_D115",
+            "Channel1.PLC_FOLDER.CALIBRAR_D110",
+            "Channel1.PLC_FOLDER.CALIBRAR_D111",
+            "Channel1.PLC_FOLDER.CALIBRAR_D112",
+            "Channel1.PLC_FOLDER.CALIBRAR_D113",
+            "Channel1.PLC_FOLDER.CALIBRAR_D114",
+            "Channel1.PLC_FOLDER.CALIBRAR_D115",
+            "Channel1.PLC_FOLDER.D110_FAULT",
+            "Channel1.PLC_FOLDER.D111_FAULT",
+            "Channel1.PLC_FOLDER.D112_FAULT",
+            "Channel1.PLC_FOLDER.D113_FAULT",
+            "Channel1.PLC_FOLDER.D114_FAULT",
+            "Channel1.PLC_FOLDER.D115_FAULT",
+            "Channel1.PLC_FOLDER.EN_ETHERNET_D110",
+            "Channel1.PLC_FOLDER.EN_ETHERNET_D111",
+            "Channel1.PLC_FOLDER.EN_ETHERNET_D112",
+            "Channel1.PLC_FOLDER.EN_ETHERNET_D113",
+            "Channel1.PLC_FOLDER.EN_ETHERNET_D114",
+            "Channel1.PLC_FOLDER.EN_ETHERNET_D115",
+            "Channel1.PLC_FOLDER.END_CUELLO_A",
+            "Channel1.PLC_FOLDER.END_CUELLO_B",
+            "Channel1.PLC_FOLDER.END_CUELLO_C",
+            "Channel1.PLC_FOLDER.END_CUELLO_D",
+            "Channel1.PLC_FOLDER.END_CUELLO_REG_E",
+            "Channel1.PLC_FOLDER.END_CUELLO_REG_F",
+            "Channel1.PLC_FOLDER.GO_NPOS_CUELLO_A",
+            "Channel1.PLC_FOLDER.GO_NPOS_CUELLO_B",
+            "Channel1.PLC_FOLDER.GO_NPOS_CUELLO_C",
+            "Channel1.PLC_FOLDER.GO_NPOS_CUELLO_D",
+            "Channel1.PLC_FOLDER.GO_NPOS_REG_E",
+            "Channel1.PLC_FOLDER.GO_NPOS_REG_F",
+            "Channel1.PLC_FOLDER.HOME_D110",
+            "Channel1.PLC_FOLDER.HOME_D111",
+            "Channel1.PLC_FOLDER.HOME_D112",
+            "Channel1.PLC_FOLDER.HOME_D113",
+            "Channel1.PLC_FOLDER.HOME_D114",
+            "Channel1.PLC_FOLDER.HOME_D115",
+            "Channel1.PLC_FOLDER.IN_CUELLO_REG_E",
+            "Channel1.PLC_FOLDER.IN_CUELLO_REG_F",
+            "Channel1.PLC_FOLDER.INI_CUELLO_A",
+            "Channel1.PLC_FOLDER.INI_CUELLO_B",
+            "Channel1.PLC_FOLDER.INI_CUELLO_C",
+            "Channel1.PLC_FOLDER.INI_CUELLO_D",
+            "Channel1.PLC_FOLDER.IP_DRIVE_A",
+            "Channel1.PLC_FOLDER.IP_DRIVE_B",
+            "Channel1.PLC_FOLDER.IP_DRIVE_C",
+            "Channel1.PLC_FOLDER.IP_DRIVE_D",
+            "Channel1.PLC_FOLDER.IP_DRIVE_E",
+            "Channel1.PLC_FOLDER.IP_DRIVE_F",
+            "Channel1.PLC_FOLDER.NPOS_A",
+            "Channel1.PLC_FOLDER.NPOS_B",
+            "Channel1.PLC_FOLDER.NPOS_C",
+            "Channel1.PLC_FOLDER.NPOS_D",
+            "Channel1.PLC_FOLDER.NPOS_REG_E",
+            "Channel1.PLC_FOLDER.NPOS_REG_F",
+            "Channel1.PLC_FOLDER.POS_A",
+            "Channel1.PLC_FOLDER.POS_B",
+            "Channel1.PLC_FOLDER.POS_C",
+            "Channel1.PLC_FOLDER.POS_D",
+            "Channel1.PLC_FOLDER.POS_REG_E",
+            "Channel1.PLC_FOLDER.POS_REG_F",
+            "Channel1.PLC_FOLDER.VEL_MAX_NPOS",
+            "Channel1.PLC_FOLDER.VEL_MIN_NPOS",
+
         };
+        public static int TagCount = TagList.Length - 1;
+        public static Array ItemServerHandles;
+        public static OPCGroup _OPCGroup;
+        public static Array ItemServerErrors;
+        public static int[] OPCItemIsArray = new int[TagCount];
+        
         //public static Array TagList = new string[] { "Channel1.PLC_SLOTTER.PB_1", "Channel1.PLC_SLOTTER.POS_REG", "Channel1.PLC_SLOTTER.POS_REG_L" };
 
-        public static Array ValueList = new object[56];
-        public static Array HandleList = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55 };
+        public static Array ValueList = new object[TagCount + 1];
+        public static Array HandleList = new int[TagCount + 1];
         public static Array CachedTags = new Tag[10];
         public static decimal ApBrazo = 10;
 
         public AppStatics()
         {
+            for (int i = 1; i < TagList.Length; i++)
+            {
+                HandleList.SetValue(i, i);
+            }
         }
 
     }

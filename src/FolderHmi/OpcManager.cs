@@ -9,11 +9,27 @@ using System.Threading.Tasks;
 namespace FolderHmi
 {
     public delegate void OpcDataChanged(object sender, Objects.OpcItemEventArgs e);
+    public delegate void StatusMessageDelegate(object sender, string message);
+
     class OpcManager
     {
         public event OpcDataChanged DataChanged;
         public static OpcManager Instance = new OpcManager();
         OPCServer _OPCServer;
+
+        public event StatusMessageDelegate StatusMessageChanged;
+        private string _statusMessage;
+        public string StatusMessage
+        {
+            set
+            {
+                if (Instance.StatusMessageChanged != null)
+                {
+                    Instance.StatusMessageChanged(null, _statusMessage);
+                }
+            }
+            private get { return _statusMessage; }
+        }
 
         public enum CanonicalDataTypes
         {

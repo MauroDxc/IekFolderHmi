@@ -68,11 +68,11 @@ namespace FolderHmi
                 DateTime date = DateTime.Now;
                 DbManager.Insert("faults", "0,'" + tag + "','" + date.ToString("yyyy-MM-dd hh:mm") + "',1");
             }
-            TextBox t = (TextBox)Controls.Find(((string)AppStatics.TagList.GetValue(e.ItemHandle)).Replace("CHANNEL1.PLC_FOLDER.", ""), true).FirstOrDefault();
-            if (t != null)
-            {
-                t.Text = e.ItemValue + "";
-            }
+            //TextBox t = (TextBox)Controls.Find(((string)AppStatics.TagList.GetValue(e.ItemHandle)).Replace("CHANNEL1.PLC_FOLDER.", ""), true).FirstOrDefault();
+            //if (t != null)
+            //{
+            //    t.Text = e.ItemValue + "";
+            //}
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
