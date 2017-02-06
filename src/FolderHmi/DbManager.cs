@@ -32,6 +32,41 @@ namespace FolderHmi
             }
         }
 
+        public static bool Update(string table, KeyValuePair<string, string> []values, KeyValuePair<string, string>[] filters)
+        {
+            try
+            {
+                MySqlConnection myConnection = new MySqlConnection(sconnection);
+                StringBuilder updateString = new StringBuilder();
+                StringBuilder whereString = new StringBuilder();
+
+                foreach (var v in values)
+                {
+                    updateString.Append(v.Key + "=" + v.Value + ",");
+                }
+                foreach (var v in filters)
+                {
+                    whereString.Append(v.Key + "=" + v.Value + ",");
+                }
+                updateString.Remove(updateString.Length - 1, 1);
+                whereString.Remove(whereString.Length - 1, 1);
+
+                string myInsertQuery = "UPDATE " + table + " SET " + updateString + " WHERE " + whereString;
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+                myCommand.ExecuteNonQuery();
+                myCommand.Connection.Close();
+                return true;
+            }
+            catch (MySqlException e)
+            {
+                MessageBox.Show("El servidor contestó: " + e.Message, " Error Sevidor de datos",
+             MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                return false;
+            }
+        }
+
         public static DataTable GetDataTable(string cmd)
         {
             Connect();
