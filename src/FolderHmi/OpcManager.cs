@@ -9,27 +9,14 @@ using System.Threading.Tasks;
 namespace FolderHmi
 {
     public delegate void OpcDataChanged(object sender, Objects.OpcItemEventArgs e);
-    public delegate void StatusMessageDelegate(object sender, string message);
+    public delegate void StatusMessageDelegate(Exception e, string message);
 
     class OpcManager
     {
         public event OpcDataChanged DataChanged;
         public static OpcManager Instance = new OpcManager();
         OPCServer _OPCServer;
-
         public event StatusMessageDelegate StatusMessageChanged;
-        private string _statusMessage;
-        public string StatusMessage
-        {
-            set
-            {
-                if (Instance.StatusMessageChanged != null)
-                {
-                    Instance.StatusMessageChanged(null, _statusMessage);
-                }
-            }
-            private get { return _statusMessage; }
-        }
 
         public enum CanonicalDataTypes
         {
@@ -50,12 +37,13 @@ namespace FolderHmi
             try
             {
                 _OPCServer = new OPCAutomation.OPCServer();
-                _OPCServer.Connect(AppStatics.OPCServerName, "");
+                //_OPCServer.Connect(AppStatics.OPCServerName, "");
+
             }
             catch (Exception ex)
             {
+                Instance.StatusMessageChanged?.Invoke(ex, "OpcManager desconectado");
                 _OPCServer = null;
-                throw;
             }
             try
             {
@@ -69,13 +57,12 @@ namespace FolderHmi
             catch (Exception ex)
             {
                 _OPCServer = null;
-                throw;
-
+                Instance.StatusMessageChanged?.Invoke(ex, "OpcManager desconectado");
             }
             try
             {
                 //_OPCGroup.OPCItems.DefaultIsActive = true;
-                AppStatics._OPCGroup.OPCItems.AddItems(AppStatics.TagCount, AppStatics.TagList, AppStatics.HandleList, out AppStatics.ItemServerHandles, out AppStatics.ItemServerErrors);
+                //AppStatics._OPCGroup.OPCItems.AddItems(AppStatics.TagCount, AppStatics.TagList, AppStatics.HandleList, out AppStatics.ItemServerHandles, out AppStatics.ItemServerErrors);
                 bool itemgood = false;
                 for (int i = 1; i <= AppStatics.TagCount; i++)
                 {

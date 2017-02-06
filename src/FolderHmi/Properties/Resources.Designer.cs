@@ -113,6 +113,16 @@ namespace FolderHmi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap slotter {
+            get {
+                object obj = ResourceManager.GetObject("slotter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap software_update_urgent {
             get {
                 object obj = ResourceManager.GetObject("software-update-urgent", resourceCulture);

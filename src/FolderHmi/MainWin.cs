@@ -40,12 +40,14 @@ namespace FolderHmi
             try
             {
                 OpcManager.Instance.DataChanged += _opcManager_DataChanged;
-
+                OpcManager.Instance.StatusMessageChanged += _opcManager_StatusMessageChanged;
             }
             catch (Exception)
             {
                 connectBtn.Image = new Bitmap(FolderHmi.Properties.Resources.light_off);
-                MessageBox.Show("OpcManager offline!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("OpcManager desconectado!", "OpcManager", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                toolStripStatusLabel1.Text = "OpcManager desconectado";
+
             }
             AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloA, CuelloAMov, CuelloAObj), 0);
             AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloB, CuelloBMov, CuelloBObj), 1);
@@ -58,6 +60,11 @@ namespace FolderHmi
             //AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_GM, BrazoGmMov, NPOS_BRAZO_GM), 8);
             //AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_CDR, BrazoCdrMov, NPOS_BRAZO_CDR), 9);
 
+        }
+
+        private void _opcManager_StatusMessageChanged(object sender, string message)
+        {
+            toolStripStatusLabel1.Text = message;
         }
 
         private void _opcManager_DataChanged(object sender, Objects.OpcItemEventArgs e)
@@ -213,20 +220,28 @@ namespace FolderHmi
 
         private void actionButton_Click(object sender, EventArgs e)
         {
+            toolStripStatusLabel1.Text = "Procesando...";
+
             Button btn = (Button)sender;
             int index = int.Parse(btn.Tag.ToString().Split(',')[0]);
             int action = int.Parse(btn.Tag.ToString().Split(',')[1]);
             AppStatics.ValueList.SetValue(action, index);
             OpcManager.Instance.Write(index);
+
+            toolStripStatusLabel1.Text = "Listo";
         }
 
         private void numUpDown_ValueChanged(object sender, EventArgs e)
         {
+            toolStripStatusLabel1.Text = "Procesando...";
+
             NumericUpDown nud = (NumericUpDown)sender;
             int index = int.Parse(nud.Tag.ToString().Split(',')[0]);
             decimal action = nud.Value;
             AppStatics.ValueList.SetValue(action, index);
             OpcManager.Instance.Write(index);
+
+            toolStripStatusLabel1.Text = "Listo";
         }
 
         private void connectBtn_Click(object sender, EventArgs e)

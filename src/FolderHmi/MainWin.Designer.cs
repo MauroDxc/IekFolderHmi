@@ -34,11 +34,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button15 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button19 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -53,36 +48,24 @@
             this.label16 = new System.Windows.Forms.Label();
             this.NPOS_BRAZO_CDR = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.POS_BRAZO_GM = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.NPOS_BRAZO_GM = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.POS_BRAZO_LO = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.NPOS_BRAZO_LO = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.POS_BRAZO_LT = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.NPOS_BRAZO_LT = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
@@ -128,6 +111,26 @@
             this.CuelloAObj = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.connectBtn = new System.Windows.Forms.ToolStripButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.button51 = new System.Windows.Forms.Button();
             this.button50 = new System.Windows.Forms.Button();
             this.button49 = new System.Windows.Forms.Button();
@@ -146,15 +149,55 @@
             this.button36 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.connectBtn = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button21 = new System.Windows.Forms.Button();
+            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.button24 = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.button25 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button26 = new System.Windows.Forms.Button();
+            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.button27 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.button28 = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button29 = new System.Windows.Forms.Button();
+            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.button30 = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.button31 = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button32 = new System.Windows.Forms.Button();
+            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.button33 = new System.Windows.Forms.Button();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.button52 = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button53 = new System.Windows.Forms.Button();
+            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
+            this.button54 = new System.Windows.Forms.Button();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.button55 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
@@ -162,6 +205,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -202,67 +259,6 @@
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
-            // button18
-            // 
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Image = global::FolderHmi.Properties.Resources.system_log_out;
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(1256, 786);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(230, 76);
-            this.button18.TabIndex = 173;
-            this.button18.Text = "Salir";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
-            // 
-            // button16
-            // 
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Image = global::FolderHmi.Properties.Resources.software_update_urgent;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(493, 786);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(230, 76);
-            this.button16.TabIndex = 171;
-            this.button16.Text = "      Alarmas";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // button14
-            // 
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Image = global::FolderHmi.Properties.Resources.preferences_system;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(893, 786);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(230, 76);
-            this.button14.TabIndex = 168;
-            this.button14.Text = "      Configuraciones";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::FolderHmi.Properties.Resources.x_office_document_template;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(102, 786);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 76);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "     Calibrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(352, 129);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // button19
             // 
             this.button19.Location = new System.Drawing.Point(57, 468);
@@ -280,15 +276,22 @@
             this.tabControl1.Location = new System.Drawing.Point(358, 31);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1200, 722);
+            this.tabControl1.Size = new System.Drawing.Size(1219, 722);
             this.tabControl1.TabIndex = 175;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.groupBox6);
+            this.tabPage1.Controls.Add(this.groupBox5);
+            this.tabPage1.Controls.Add(this.groupBox4);
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.pictureBox2);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1192, 689);
+            this.tabPage1.Size = new System.Drawing.Size(1211, 689);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Slotter";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -305,36 +308,24 @@
             this.tabPage2.Controls.Add(this.label16);
             this.tabPage2.Controls.Add(this.NPOS_BRAZO_CDR);
             this.tabPage2.Controls.Add(this.label17);
-            this.tabPage2.Controls.Add(this.button11);
-            this.tabPage2.Controls.Add(this.button12);
-            this.tabPage2.Controls.Add(this.button13);
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.POS_BRAZO_GM);
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Controls.Add(this.NPOS_BRAZO_GM);
             this.tabPage2.Controls.Add(this.label13);
-            this.tabPage2.Controls.Add(this.button8);
-            this.tabPage2.Controls.Add(this.button9);
-            this.tabPage2.Controls.Add(this.button10);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.POS_BRAZO_LO);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.NPOS_BRAZO_LO);
             this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Controls.Add(this.button6);
-            this.tabPage2.Controls.Add(this.button7);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.POS_BRAZO_LT);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.NPOS_BRAZO_LT);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.label66);
             this.tabPage2.Controls.Add(this.label67);
             this.tabPage2.Controls.Add(this.label68);
@@ -380,6 +371,18 @@
             this.tabPage2.Controls.Add(this.CuelloAObj);
             this.tabPage2.Controls.Add(this.label46);
             this.tabPage2.Controls.Add(this.label45);
+            this.tabPage2.Controls.Add(this.button11);
+            this.tabPage2.Controls.Add(this.button12);
+            this.tabPage2.Controls.Add(this.button13);
+            this.tabPage2.Controls.Add(this.button8);
+            this.tabPage2.Controls.Add(this.button9);
+            this.tabPage2.Controls.Add(this.button10);
+            this.tabPage2.Controls.Add(this.button5);
+            this.tabPage2.Controls.Add(this.button6);
+            this.tabPage2.Controls.Add(this.button7);
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.button3);
+            this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.button51);
             this.tabPage2.Controls.Add(this.button50);
             this.tabPage2.Controls.Add(this.button49);
@@ -401,7 +404,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1192, 689);
+            this.tabPage2.Size = new System.Drawing.Size(1211, 689);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Folder";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -578,41 +581,6 @@
             this.label17.TabIndex = 263;
             this.label17.Text = "Brazo CDR";
             // 
-            // button11
-            // 
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.Location = new System.Drawing.Point(829, 636);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(39, 39);
-            this.button11.TabIndex = 262;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(1048, 636);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(122, 39);
-            this.button12.TabIndex = 265;
-            this.button12.Tag = "21,0";
-            this.button12.Text = "      Detener";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.actionButton_Click);
-            // 
-            // button13
-            // 
-            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(896, 636);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(122, 39);
-            this.button13.TabIndex = 264;
-            this.button13.Tag = "21,1";
-            this.button13.Text = "    Aplicar";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.actionButton_Click);
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -679,41 +647,6 @@
             this.label13.Size = new System.Drawing.Size(112, 27);
             this.label13.TabIndex = 253;
             this.label13.Text = "Brazo GM";
-            // 
-            // button8
-            // 
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(829, 572);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(39, 39);
-            this.button8.TabIndex = 252;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(1048, 572);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(122, 39);
-            this.button9.TabIndex = 255;
-            this.button9.Tag = "22,0";
-            this.button9.Text = "      Detener";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.actionButton_Click);
-            // 
-            // button10
-            // 
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(896, 572);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(122, 39);
-            this.button10.TabIndex = 254;
-            this.button10.Tag = "22,1";
-            this.button10.Text = "    Aplicar";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.actionButton_Click);
             // 
             // label6
             // 
@@ -782,41 +715,6 @@
             this.label9.TabIndex = 243;
             this.label9.Text = "Brazo LO";
             // 
-            // button5
-            // 
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(829, 444);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(39, 39);
-            this.button5.TabIndex = 242;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(1048, 444);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(122, 39);
-            this.button6.TabIndex = 245;
-            this.button6.Tag = "23,0";
-            this.button6.Text = "      Detener";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.actionButton_Click);
-            // 
-            // button7
-            // 
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(896, 444);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(122, 39);
-            this.button7.TabIndex = 244;
-            this.button7.Tag = "23,1";
-            this.button7.Text = "    Aplicar";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.actionButton_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -883,41 +781,6 @@
             this.label5.Size = new System.Drawing.Size(104, 27);
             this.label5.TabIndex = 233;
             this.label5.Text = "Brazo LT";
-            // 
-            // button2
-            // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(829, 508);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(39, 39);
-            this.button2.TabIndex = 232;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(1048, 508);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 39);
-            this.button3.TabIndex = 235;
-            this.button3.Tag = "24,0";
-            this.button3.Text = "      Detener";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.actionButton_Click);
-            // 
-            // button4
-            // 
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(896, 508);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 39);
-            this.button4.TabIndex = 234;
-            this.button4.Tag = "24,1";
-            this.button4.Text = "    Aplicar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.actionButton_Click);
             // 
             // label66
             // 
@@ -1414,6 +1277,215 @@
             this.label45.TabIndex = 172;
             this.label45.Text = "Cuello A";
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.White;
+            this.imageList1.Images.SetKeyName(0, "light_off.png");
+            this.imageList1.Images.SetKeyName(1, "light_on.png");
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.connectBtn,
+            this.toolStripSeparator1});
+            this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
+            this.toolStrip1.Location = new System.Drawing.Point(5, 5);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1572, 23);
+            this.toolStrip1.TabIndex = 176;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 23);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.statusStrip1.Location = new System.Drawing.Point(5, 838);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1572, 22);
+            this.statusStrip1.TabIndex = 177;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Blue;
+            this.panel1.Location = new System.Drawing.Point(-12, -4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1635, 10);
+            this.panel1.TabIndex = 275;
+            // 
+            // connectBtn
+            // 
+            this.connectBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.connectBtn.Image = ((System.Drawing.Image)(resources.GetObject("connectBtn.Image")));
+            this.connectBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.connectBtn.Name = "connectBtn";
+            this.connectBtn.Size = new System.Drawing.Size(23, 20);
+            this.connectBtn.Text = "Conectar";
+            this.connectBtn.Click += new System.EventHandler(this.connectBtn_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::FolderHmi.Properties.Resources.slotter;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 182);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(977, 493);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button11
+            // 
+            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
+            this.button11.Location = new System.Drawing.Point(829, 636);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(39, 39);
+            this.button11.TabIndex = 262;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
+            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button12.Location = new System.Drawing.Point(1048, 636);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(122, 39);
+            this.button12.TabIndex = 265;
+            this.button12.Tag = "21,0";
+            this.button12.Text = "      Detener";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // button13
+            // 
+            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
+            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.Location = new System.Drawing.Point(896, 636);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(122, 39);
+            this.button13.TabIndex = 264;
+            this.button13.Tag = "21,1";
+            this.button13.Text = "    Aplicar";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // button8
+            // 
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Location = new System.Drawing.Point(829, 572);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(39, 39);
+            this.button8.TabIndex = 252;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.Location = new System.Drawing.Point(1048, 572);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(122, 39);
+            this.button9.TabIndex = 255;
+            this.button9.Tag = "22,0";
+            this.button9.Text = "      Detener";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // button10
+            // 
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button10.Location = new System.Drawing.Point(896, 572);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(122, 39);
+            this.button10.TabIndex = 254;
+            this.button10.Tag = "22,1";
+            this.button10.Text = "    Aplicar";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // button5
+            // 
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(829, 444);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(39, 39);
+            this.button5.TabIndex = 242;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(1048, 444);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(122, 39);
+            this.button6.TabIndex = 245;
+            this.button6.Tag = "23,0";
+            this.button6.Text = "      Detener";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // button7
+            // 
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(896, 444);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(122, 39);
+            this.button7.TabIndex = 244;
+            this.button7.Tag = "23,1";
+            this.button7.Text = "    Aplicar";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // button2
+            // 
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(829, 508);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(39, 39);
+            this.button2.TabIndex = 232;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(1048, 508);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(122, 39);
+            this.button3.TabIndex = 235;
+            this.button3.Tag = "24,0";
+            this.button3.Text = "      Detener";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // button4
+            // 
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(896, 508);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(122, 39);
+            this.button4.TabIndex = 234;
+            this.button4.Tag = "24,1";
+            this.button4.Text = "    Aplicar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.actionButton_Click);
+            // 
             // button51
             // 
             this.button51.Image = ((System.Drawing.Image)(resources.GetObject("button51.Image")));
@@ -1600,64 +1672,564 @@
             this.button34.Text = "    Aplicar";
             this.button34.UseVisualStyleBackColor = true;
             // 
-            // imageList1
+            // button18
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.White;
-            this.imageList1.Images.SetKeyName(0, "light_off.png");
-            this.imageList1.Images.SetKeyName(1, "light_on.png");
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.Image = global::FolderHmi.Properties.Resources.system_log_out;
+            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button18.Location = new System.Drawing.Point(1256, 786);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(230, 76);
+            this.button18.TabIndex = 173;
+            this.button18.Text = "Salir";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
-            // toolStrip1
+            // button16
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.connectBtn,
-            this.toolStripSeparator1});
-            this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.toolStrip1.Location = new System.Drawing.Point(5, 5);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1572, 23);
-            this.toolStrip1.TabIndex = 176;
-            this.toolStrip1.Text = "toolStrip1";
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.Image = global::FolderHmi.Properties.Resources.software_update_urgent;
+            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button16.Location = new System.Drawing.Point(493, 786);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(230, 76);
+            this.button16.TabIndex = 171;
+            this.button16.Text = "      Alarmas";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
-            // connectBtn
+            // button14
             // 
-            this.connectBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.connectBtn.Image = ((System.Drawing.Image)(resources.GetObject("connectBtn.Image")));
-            this.connectBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.connectBtn.Name = "connectBtn";
-            this.connectBtn.Size = new System.Drawing.Size(23, 20);
-            this.connectBtn.Text = "Conectar";
-            this.connectBtn.Click += new System.EventHandler(this.connectBtn_Click);
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.Image = global::FolderHmi.Properties.Resources.preferences_system;
+            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button14.Location = new System.Drawing.Point(893, 786);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(230, 76);
+            this.button14.TabIndex = 168;
+            this.button14.Text = "      Configuraciones";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
-            // toolStripSeparator1
+            // button1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 23);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::FolderHmi.Properties.Resources.x_office_document_template;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(102, 786);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(230, 76);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "     Calibrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // statusStrip1
+            // pictureBox1
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.statusStrip1.Location = new System.Drawing.Point(5, 838);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1572, 22);
-            this.statusStrip1.TabIndex = 177;
-            this.statusStrip1.Text = "statusStrip1";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(352, 129);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
-            // toolStripStatusLabel1
+            // numericUpDown7
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            this.numericUpDown7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown7.Location = new System.Drawing.Point(65, 41);
+            this.numericUpDown7.Name = "numericUpDown7";
+            this.numericUpDown7.Size = new System.Drawing.Size(152, 32);
+            this.numericUpDown7.TabIndex = 7;
+            this.numericUpDown7.Tag = "122";
+            this.numericUpDown7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDown7.ThousandsSeparator = true;
+            this.numericUpDown7.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.numericUpDown7.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
             // 
-            // panel1
+            // label25
             // 
-            this.panel1.BackColor = System.Drawing.Color.Blue;
-            this.panel1.Location = new System.Drawing.Point(-12, -4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1635, 10);
-            this.panel1.TabIndex = 275;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(9, 92);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(94, 22);
+            this.label25.TabIndex = 14;
+            this.label25.Text = "Objetivo:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(13, 123);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(75, 22);
+            this.label27.TabIndex = 13;
+            this.label27.Text = "Actual:";
+            // 
+            // button22
+            // 
+            this.button22.Image = ((System.Drawing.Image)(resources.GetObject("button22.Image")));
+            this.button22.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button22.Location = new System.Drawing.Point(145, 157);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(43, 39);
+            this.button22.TabIndex = 195;
+            this.button22.Tag = "98,0";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // button23
+            // 
+            this.button23.Image = ((System.Drawing.Image)(resources.GetObject("button23.Image")));
+            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button23.Location = new System.Drawing.Point(68, 157);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(43, 39);
+            this.button23.TabIndex = 194;
+            this.button23.Tag = "99,1";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // button20
+            // 
+            this.button20.Image = ((System.Drawing.Image)(resources.GetObject("button20.Image")));
+            this.button20.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button20.Location = new System.Drawing.Point(21, 38);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(38, 39);
+            this.button20.TabIndex = 185;
+            this.button20.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button20);
+            this.groupBox1.Controls.Add(this.numericUpDown7);
+            this.groupBox1.Controls.Add(this.button22);
+            this.groupBox1.Controls.Add(this.label27);
+            this.groupBox1.Controls.Add(this.label25);
+            this.groupBox1.Controls.Add(this.button23);
+            this.groupBox1.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(45, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(237, 202);
+            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "d";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button21);
+            this.groupBox2.Controls.Add(this.numericUpDown5);
+            this.groupBox2.Controls.Add(this.button24);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.button25);
+            this.groupBox2.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(288, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(237, 202);
+            this.groupBox2.TabIndex = 196;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "c";
+            // 
+            // button21
+            // 
+            this.button21.Image = ((System.Drawing.Image)(resources.GetObject("button21.Image")));
+            this.button21.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button21.Location = new System.Drawing.Point(21, 38);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(38, 39);
+            this.button21.TabIndex = 185;
+            this.button21.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown5
+            // 
+            this.numericUpDown5.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown5.Location = new System.Drawing.Point(65, 41);
+            this.numericUpDown5.Name = "numericUpDown5";
+            this.numericUpDown5.Size = new System.Drawing.Size(152, 32);
+            this.numericUpDown5.TabIndex = 7;
+            this.numericUpDown5.Tag = "121";
+            this.numericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDown5.ThousandsSeparator = true;
+            this.numericUpDown5.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.numericUpDown5.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            // 
+            // button24
+            // 
+            this.button24.Image = ((System.Drawing.Image)(resources.GetObject("button24.Image")));
+            this.button24.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button24.Location = new System.Drawing.Point(145, 157);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(43, 39);
+            this.button24.TabIndex = 195;
+            this.button24.Tag = "97,0";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(13, 123);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(75, 22);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "Actual:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(9, 92);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(94, 22);
+            this.label19.TabIndex = 14;
+            this.label19.Text = "Objetivo:";
+            // 
+            // button25
+            // 
+            this.button25.Image = ((System.Drawing.Image)(resources.GetObject("button25.Image")));
+            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button25.Location = new System.Drawing.Point(68, 157);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(43, 39);
+            this.button25.TabIndex = 194;
+            this.button25.Tag = "97,1";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button26);
+            this.groupBox3.Controls.Add(this.numericUpDown6);
+            this.groupBox3.Controls.Add(this.button27);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Controls.Add(this.button28);
+            this.groupBox3.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(582, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(237, 202);
+            this.groupBox3.TabIndex = 197;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "b";
+            // 
+            // button26
+            // 
+            this.button26.Image = ((System.Drawing.Image)(resources.GetObject("button26.Image")));
+            this.button26.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button26.Location = new System.Drawing.Point(21, 38);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(38, 39);
+            this.button26.TabIndex = 185;
+            this.button26.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown6
+            // 
+            this.numericUpDown6.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown6.Location = new System.Drawing.Point(65, 41);
+            this.numericUpDown6.Name = "numericUpDown6";
+            this.numericUpDown6.Size = new System.Drawing.Size(152, 32);
+            this.numericUpDown6.TabIndex = 7;
+            this.numericUpDown6.Tag = "120";
+            this.numericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDown6.ThousandsSeparator = true;
+            this.numericUpDown6.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.numericUpDown6.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            // 
+            // button27
+            // 
+            this.button27.Image = ((System.Drawing.Image)(resources.GetObject("button27.Image")));
+            this.button27.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button27.Location = new System.Drawing.Point(145, 157);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(43, 39);
+            this.button27.TabIndex = 195;
+            this.button27.Tag = "96,0";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(13, 123);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(75, 22);
+            this.label20.TabIndex = 13;
+            this.label20.Text = "Actual:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(9, 92);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(94, 22);
+            this.label21.TabIndex = 14;
+            this.label21.Text = "Objetivo:";
+            // 
+            // button28
+            // 
+            this.button28.Image = ((System.Drawing.Image)(resources.GetObject("button28.Image")));
+            this.button28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button28.Location = new System.Drawing.Point(68, 157);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(43, 39);
+            this.button28.TabIndex = 194;
+            this.button28.Tag = "96,1";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.button29);
+            this.groupBox4.Controls.Add(this.numericUpDown8);
+            this.groupBox4.Controls.Add(this.button30);
+            this.groupBox4.Controls.Add(this.label22);
+            this.groupBox4.Controls.Add(this.label23);
+            this.groupBox4.Controls.Add(this.button31);
+            this.groupBox4.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(838, 6);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(237, 202);
+            this.groupBox4.TabIndex = 197;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "a";
+            // 
+            // button29
+            // 
+            this.button29.Image = ((System.Drawing.Image)(resources.GetObject("button29.Image")));
+            this.button29.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button29.Location = new System.Drawing.Point(21, 38);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(38, 39);
+            this.button29.TabIndex = 185;
+            this.button29.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown8
+            // 
+            this.numericUpDown8.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown8.Location = new System.Drawing.Point(65, 41);
+            this.numericUpDown8.Name = "numericUpDown8";
+            this.numericUpDown8.Size = new System.Drawing.Size(152, 32);
+            this.numericUpDown8.TabIndex = 7;
+            this.numericUpDown8.Tag = "119";
+            this.numericUpDown8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDown8.ThousandsSeparator = true;
+            this.numericUpDown8.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.numericUpDown8.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            // 
+            // button30
+            // 
+            this.button30.Image = ((System.Drawing.Image)(resources.GetObject("button30.Image")));
+            this.button30.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button30.Location = new System.Drawing.Point(145, 157);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(43, 39);
+            this.button30.TabIndex = 195;
+            this.button30.Tag = "95,0";
+            this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(13, 123);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(75, 22);
+            this.label22.TabIndex = 13;
+            this.label22.Text = "Actual:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(9, 92);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(94, 22);
+            this.label23.TabIndex = 14;
+            this.label23.Text = "Objetivo:";
+            // 
+            // button31
+            // 
+            this.button31.Image = ((System.Drawing.Image)(resources.GetObject("button31.Image")));
+            this.button31.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button31.Location = new System.Drawing.Point(68, 157);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(43, 39);
+            this.button31.TabIndex = 194;
+            this.button31.Tag = "95,1";
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.button32);
+            this.groupBox5.Controls.Add(this.numericUpDown9);
+            this.groupBox5.Controls.Add(this.button33);
+            this.groupBox5.Controls.Add(this.label24);
+            this.groupBox5.Controls.Add(this.label26);
+            this.groupBox5.Controls.Add(this.button52);
+            this.groupBox5.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(968, 209);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(237, 202);
+            this.groupBox5.TabIndex = 197;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "e";
+            // 
+            // button32
+            // 
+            this.button32.Image = ((System.Drawing.Image)(resources.GetObject("button32.Image")));
+            this.button32.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button32.Location = new System.Drawing.Point(21, 38);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(38, 39);
+            this.button32.TabIndex = 185;
+            this.button32.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown9
+            // 
+            this.numericUpDown9.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown9.Location = new System.Drawing.Point(65, 41);
+            this.numericUpDown9.Name = "numericUpDown9";
+            this.numericUpDown9.Size = new System.Drawing.Size(152, 32);
+            this.numericUpDown9.TabIndex = 7;
+            this.numericUpDown9.Tag = "123";
+            this.numericUpDown9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDown9.ThousandsSeparator = true;
+            this.numericUpDown9.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.numericUpDown9.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            // 
+            // button33
+            // 
+            this.button33.Image = ((System.Drawing.Image)(resources.GetObject("button33.Image")));
+            this.button33.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button33.Location = new System.Drawing.Point(145, 157);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(43, 39);
+            this.button33.TabIndex = 195;
+            this.button33.Tag = "99,0";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(13, 123);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(75, 22);
+            this.label24.TabIndex = 13;
+            this.label24.Text = "Actual:";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(9, 92);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(94, 22);
+            this.label26.TabIndex = 14;
+            this.label26.Text = "Objetivo:";
+            // 
+            // button52
+            // 
+            this.button52.Image = ((System.Drawing.Image)(resources.GetObject("button52.Image")));
+            this.button52.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button52.Location = new System.Drawing.Point(68, 157);
+            this.button52.Name = "button52";
+            this.button52.Size = new System.Drawing.Size(43, 39);
+            this.button52.TabIndex = 194;
+            this.button52.Tag = "98,1";
+            this.button52.UseVisualStyleBackColor = true;
+            this.button52.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.button53);
+            this.groupBox6.Controls.Add(this.numericUpDown10);
+            this.groupBox6.Controls.Add(this.button54);
+            this.groupBox6.Controls.Add(this.label28);
+            this.groupBox6.Controls.Add(this.label29);
+            this.groupBox6.Controls.Add(this.button55);
+            this.groupBox6.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Location = new System.Drawing.Point(968, 411);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(237, 202);
+            this.groupBox6.TabIndex = 198;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "f";
+            // 
+            // button53
+            // 
+            this.button53.Image = ((System.Drawing.Image)(resources.GetObject("button53.Image")));
+            this.button53.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button53.Location = new System.Drawing.Point(21, 38);
+            this.button53.Name = "button53";
+            this.button53.Size = new System.Drawing.Size(38, 39);
+            this.button53.TabIndex = 185;
+            this.button53.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown10
+            // 
+            this.numericUpDown10.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown10.Location = new System.Drawing.Point(65, 41);
+            this.numericUpDown10.Name = "numericUpDown10";
+            this.numericUpDown10.Size = new System.Drawing.Size(152, 32);
+            this.numericUpDown10.TabIndex = 7;
+            this.numericUpDown10.Tag = "124";
+            this.numericUpDown10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDown10.ThousandsSeparator = true;
+            this.numericUpDown10.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.numericUpDown10.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            // 
+            // button54
+            // 
+            this.button54.Image = ((System.Drawing.Image)(resources.GetObject("button54.Image")));
+            this.button54.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button54.Location = new System.Drawing.Point(145, 157);
+            this.button54.Name = "button54";
+            this.button54.Size = new System.Drawing.Size(43, 39);
+            this.button54.TabIndex = 195;
+            this.button54.Tag = "100,0";
+            this.button54.UseVisualStyleBackColor = true;
+            this.button54.Click += new System.EventHandler(this.actionButton_Click);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(13, 123);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(75, 22);
+            this.label28.TabIndex = 13;
+            this.label28.Text = "Actual:";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(9, 92);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(94, 22);
+            this.label29.TabIndex = 14;
+            this.label29.Text = "Objetivo:";
+            // 
+            // button55
+            // 
+            this.button55.Image = ((System.Drawing.Image)(resources.GetObject("button55.Image")));
+            this.button55.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button55.Location = new System.Drawing.Point(68, 157);
+            this.button55.Name = "button55";
+            this.button55.Size = new System.Drawing.Size(43, 39);
+            this.button55.TabIndex = 194;
+            this.button55.Tag = "100,1";
+            this.button55.UseVisualStyleBackColor = true;
+            this.button55.Click += new System.EventHandler(this.actionButton_Click);
             // 
             // MainWin
             // 
@@ -1690,8 +2262,8 @@
             this.Text = "IEK";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainWin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
@@ -1702,6 +2274,26 @@
             this.toolStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1831,6 +2423,49 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button button53;
+        private System.Windows.Forms.NumericUpDown numericUpDown10;
+        private System.Windows.Forms.Button button54;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Button button55;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.NumericUpDown numericUpDown9;
+        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Button button52;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.NumericUpDown numericUpDown8;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button button25;
     }
 }
 

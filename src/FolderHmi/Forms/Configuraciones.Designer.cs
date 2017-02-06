@@ -28,31 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configuraciones));
-            this.button1 = new System.Windows.Forms.Button();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button53 = new System.Windows.Forms.Button();
-            this.button55 = new System.Windows.Forms.Button();
-            this.button62 = new System.Windows.Forms.Button();
-            this.button63 = new System.Windows.Forms.Button();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown41 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown42 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown43 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown44 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown45 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown46 = new System.Windows.Forms.NumericUpDown();
-            this.button61 = new System.Windows.Forms.Button();
-            this.button60 = new System.Windows.Forms.Button();
-            this.button59 = new System.Windows.Forms.Button();
-            this.button58 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
-            this.button56 = new System.Windows.Forms.Button();
-            this.button54 = new System.Windows.Forms.Button();
             this.label115 = new System.Windows.Forms.Label();
             this.label107 = new System.Windows.Forms.Label();
             this.label108 = new System.Windows.Forms.Label();
@@ -103,14 +78,35 @@
             this.label83 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.numericUpDown47 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown48 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown49 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown50 = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown46)).BeginInit();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown36)).BeginInit();
@@ -139,414 +135,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown49)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown50)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(458, 412);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 37);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Cerrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label84.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label84.Location = new System.Drawing.Point(907, 57);
-            this.label84.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(76, 24);
-            this.label84.TabIndex = 309;
-            this.label84.Text = "Aplicar";
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label74.Location = new System.Drawing.Point(530, 53);
-            this.label74.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(76, 24);
-            this.label74.TabIndex = 308;
-            this.label74.Text = "Aplicar";
-            // 
-            // button11
-            // 
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.Location = new System.Drawing.Point(544, 351);
-            this.button11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(38, 32);
-            this.button11.TabIndex = 307;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.Location = new System.Drawing.Point(544, 308);
-            this.button13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(38, 32);
-            this.button13.TabIndex = 306;
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
-            this.button14.Location = new System.Drawing.Point(544, 264);
-            this.button14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(38, 32);
-            this.button14.TabIndex = 305;
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button53
-            // 
-            this.button53.Image = ((System.Drawing.Image)(resources.GetObject("button53.Image")));
-            this.button53.Location = new System.Drawing.Point(544, 221);
-            this.button53.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(38, 32);
-            this.button53.TabIndex = 304;
-            this.button53.UseVisualStyleBackColor = true;
-            // 
-            // button55
-            // 
-            this.button55.Image = ((System.Drawing.Image)(resources.GetObject("button55.Image")));
-            this.button55.Location = new System.Drawing.Point(544, 178);
-            this.button55.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(38, 32);
-            this.button55.TabIndex = 303;
-            this.button55.UseVisualStyleBackColor = true;
-            // 
-            // button62
-            // 
-            this.button62.Image = ((System.Drawing.Image)(resources.GetObject("button62.Image")));
-            this.button62.Location = new System.Drawing.Point(544, 135);
-            this.button62.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(38, 32);
-            this.button62.TabIndex = 302;
-            this.button62.UseVisualStyleBackColor = true;
-            // 
-            // button63
-            // 
-            this.button63.Image = ((System.Drawing.Image)(resources.GetObject("button63.Image")));
-            this.button63.Location = new System.Drawing.Point(544, 92);
-            this.button63.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button63.Name = "button63";
-            this.button63.Size = new System.Drawing.Size(38, 32);
-            this.button63.TabIndex = 301;
-            this.button63.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDown11
-            // 
-            this.numericUpDown11.DecimalPlaces = 2;
-            this.numericUpDown11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown11.Increment = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.numericUpDown11.Location = new System.Drawing.Point(278, 353);
-            this.numericUpDown11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown11.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.numericUpDown11.Minimum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.ReadOnly = true;
-            this.numericUpDown11.Size = new System.Drawing.Size(107, 29);
-            this.numericUpDown11.TabIndex = 300;
-            this.numericUpDown11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown11.Value = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown41
-            // 
-            this.numericUpDown41.DecimalPlaces = 2;
-            this.numericUpDown41.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown41.Increment = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.numericUpDown41.Location = new System.Drawing.Point(278, 310);
-            this.numericUpDown41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown41.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.numericUpDown41.Minimum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDown41.Name = "numericUpDown41";
-            this.numericUpDown41.ReadOnly = true;
-            this.numericUpDown41.Size = new System.Drawing.Size(107, 29);
-            this.numericUpDown41.TabIndex = 299;
-            this.numericUpDown41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown41.Value = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown42
-            // 
-            this.numericUpDown42.DecimalPlaces = 2;
-            this.numericUpDown42.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown42.Increment = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.numericUpDown42.Location = new System.Drawing.Point(278, 267);
-            this.numericUpDown42.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown42.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.numericUpDown42.Minimum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDown42.Name = "numericUpDown42";
-            this.numericUpDown42.ReadOnly = true;
-            this.numericUpDown42.Size = new System.Drawing.Size(107, 29);
-            this.numericUpDown42.TabIndex = 298;
-            this.numericUpDown42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown42.Value = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown43
-            // 
-            this.numericUpDown43.DecimalPlaces = 2;
-            this.numericUpDown43.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown43.Increment = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.numericUpDown43.Location = new System.Drawing.Point(278, 224);
-            this.numericUpDown43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown43.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.numericUpDown43.Minimum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDown43.Name = "numericUpDown43";
-            this.numericUpDown43.ReadOnly = true;
-            this.numericUpDown43.Size = new System.Drawing.Size(107, 29);
-            this.numericUpDown43.TabIndex = 297;
-            this.numericUpDown43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown43.Value = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown44
-            // 
-            this.numericUpDown44.DecimalPlaces = 2;
-            this.numericUpDown44.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown44.Increment = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.numericUpDown44.Location = new System.Drawing.Point(278, 179);
-            this.numericUpDown44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown44.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.numericUpDown44.Minimum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDown44.Name = "numericUpDown44";
-            this.numericUpDown44.ReadOnly = true;
-            this.numericUpDown44.Size = new System.Drawing.Size(107, 29);
-            this.numericUpDown44.TabIndex = 296;
-            this.numericUpDown44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown44.Value = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown45
-            // 
-            this.numericUpDown45.DecimalPlaces = 2;
-            this.numericUpDown45.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown45.Increment = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.numericUpDown45.Location = new System.Drawing.Point(278, 137);
-            this.numericUpDown45.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown45.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.numericUpDown45.Minimum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDown45.Name = "numericUpDown45";
-            this.numericUpDown45.ReadOnly = true;
-            this.numericUpDown45.Size = new System.Drawing.Size(107, 29);
-            this.numericUpDown45.TabIndex = 295;
-            this.numericUpDown45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown45.Value = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown46
-            // 
-            this.numericUpDown46.DecimalPlaces = 2;
-            this.numericUpDown46.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown46.Increment = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.numericUpDown46.Location = new System.Drawing.Point(278, 94);
-            this.numericUpDown46.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown46.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.numericUpDown46.Minimum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDown46.Name = "numericUpDown46";
-            this.numericUpDown46.ReadOnly = true;
-            this.numericUpDown46.Size = new System.Drawing.Size(107, 29);
-            this.numericUpDown46.TabIndex = 294;
-            this.numericUpDown46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown46.Value = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            // 
-            // button61
-            // 
-            this.button61.Image = ((System.Drawing.Image)(resources.GetObject("button61.Image")));
-            this.button61.Location = new System.Drawing.Point(927, 353);
-            this.button61.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button61.Name = "button61";
-            this.button61.Size = new System.Drawing.Size(38, 32);
-            this.button61.TabIndex = 293;
-            this.button61.UseVisualStyleBackColor = true;
-            // 
-            // button60
-            // 
-            this.button60.Image = ((System.Drawing.Image)(resources.GetObject("button60.Image")));
-            this.button60.Location = new System.Drawing.Point(927, 309);
-            this.button60.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(38, 32);
-            this.button60.TabIndex = 292;
-            this.button60.UseVisualStyleBackColor = true;
-            // 
-            // button59
-            // 
-            this.button59.Image = ((System.Drawing.Image)(resources.GetObject("button59.Image")));
-            this.button59.Location = new System.Drawing.Point(927, 266);
-            this.button59.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(38, 32);
-            this.button59.TabIndex = 291;
-            this.button59.UseVisualStyleBackColor = true;
-            // 
-            // button58
-            // 
-            this.button58.Image = ((System.Drawing.Image)(resources.GetObject("button58.Image")));
-            this.button58.Location = new System.Drawing.Point(927, 223);
-            this.button58.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button58.Name = "button58";
-            this.button58.Size = new System.Drawing.Size(38, 32);
-            this.button58.TabIndex = 290;
-            this.button58.UseVisualStyleBackColor = true;
-            // 
-            // button57
-            // 
-            this.button57.Image = ((System.Drawing.Image)(resources.GetObject("button57.Image")));
-            this.button57.Location = new System.Drawing.Point(927, 180);
-            this.button57.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(38, 32);
-            this.button57.TabIndex = 289;
-            this.button57.UseVisualStyleBackColor = true;
-            // 
-            // button56
-            // 
-            this.button56.Image = ((System.Drawing.Image)(resources.GetObject("button56.Image")));
-            this.button56.Location = new System.Drawing.Point(927, 136);
-            this.button56.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(38, 32);
-            this.button56.TabIndex = 288;
-            this.button56.UseVisualStyleBackColor = true;
-            // 
-            // button54
-            // 
-            this.button54.Image = ((System.Drawing.Image)(resources.GetObject("button54.Image")));
-            this.button54.Location = new System.Drawing.Point(927, 93);
-            this.button54.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(38, 32);
-            this.button54.TabIndex = 287;
-            this.button54.UseVisualStyleBackColor = true;
             // 
             // label115
             // 
             this.label115.AutoSize = true;
             this.label115.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label115.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label115.Location = new System.Drawing.Point(643, 53);
+            this.label115.Location = new System.Drawing.Point(600, 53);
             this.label115.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label115.Name = "label115";
             this.label115.Size = new System.Drawing.Size(70, 24);
@@ -558,7 +166,7 @@
             this.label107.AutoSize = true;
             this.label107.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label107.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label107.Location = new System.Drawing.Point(760, 53);
+            this.label107.Location = new System.Drawing.Point(717, 53);
             this.label107.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label107.Name = "label107";
             this.label107.Size = new System.Drawing.Size(104, 24);
@@ -568,77 +176,77 @@
             // label108
             // 
             this.label108.AutoSize = true;
-            this.label108.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label108.Location = new System.Drawing.Point(870, 354);
+            this.label108.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label108.Location = new System.Drawing.Point(822, 351);
             this.label108.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(44, 24);
+            this.label108.Size = new System.Drawing.Size(35, 20);
             this.label108.TabIndex = 284;
             this.label108.Text = "mm";
             // 
             // label109
             // 
             this.label109.AutoSize = true;
-            this.label109.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label109.Location = new System.Drawing.Point(870, 313);
+            this.label109.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label109.Location = new System.Drawing.Point(822, 310);
             this.label109.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(44, 24);
+            this.label109.Size = new System.Drawing.Size(35, 20);
             this.label109.TabIndex = 283;
             this.label109.Text = "mm";
             // 
             // label110
             // 
             this.label110.AutoSize = true;
-            this.label110.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label110.Location = new System.Drawing.Point(870, 270);
+            this.label110.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label110.Location = new System.Drawing.Point(822, 267);
             this.label110.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(44, 24);
+            this.label110.Size = new System.Drawing.Size(35, 20);
             this.label110.TabIndex = 282;
             this.label110.Text = "mm";
             // 
             // label111
             // 
             this.label111.AutoSize = true;
-            this.label111.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label111.Location = new System.Drawing.Point(870, 227);
+            this.label111.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label111.Location = new System.Drawing.Point(822, 224);
             this.label111.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(44, 24);
+            this.label111.Size = new System.Drawing.Size(35, 20);
             this.label111.TabIndex = 281;
             this.label111.Text = "mm";
             // 
             // label112
             // 
             this.label112.AutoSize = true;
-            this.label112.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label112.Location = new System.Drawing.Point(870, 184);
+            this.label112.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label112.Location = new System.Drawing.Point(822, 181);
             this.label112.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(44, 24);
+            this.label112.Size = new System.Drawing.Size(35, 20);
             this.label112.TabIndex = 280;
             this.label112.Text = "mm";
             // 
             // label113
             // 
             this.label113.AutoSize = true;
-            this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label113.Location = new System.Drawing.Point(870, 138);
+            this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label113.Location = new System.Drawing.Point(822, 135);
             this.label113.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(44, 24);
+            this.label113.Size = new System.Drawing.Size(35, 20);
             this.label113.TabIndex = 279;
             this.label113.Text = "mm";
             // 
             // label114
             // 
             this.label114.AutoSize = true;
-            this.label114.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label114.Location = new System.Drawing.Point(870, 98);
+            this.label114.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label114.Location = new System.Drawing.Point(822, 95);
             this.label114.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(44, 24);
+            this.label114.Size = new System.Drawing.Size(35, 20);
             this.label114.TabIndex = 278;
             this.label114.Text = "mm";
             // 
@@ -646,8 +254,8 @@
             // 
             this.numericUpDown34.DecimalPlaces = 2;
             this.numericUpDown34.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown34.Location = new System.Drawing.Point(754, 354);
-            this.numericUpDown34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown34.Location = new System.Drawing.Point(711, 351);
+            this.numericUpDown34.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown34.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -662,13 +270,14 @@
             this.numericUpDown34.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown34.TabIndex = 277;
             this.numericUpDown34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown34.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown35
             // 
             this.numericUpDown35.DecimalPlaces = 2;
             this.numericUpDown35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown35.Location = new System.Drawing.Point(754, 310);
-            this.numericUpDown35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown35.Location = new System.Drawing.Point(711, 307);
+            this.numericUpDown35.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown35.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -683,13 +292,14 @@
             this.numericUpDown35.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown35.TabIndex = 276;
             this.numericUpDown35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown35.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown36
             // 
             this.numericUpDown36.DecimalPlaces = 2;
             this.numericUpDown36.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown36.Location = new System.Drawing.Point(754, 267);
-            this.numericUpDown36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown36.Location = new System.Drawing.Point(711, 264);
+            this.numericUpDown36.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown36.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -704,13 +314,14 @@
             this.numericUpDown36.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown36.TabIndex = 275;
             this.numericUpDown36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown36.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown37
             // 
             this.numericUpDown37.DecimalPlaces = 2;
             this.numericUpDown37.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown37.Location = new System.Drawing.Point(754, 224);
-            this.numericUpDown37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown37.Location = new System.Drawing.Point(711, 221);
+            this.numericUpDown37.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown37.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -725,13 +336,14 @@
             this.numericUpDown37.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown37.TabIndex = 274;
             this.numericUpDown37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown37.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown38
             // 
             this.numericUpDown38.DecimalPlaces = 2;
             this.numericUpDown38.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown38.Location = new System.Drawing.Point(754, 180);
-            this.numericUpDown38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown38.Location = new System.Drawing.Point(711, 177);
+            this.numericUpDown38.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown38.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -746,13 +358,14 @@
             this.numericUpDown38.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown38.TabIndex = 273;
             this.numericUpDown38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown38.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown39
             // 
             this.numericUpDown39.DecimalPlaces = 2;
             this.numericUpDown39.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown39.Location = new System.Drawing.Point(754, 137);
-            this.numericUpDown39.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown39.Location = new System.Drawing.Point(711, 134);
+            this.numericUpDown39.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown39.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -767,14 +380,14 @@
             this.numericUpDown39.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown39.TabIndex = 272;
             this.numericUpDown39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown39.ValueChanged += new System.EventHandler(this.numericUpDown39_ValueChanged);
+            this.numericUpDown39.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown40
             // 
             this.numericUpDown40.DecimalPlaces = 2;
             this.numericUpDown40.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown40.Location = new System.Drawing.Point(754, 95);
-            this.numericUpDown40.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown40.Location = new System.Drawing.Point(711, 92);
+            this.numericUpDown40.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown40.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -789,14 +402,14 @@
             this.numericUpDown40.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown40.TabIndex = 271;
             this.numericUpDown40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown40.ValueChanged += new System.EventHandler(this.numericUpDown40_ValueChanged);
+            this.numericUpDown40.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // label106
             // 
             this.label106.AutoSize = true;
             this.label106.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label106.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label106.Location = new System.Drawing.Point(407, 53);
+            this.label106.Location = new System.Drawing.Point(302, 56);
             this.label106.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label106.Name = "label106";
             this.label106.Size = new System.Drawing.Size(104, 24);
@@ -808,7 +421,7 @@
             this.label105.AutoSize = true;
             this.label105.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label105.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label105.Location = new System.Drawing.Point(158, 53);
+            this.label105.Location = new System.Drawing.Point(190, 63);
             this.label105.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label105.Name = "label105";
             this.label105.Size = new System.Drawing.Size(70, 24);
@@ -819,8 +432,8 @@
             // 
             this.numericUpDown27.DecimalPlaces = 2;
             this.numericUpDown27.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown27.Location = new System.Drawing.Point(405, 352);
-            this.numericUpDown27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown27.Location = new System.Drawing.Point(300, 352);
+            this.numericUpDown27.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown27.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -835,14 +448,14 @@
             this.numericUpDown27.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown27.TabIndex = 268;
             this.numericUpDown27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown27.ValueChanged += new System.EventHandler(this.numericUpDown27_ValueChanged);
+            this.numericUpDown27.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown28
             // 
             this.numericUpDown28.DecimalPlaces = 2;
             this.numericUpDown28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown28.Location = new System.Drawing.Point(405, 309);
-            this.numericUpDown28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown28.Location = new System.Drawing.Point(300, 309);
+            this.numericUpDown28.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown28.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -857,14 +470,14 @@
             this.numericUpDown28.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown28.TabIndex = 267;
             this.numericUpDown28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown28.ValueChanged += new System.EventHandler(this.numericUpDown28_ValueChanged);
+            this.numericUpDown28.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown29
             // 
             this.numericUpDown29.DecimalPlaces = 2;
             this.numericUpDown29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown29.Location = new System.Drawing.Point(405, 266);
-            this.numericUpDown29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown29.Location = new System.Drawing.Point(300, 266);
+            this.numericUpDown29.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown29.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -879,14 +492,14 @@
             this.numericUpDown29.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown29.TabIndex = 266;
             this.numericUpDown29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown29.ValueChanged += new System.EventHandler(this.numericUpDown29_ValueChanged);
+            this.numericUpDown29.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown30
             // 
             this.numericUpDown30.DecimalPlaces = 2;
             this.numericUpDown30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown30.Location = new System.Drawing.Point(405, 223);
-            this.numericUpDown30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown30.Location = new System.Drawing.Point(300, 223);
+            this.numericUpDown30.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown30.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -901,14 +514,14 @@
             this.numericUpDown30.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown30.TabIndex = 265;
             this.numericUpDown30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown30.ValueChanged += new System.EventHandler(this.numericUpDown30_ValueChanged);
+            this.numericUpDown30.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown31
             // 
             this.numericUpDown31.DecimalPlaces = 2;
             this.numericUpDown31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown31.Location = new System.Drawing.Point(405, 179);
-            this.numericUpDown31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown31.Location = new System.Drawing.Point(300, 179);
+            this.numericUpDown31.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown31.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -923,14 +536,14 @@
             this.numericUpDown31.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown31.TabIndex = 264;
             this.numericUpDown31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown31.ValueChanged += new System.EventHandler(this.numericUpDown31_ValueChanged);
+            this.numericUpDown31.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown32
             // 
             this.numericUpDown32.DecimalPlaces = 2;
             this.numericUpDown32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown32.Location = new System.Drawing.Point(405, 136);
-            this.numericUpDown32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown32.Location = new System.Drawing.Point(300, 136);
+            this.numericUpDown32.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown32.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -945,14 +558,14 @@
             this.numericUpDown32.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown32.TabIndex = 263;
             this.numericUpDown32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown32.ValueChanged += new System.EventHandler(this.numericUpDown32_ValueChanged);
+            this.numericUpDown32.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown33
             // 
             this.numericUpDown33.DecimalPlaces = 2;
             this.numericUpDown33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown33.Location = new System.Drawing.Point(405, 94);
-            this.numericUpDown33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown33.Location = new System.Drawing.Point(300, 94);
+            this.numericUpDown33.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown33.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -967,7 +580,7 @@
             this.numericUpDown33.Size = new System.Drawing.Size(107, 29);
             this.numericUpDown33.TabIndex = 262;
             this.numericUpDown33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown33.ValueChanged += new System.EventHandler(this.numericUpDown33_ValueChanged);
+            this.numericUpDown33.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown12
             // 
@@ -978,8 +591,8 @@
             0,
             0,
             0});
-            this.numericUpDown12.Location = new System.Drawing.Point(625, 353);
-            this.numericUpDown12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown12.Location = new System.Drawing.Point(582, 350);
+            this.numericUpDown12.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown12.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1000,7 +613,7 @@
             0,
             0,
             0});
-            this.numericUpDown12.ValueChanged += new System.EventHandler(this.numericUpDown12_ValueChanged);
+            this.numericUpDown12.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown13
             // 
@@ -1011,8 +624,8 @@
             0,
             0,
             0});
-            this.numericUpDown13.Location = new System.Drawing.Point(625, 310);
-            this.numericUpDown13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown13.Location = new System.Drawing.Point(582, 307);
+            this.numericUpDown13.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown13.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1033,7 +646,7 @@
             0,
             0,
             0});
-            this.numericUpDown13.ValueChanged += new System.EventHandler(this.numericUpDown13_ValueChanged);
+            this.numericUpDown13.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown14
             // 
@@ -1044,8 +657,8 @@
             0,
             0,
             0});
-            this.numericUpDown14.Location = new System.Drawing.Point(625, 267);
-            this.numericUpDown14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown14.Location = new System.Drawing.Point(582, 264);
+            this.numericUpDown14.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown14.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1066,7 +679,7 @@
             0,
             0,
             0});
-            this.numericUpDown14.ValueChanged += new System.EventHandler(this.numericUpDown14_ValueChanged);
+            this.numericUpDown14.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown15
             // 
@@ -1077,8 +690,8 @@
             0,
             0,
             0});
-            this.numericUpDown15.Location = new System.Drawing.Point(625, 224);
-            this.numericUpDown15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown15.Location = new System.Drawing.Point(582, 221);
+            this.numericUpDown15.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown15.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1099,7 +712,7 @@
             0,
             0,
             0});
-            this.numericUpDown15.ValueChanged += new System.EventHandler(this.numericUpDown15_ValueChanged);
+            this.numericUpDown15.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown16
             // 
@@ -1110,8 +723,8 @@
             0,
             0,
             0});
-            this.numericUpDown16.Location = new System.Drawing.Point(625, 180);
-            this.numericUpDown16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown16.Location = new System.Drawing.Point(582, 177);
+            this.numericUpDown16.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown16.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1132,7 +745,7 @@
             0,
             0,
             0});
-            this.numericUpDown16.ValueChanged += new System.EventHandler(this.numericUpDown16_ValueChanged);
+            this.numericUpDown16.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown17
             // 
@@ -1143,8 +756,8 @@
             0,
             0,
             0});
-            this.numericUpDown17.Location = new System.Drawing.Point(625, 137);
-            this.numericUpDown17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown17.Location = new System.Drawing.Point(582, 134);
+            this.numericUpDown17.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown17.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1165,7 +778,7 @@
             0,
             0,
             0});
-            this.numericUpDown17.ValueChanged += new System.EventHandler(this.numericUpDown17_ValueChanged);
+            this.numericUpDown17.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown19
             // 
@@ -1176,8 +789,8 @@
             0,
             0,
             0});
-            this.numericUpDown19.Location = new System.Drawing.Point(625, 95);
-            this.numericUpDown19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown19.Location = new System.Drawing.Point(582, 92);
+            this.numericUpDown19.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown19.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1198,7 +811,7 @@
             0,
             0,
             0});
-            this.numericUpDown19.ValueChanged += new System.EventHandler(this.numericUpDown19_ValueChanged);
+            this.numericUpDown19.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDown20
             // 
@@ -1209,8 +822,8 @@
             0,
             0,
             0});
-            this.numericUpDown20.Location = new System.Drawing.Point(140, 352);
-            this.numericUpDown20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown20.Location = new System.Drawing.Point(172, 352);
+            this.numericUpDown20.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown20.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1241,8 +854,8 @@
             0,
             0,
             0});
-            this.numericUpDown21.Location = new System.Drawing.Point(140, 309);
-            this.numericUpDown21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown21.Location = new System.Drawing.Point(172, 309);
+            this.numericUpDown21.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown21.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1273,8 +886,8 @@
             0,
             0,
             0});
-            this.numericUpDown22.Location = new System.Drawing.Point(140, 266);
-            this.numericUpDown22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown22.Location = new System.Drawing.Point(172, 266);
+            this.numericUpDown22.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown22.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1305,8 +918,8 @@
             0,
             0,
             0});
-            this.numericUpDown23.Location = new System.Drawing.Point(140, 223);
-            this.numericUpDown23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown23.Location = new System.Drawing.Point(172, 223);
+            this.numericUpDown23.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown23.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1337,8 +950,8 @@
             0,
             0,
             0});
-            this.numericUpDown24.Location = new System.Drawing.Point(140, 179);
-            this.numericUpDown24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown24.Location = new System.Drawing.Point(172, 179);
+            this.numericUpDown24.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown24.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1369,8 +982,8 @@
             0,
             0,
             0});
-            this.numericUpDown25.Location = new System.Drawing.Point(140, 136);
-            this.numericUpDown25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown25.Location = new System.Drawing.Point(172, 136);
+            this.numericUpDown25.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown25.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1401,8 +1014,8 @@
             0,
             0,
             0});
-            this.numericUpDown26.Location = new System.Drawing.Point(140, 94);
-            this.numericUpDown26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown26.Location = new System.Drawing.Point(172, 94);
+            this.numericUpDown26.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown26.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -1432,16 +1045,16 @@
             this.label81.Location = new System.Drawing.Point(16, 353);
             this.label81.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(81, 24);
+            this.label81.Size = new System.Drawing.Size(107, 24);
             this.label81.TabIndex = 247;
-            this.label81.Text = "Brazo C";
+            this.label81.Text = "Brazo CDR";
             // 
             // label75
             // 
             this.label75.AutoSize = true;
             this.label75.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label75.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label75.Location = new System.Drawing.Point(15, 268);
+            this.label75.Location = new System.Drawing.Point(14, 268);
             this.label75.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(106, 24);
@@ -1511,7 +1124,7 @@
             // 
             this.label82.AutoSize = true;
             this.label82.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.Location = new System.Drawing.Point(723, 20);
+            this.label82.Location = new System.Drawing.Point(632, 11);
             this.label82.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label82.Name = "label82";
             this.label82.Size = new System.Drawing.Size(171, 27);
@@ -1522,7 +1135,7 @@
             // 
             this.label83.AutoSize = true;
             this.label83.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label83.Location = new System.Drawing.Point(368, 20);
+            this.label83.Location = new System.Drawing.Point(230, 14);
             this.label83.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(158, 27);
@@ -1534,7 +1147,7 @@
             this.label73.AutoSize = true;
             this.label73.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label73.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label73.Location = new System.Drawing.Point(150, 28);
+            this.label73.Location = new System.Drawing.Point(181, 47);
             this.label73.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(88, 24);
@@ -1553,51 +1166,555 @@
             this.label1.TabIndex = 313;
             this.label1.Text = "Registro F";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(822, 391);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 20);
+            this.label3.TabIndex = 320;
+            this.label3.Text = "mm";
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.DecimalPlaces = 2;
+            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown2.Location = new System.Drawing.Point(711, 391);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Minimum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(107, 29);
+            this.numericUpDown2.TabIndex = 319;
+            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.DecimalPlaces = 2;
+            this.numericUpDown3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown3.Location = new System.Drawing.Point(300, 392);
+            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown3.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDown3.Minimum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(107, 29);
+            this.numericUpDown3.TabIndex = 318;
+            this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown3.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            // 
+            // numericUpDown4
+            // 
+            this.numericUpDown4.DecimalPlaces = 2;
+            this.numericUpDown4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown4.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.numericUpDown4.Location = new System.Drawing.Point(582, 390);
+            this.numericUpDown4.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown4.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDown4.Minimum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDown4.Name = "numericUpDown4";
+            this.numericUpDown4.ReadOnly = true;
+            this.numericUpDown4.Size = new System.Drawing.Size(107, 29);
+            this.numericUpDown4.TabIndex = 317;
+            this.numericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown4.Value = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            // 
+            // numericUpDown5
+            // 
+            this.numericUpDown5.DecimalPlaces = 2;
+            this.numericUpDown5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown5.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.numericUpDown5.Location = new System.Drawing.Point(172, 392);
+            this.numericUpDown5.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown5.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDown5.Minimum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDown5.Name = "numericUpDown5";
+            this.numericUpDown5.ReadOnly = true;
+            this.numericUpDown5.Size = new System.Drawing.Size(107, 29);
+            this.numericUpDown5.TabIndex = 316;
+            this.numericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown5.Value = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(16, 393);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 24);
+            this.label4.TabIndex = 315;
+            this.label4.Text = "Brazo GM";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(822, 432);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 20);
+            this.label5.TabIndex = 329;
+            this.label5.Text = "mm";
+            // 
+            // numericUpDown7
+            // 
+            this.numericUpDown7.DecimalPlaces = 2;
+            this.numericUpDown7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown7.Location = new System.Drawing.Point(711, 432);
+            this.numericUpDown7.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown7.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDown7.Minimum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDown7.Name = "numericUpDown7";
+            this.numericUpDown7.Size = new System.Drawing.Size(107, 29);
+            this.numericUpDown7.TabIndex = 328;
+            this.numericUpDown7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown7.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            // 
+            // numericUpDown8
+            // 
+            this.numericUpDown8.DecimalPlaces = 2;
+            this.numericUpDown8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown8.Location = new System.Drawing.Point(300, 433);
+            this.numericUpDown8.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown8.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDown8.Minimum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDown8.Name = "numericUpDown8";
+            this.numericUpDown8.Size = new System.Drawing.Size(107, 29);
+            this.numericUpDown8.TabIndex = 327;
+            this.numericUpDown8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown8.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            // 
+            // numericUpDown9
+            // 
+            this.numericUpDown9.DecimalPlaces = 2;
+            this.numericUpDown9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown9.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.numericUpDown9.Location = new System.Drawing.Point(582, 431);
+            this.numericUpDown9.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown9.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDown9.Minimum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDown9.Name = "numericUpDown9";
+            this.numericUpDown9.ReadOnly = true;
+            this.numericUpDown9.Size = new System.Drawing.Size(107, 29);
+            this.numericUpDown9.TabIndex = 326;
+            this.numericUpDown9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown9.Value = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            // 
+            // numericUpDown10
+            // 
+            this.numericUpDown10.DecimalPlaces = 2;
+            this.numericUpDown10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown10.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.numericUpDown10.Location = new System.Drawing.Point(172, 433);
+            this.numericUpDown10.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown10.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDown10.Minimum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDown10.Name = "numericUpDown10";
+            this.numericUpDown10.ReadOnly = true;
+            this.numericUpDown10.Size = new System.Drawing.Size(107, 29);
+            this.numericUpDown10.TabIndex = 325;
+            this.numericUpDown10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown10.Value = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label6.Location = new System.Drawing.Point(16, 434);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(93, 24);
+            this.label6.TabIndex = 324;
+            this.label6.Text = "Brazo LO";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(822, 470);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 20);
+            this.label7.TabIndex = 338;
+            this.label7.Text = "mm";
+            // 
+            // numericUpDown47
+            // 
+            this.numericUpDown47.DecimalPlaces = 2;
+            this.numericUpDown47.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown47.Location = new System.Drawing.Point(711, 470);
+            this.numericUpDown47.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown47.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDown47.Minimum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDown47.Name = "numericUpDown47";
+            this.numericUpDown47.Size = new System.Drawing.Size(107, 29);
+            this.numericUpDown47.TabIndex = 337;
+            this.numericUpDown47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown47.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            // 
+            // numericUpDown48
+            // 
+            this.numericUpDown48.DecimalPlaces = 2;
+            this.numericUpDown48.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown48.Location = new System.Drawing.Point(300, 471);
+            this.numericUpDown48.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown48.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDown48.Minimum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDown48.Name = "numericUpDown48";
+            this.numericUpDown48.Size = new System.Drawing.Size(107, 29);
+            this.numericUpDown48.TabIndex = 336;
+            this.numericUpDown48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown48.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            // 
+            // numericUpDown49
+            // 
+            this.numericUpDown49.DecimalPlaces = 2;
+            this.numericUpDown49.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown49.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.numericUpDown49.Location = new System.Drawing.Point(582, 469);
+            this.numericUpDown49.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown49.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDown49.Minimum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDown49.Name = "numericUpDown49";
+            this.numericUpDown49.ReadOnly = true;
+            this.numericUpDown49.Size = new System.Drawing.Size(107, 29);
+            this.numericUpDown49.TabIndex = 335;
+            this.numericUpDown49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown49.Value = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            // 
+            // numericUpDown50
+            // 
+            this.numericUpDown50.DecimalPlaces = 2;
+            this.numericUpDown50.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown50.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.numericUpDown50.Location = new System.Drawing.Point(172, 471);
+            this.numericUpDown50.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown50.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDown50.Minimum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDown50.Name = "numericUpDown50";
+            this.numericUpDown50.ReadOnly = true;
+            this.numericUpDown50.Size = new System.Drawing.Size(107, 29);
+            this.numericUpDown50.TabIndex = 334;
+            this.numericUpDown50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown50.Value = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label8.Location = new System.Drawing.Point(16, 472);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(90, 24);
+            this.label8.TabIndex = 333;
+            this.label8.Text = "Brazo LT";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(495, 53);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1, 459);
+            this.panel1.TabIndex = 342;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(296, 53);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(411, 471);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 24);
-            this.label2.TabIndex = 314;
-            this.label2.Text = "Actual";
+            this.label2.Size = new System.Drawing.Size(35, 20);
+            this.label2.TabIndex = 352;
+            this.label2.Text = "mm";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(411, 433);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 20);
+            this.label9.TabIndex = 351;
+            this.label9.Text = "mm";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(411, 392);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(35, 20);
+            this.label10.TabIndex = 350;
+            this.label10.Text = "mm";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(411, 352);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(35, 20);
+            this.label11.TabIndex = 349;
+            this.label11.Text = "mm";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(411, 311);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(35, 20);
+            this.label12.TabIndex = 348;
+            this.label12.Text = "mm";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(411, 268);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(35, 20);
+            this.label13.TabIndex = 347;
+            this.label13.Text = "mm";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(411, 225);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(35, 20);
+            this.label14.TabIndex = 346;
+            this.label14.Text = "mm";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(411, 182);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(35, 20);
+            this.label15.TabIndex = 345;
+            this.label15.Text = "mm";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(411, 136);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(35, 20);
+            this.label16.TabIndex = 344;
+            this.label16.Text = "mm";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(411, 96);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(35, 20);
+            this.label17.TabIndex = 343;
+            this.label17.Text = "mm";
             // 
             // Configuraciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 462);
+            this.ClientSize = new System.Drawing.Size(936, 530);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.numericUpDown47);
+            this.Controls.Add(this.numericUpDown48);
+            this.Controls.Add(this.numericUpDown49);
+            this.Controls.Add(this.numericUpDown50);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.numericUpDown7);
+            this.Controls.Add(this.numericUpDown8);
+            this.Controls.Add(this.numericUpDown9);
+            this.Controls.Add(this.numericUpDown10);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.numericUpDown4);
+            this.Controls.Add(this.numericUpDown5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label73);
             this.Controls.Add(this.label82);
             this.Controls.Add(this.label83);
-            this.Controls.Add(this.label84);
-            this.Controls.Add(this.label74);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button53);
-            this.Controls.Add(this.button55);
-            this.Controls.Add(this.button62);
-            this.Controls.Add(this.button63);
-            this.Controls.Add(this.numericUpDown11);
-            this.Controls.Add(this.numericUpDown41);
-            this.Controls.Add(this.numericUpDown42);
-            this.Controls.Add(this.numericUpDown43);
-            this.Controls.Add(this.numericUpDown44);
-            this.Controls.Add(this.numericUpDown45);
-            this.Controls.Add(this.numericUpDown46);
-            this.Controls.Add(this.button61);
-            this.Controls.Add(this.button60);
-            this.Controls.Add(this.button59);
-            this.Controls.Add(this.button58);
-            this.Controls.Add(this.button57);
-            this.Controls.Add(this.button56);
-            this.Controls.Add(this.button54);
             this.Controls.Add(this.label115);
             this.Controls.Add(this.label107);
             this.Controls.Add(this.label108);
@@ -1644,18 +1761,13 @@
             this.Controls.Add(this.label78);
             this.Controls.Add(this.label79);
             this.Controls.Add(this.label80);
-            this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Configuraciones";
+            this.ShowInTaskbar = false;
             this.Text = "Configuraciones";
             this.Load += new System.EventHandler(this.Configuraciones_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown46)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown36)).EndInit();
@@ -1684,37 +1796,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown49)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown50)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button53;
-        private System.Windows.Forms.Button button55;
-        private System.Windows.Forms.Button button62;
-        private System.Windows.Forms.Button button63;
-        private System.Windows.Forms.NumericUpDown numericUpDown11;
-        private System.Windows.Forms.NumericUpDown numericUpDown41;
-        private System.Windows.Forms.NumericUpDown numericUpDown42;
-        private System.Windows.Forms.NumericUpDown numericUpDown43;
-        private System.Windows.Forms.NumericUpDown numericUpDown44;
-        private System.Windows.Forms.NumericUpDown numericUpDown45;
-        private System.Windows.Forms.NumericUpDown numericUpDown46;
-        private System.Windows.Forms.Button button61;
-        private System.Windows.Forms.Button button60;
-        private System.Windows.Forms.Button button59;
-        private System.Windows.Forms.Button button58;
-        private System.Windows.Forms.Button button57;
-        private System.Windows.Forms.Button button56;
-        private System.Windows.Forms.Button button54;
         private System.Windows.Forms.Label label115;
         private System.Windows.Forms.Label label107;
         private System.Windows.Forms.Label label108;
@@ -1765,6 +1864,34 @@
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.NumericUpDown numericUpDown8;
+        private System.Windows.Forms.NumericUpDown numericUpDown9;
+        private System.Windows.Forms.NumericUpDown numericUpDown10;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.NumericUpDown numericUpDown47;
+        private System.Windows.Forms.NumericUpDown numericUpDown48;
+        private System.Windows.Forms.NumericUpDown numericUpDown49;
+        private System.Windows.Forms.NumericUpDown numericUpDown50;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }
