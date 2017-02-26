@@ -63,6 +63,26 @@ namespace FolderHmi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bad {
+            get {
+                object obj = ResourceManager.GetObject("bad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap check {
+            get {
+                object obj = ResourceManager.GetObject("check", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap edit_clear {
             get {
                 object obj = ResourceManager.GetObject("edit-clear", resourceCulture);
@@ -83,6 +103,16 @@ namespace FolderHmi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FOLDER2 {
+            get {
+                object obj = ResourceManager.GetObject("FOLDER2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap light_off {
             get {
                 object obj = ResourceManager.GetObject("light_off", resourceCulture);
@@ -96,6 +126,16 @@ namespace FolderHmi.Properties {
         internal static System.Drawing.Bitmap light_on {
             get {
                 object obj = ResourceManager.GetObject("light_on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap network_workgroup {
+            get {
+                object obj = ResourceManager.GetObject("network-workgroup", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

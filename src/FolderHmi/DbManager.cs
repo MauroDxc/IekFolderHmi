@@ -11,34 +11,15 @@ namespace FolderHmi
 {
     class DbManager
     {
-        private static MySqlConnection conn;
-        private static String sconnection = "server=localhost;User Id=root;password=password;Persist Security Info=True;database=iekfolder";
-
-        private static void Connect()
-        {
-            if (conn != null)
-            {
-                conn.Close();
-            }
-            string connStr = String.Format("server={0};user id={1}; password={2}; database=iekfolder; pooling=false", "localhost", "root", "password");
-            try
-            {
-                conn = new MySqlConnection(connStr);
-                conn.Open();
-            }
-            catch (MySqlException ex)
-            {
-                throw;
-            }
-        }
+        private static String sconnection = "server=localhost;User Id=root;password=password;Persist Security Info=True;database=iekfolder; pooling=false";
 
         public static bool Update(string table, KeyValuePair<string, string> []values, KeyValuePair<string, string>[] filters)
         {
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(sconnection);
-                StringBuilder updateString = new StringBuilder();
-                StringBuilder whereString = new StringBuilder();
+                StringBuilder updateString = new StringBuilder("");
+                StringBuilder whereString = new StringBuilder("");
 
                 foreach (var v in values)
                 {
@@ -69,33 +50,35 @@ namespace FolderHmi
 
         public static DataTable GetDataTable(string cmd)
         {
-            Connect();
+            MySqlConnection myConnection = new MySqlConnection(sconnection);
             DataTable data = new DataTable();
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd, conn);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd, myConnection);
             MySqlCommandBuilder cb = new MySqlCommandBuilder(da);
             da.Fill(data);
+            myConnection.Close();
             return data;
 
         }
 
-        public static bool Insert(String tabla, String datos)
+        public static int Insert(String tabla, String datos)
         {
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(sconnection);
-                string myInsertQuery = "INSERT INTO " + tabla + " Values(" + datos + ")";
-                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
-                myCommand.Connection = myConnection;
-                myConnection.Open();
-                myCommand.ExecuteNonQuery();
-                myCommand.Connection.Close();
-                return true;
+                string myInsertQuery = "INSERT INTO " + tabla + " Values(" + datos + "); select @@IDENTITY;";
+                DataTable data = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(myInsertQuery, myConnection);
+                MySqlCommandBuilder cb = new MySqlCommandBuilder(da);
+                da.Fill(data);
+                myConnection.Close();
+                int identity = int.Parse(data.Rows[0].ItemArray[0].ToString());
+                return identity;
             }
             catch (MySqlException e)
             {
                 MessageBox.Show("El servidor contestó: " + e.Message, " Error Sevidor de datos",
              MessageBoxButtons.OK, MessageBoxIcon.Hand);
-                return false;
+                return -1;
             }
 
         }

@@ -37,7 +37,7 @@ namespace FolderHmi.Forms
                 numericUpDown3.Value + "," +
                 numericUpDown4.Value + "," +
                 numericUpDown5.Value + "," +
-                numericUpDown6.Value );
+                numericUpDown6.Value + ",1");
         }
     }
 }

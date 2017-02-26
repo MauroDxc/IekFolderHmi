@@ -70,7 +70,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppStatics.cs" />
+    <Compile Include="Forms\Ethernet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ethernet.Designer.cs">
+      <DependentUpon>Ethernet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module1.cs" />
     <Compile Include="DbManager.cs" />
     <Compile Include="Forms\Alarmas.cs">
       <SubType>Form</SubType>
@@ -102,11 +108,11 @@
     <Compile Include="Forms\Folder.Designer.cs">
       <DependentUpon>Folder.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Ordenes.cs">
+    <Compile Include="Forms\Cargar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Ordenes.Designer.cs">
-      <DependentUpon>Ordenes.cs</DependentUpon>
+    <Compile Include="Forms\Cargar.Designer.cs">
+      <DependentUpon>Cargar.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Slotter.cs">
       <SubType>Form</SubType>
@@ -126,6 +132,7 @@
     <Compile Include="MainWin.Designer.cs">
       <DependentUpon>MainWin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Objects\FormClosedEventArgsS.cs" />
     <Compile Include="Objects\OpcItemEventArgs.cs" />
     <Compile Include="Objects\Text.cs" />
     <Compile Include="OpcManager.cs" />
@@ -144,11 +151,14 @@
     <EmbeddedResource Include="Forms\Configuraciones.resx">
       <DependentUpon>Configuraciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ethernet.resx">
+      <DependentUpon>Ethernet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Folder.resx">
       <DependentUpon>Folder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Ordenes.resx">
-      <DependentUpon>Ordenes.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Cargar.resx">
+      <DependentUpon>Cargar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Slotter.resx">
       <DependentUpon>Slotter.cs</DependentUpon>
@@ -184,8 +194,12 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="resources\FOLDER2.bmp" />
+    <None Include="resources\check.png" />
+    <None Include="resources\bad.png" />
     <Content Include="resources\light_off.png" />
     <Content Include="resources\light_on.png" />
+    <None Include="resources\network-workgroup.png" />
     <Content Include="resources\slotter.bmp" />
     <None Include="resources\edit-clear.png" />
     <None Include="resources\emblem-important.png" />

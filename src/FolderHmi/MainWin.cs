@@ -17,6 +17,7 @@ using System.Diagnostics;
 using System.IO;
 using Microsoft.Win32;
 using System.Resources;
+using FolderHmi.Forms;
 
 namespace FolderHmi
 {
@@ -33,6 +34,8 @@ namespace FolderHmi
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool SetForegroundWindow(IntPtr hWnd);
         String PersonalFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+        private Form _frmConfig = new Forms.Configuraciones();
+        private Form _frmEthernet = new Forms.Ethernet();
 
         public MainWin()
         {
@@ -41,24 +44,24 @@ namespace FolderHmi
             {
                 OpcManager.Instance.DataChanged += _opcManager_DataChanged;
                 OpcManager.Instance.StatusMessageChanged += _opcManager_StatusMessageChanged;
+                DataTable dt = DbManager.GetDataTable("SELECT handle,value FROM limites");
+                foreach (DataRow dr in dt.Rows)
+                {
+                    int handle = int.Parse(dr["handle"].ToString());
+                    decimal value = decimal.Parse(dr["value"].ToString());
+
+                    //_frmConfig.Controls.Find("L" + handle, true).FirstOrDefault().Text = value.ToString();
+                    //(_frmConfig.Controls.Find("Z" + handle, true).FirstOrDefault() as NumericUpDown).Value = value;
+
+                }
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 connectBtn.Image = new Bitmap(FolderHmi.Properties.Resources.light_off);
                 MessageBox.Show("OpcManager desconectado!", "OpcManager", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 toolStripStatusLabel1.Text = "OpcManager desconectado";
 
             }
-            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloA, CuelloAMov, CuelloAObj), 0);
-            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloB, CuelloBMov, CuelloBObj), 1);
-            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloC, CuelloCMov, CuelloCObj), 2);
-            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), CuelloD, CuelloDMov, CuelloDObj), 3);
-            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), RegE, RegEMov, RegEObj), 4);
-            AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), RegF, RegFMov, RegFObj), 5);
-            //AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_LO, BrazoLoMov, NPOS_BRAZO_LO), 6);
-            //AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_LT, BrazoLtMov, NPOS_BRAZO_LT), 7);
-            //AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_GM, BrazoGmMov, NPOS_BRAZO_GM), 8);
-            //AppStatics.CachedTags.SetValue(new Tag(new decimal(0.0), POS_BRAZO_CDR, BrazoCdrMov, NPOS_BRAZO_CDR), 9);
 
         }
 
@@ -69,17 +72,74 @@ namespace FolderHmi
 
         private void _opcManager_DataChanged(object sender, Objects.OpcItemEventArgs e)
         {
+            int formid = Module1.FormHandle.Select(x => x).Where(x => x.Key == e.ItemHandle).FirstOrDefault().Value;
+            switch (formid)
+            {
+                case 1:
+                    AssignValueToControl(this, "Z" + e.ItemHandle, null, e.ItemValue);
+                    AssignValueToControl(_frmConfig, "Z" + e.ItemHandle, null, e.ItemValue);
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    AssignValueToControl(_frmConfig, "Z" + e.ItemHandle, null, e.ItemValue);
+                    break;
+                case 7:
+                    AssignValueToControl(_frmEthernet, "B" + e.ItemHandle, "BackColor", (bool)e.ItemValue ? Color.Green : Color.Red);
+                    break;
+                case 8:
+                    break;
+                case 9:
+                    break;
+                case 10:
+                    break;
+                default:
+                    break;
+            }
             if (e.IsFault)
             {
-                string tag = (string)AppStatics.TagList.GetValue(e.ItemHandle);
+                button16.BackColor = Color.Red;
+                string tag = (string)Module1.TagList.GetValue(e.ItemHandle);
                 DateTime date = DateTime.Now;
-                DbManager.Insert("faults", "0,'" + tag + "','" + date.ToString("yyyy-MM-dd hh:mm") + "',1");
+                DbManager.Insert("faults", "0,'" + tag + "','" + date.ToString("yyyy-MM-dd hh:mm") + "',1,(SELECT h FROM (SELECT corr as h FROM tags WHERE handle=" + e.ItemHandle + ") AS G)");
             }
-            //TextBox t = (TextBox)Controls.Find(((string)AppStatics.TagList.GetValue(e.ItemHandle)).Replace("CHANNEL1.PLC_FOLDER.", ""), true).FirstOrDefault();
-            //if (t != null)
-            //{
-            //    t.Text = e.ItemValue + "";
-            //}
+        }
+
+        private void AssignValueToControl(Form form, string controlName, string controlProperty, object value)
+        {
+            if (value == null) return;
+            Control ctrl = form.Controls.Find(controlName, true).FirstOrDefault();
+            if (string.IsNullOrEmpty(controlProperty))
+            {
+                if (ctrl?.GetType() == typeof(Label))
+                {
+                    ctrl.GetType().GetProperties().Select(x => x).Where(x => x.Name == "Text").FirstOrDefault().SetValue(ctrl, value.ToString());
+                }
+                else if (ctrl?.GetType() == typeof(NumericUpDown))
+                {
+                    ctrl.GetType().GetProperties().Select(x => x).Where(x => x.Name == "Value").FirstOrDefault().SetValue(ctrl, decimal.Parse(value.ToString()));
+                }
+                else if (ctrl?.GetType() == typeof(PictureBox))
+                {
+                    ctrl.GetType().GetProperties().Select(x => x).Where(x => x.Name == "Image").FirstOrDefault().SetValue(ctrl, (bool)value ? new Bitmap(FolderHmi.Properties.Resources.check) : new Bitmap(FolderHmi.Properties.Resources.bad));
+                }
+                else if (ctrl?.GetType() == typeof(Button))
+                {
+                    Button b = ctrl as Button;
+                    b.ImageIndex = (bool)value ? 1 : 0;
+                    b.Enabled = true;
+                }
+            }
+            else
+            {
+                ctrl?.GetType().GetProperties().Select(x => x).Where(x => x.Name == controlProperty).FirstOrDefault().SetValue(ctrl, value);
+            }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -166,8 +226,7 @@ namespace FolderHmi
 
         private void button14_Click(object sender, EventArgs e)
         {
-            Form a = new Forms.Configuraciones();
-            a.ShowDialog();
+            _frmConfig.ShowDialog();
         }
 
         private void button34_Click(object sender, EventArgs e)
@@ -183,40 +242,42 @@ namespace FolderHmi
 
         private void button19_Click(object sender, EventArgs e)
         {
-            Form a = new Forms.Slotter();
+            Form a = new Forms.Troquel();
             a.ShowDialog();
         }
 
         private void textBox20_TextChanged(object sender, EventArgs e)
         {
-            AppStatics.ValueList.SetValue(0.0, 1);
+            Module1.ValueList.SetValue(0.0, 1);
             //_opcManager.Write(1);
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            Form a = new Forms.Ordenes();
-            a.FormClosing += Ordenes_FormClosing;
+            Cargar a = new Forms.Cargar("caja", -1);
+            a.LoadComplete += (
+                (object s, Objects.FormClosedEventArgsS f) =>
+                    {
+                        object[] values = f.CloseArguments as object[];
+                        textBox1.Text = values[0].ToString().PadLeft(3, '0');
+                        Z145.Value = (decimal)values[3] > Z145.Maximum ? Z145.Maximum : (decimal)values[3] < Z145.Minimum ? Z145.Minimum : (decimal)values[3];
+                        Z146.Value = (decimal)values[4] > Z146.Maximum ? Z146.Maximum : (decimal)values[4] < Z146.Minimum ? Z146.Minimum : (decimal)values[4];
+                        Z147.Value = (decimal)values[5] > Z147.Maximum ? Z147.Maximum : (decimal)values[5] < Z147.Minimum ? Z147.Minimum : (decimal)values[5];
+                        Z148.Value = (decimal)values[6] > Z148.Maximum ? Z148.Maximum : (decimal)values[6] < Z148.Minimum ? Z148.Minimum : (decimal)values[6];
+                        Z149.Value = (decimal)values[7] > Z149.Maximum ? Z149.Maximum : (decimal)values[7] < Z149.Minimum ? Z149.Minimum : (decimal)values[7];
+                        Z150.Value = (decimal)values[8] > Z150.Maximum ? Z150.Maximum : (decimal)values[8] < Z150.Minimum ? Z150.Minimum : (decimal)values[8];
+
+                        bGOa.PerformClick();
+                        bGOb.PerformClick();
+                        bGOc.PerformClick();
+                        bGOd.PerformClick();
+                        bGOe.PerformClick();
+                        bGOf.PerformClick();
+
+                    });
             a.ShowDialog();
         }
 
-        private void Ordenes_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            for (int i = 0; i < AppStatics.CachedTags.Length; i++)
-            {
-                Tag t = (Tag)AppStatics.CachedTags.GetValue(i);
-                TextBox tx = (TextBox)(Controls.Find(t.Objetivo.Name, true)[0]);
-                tx.Text = "" + t.Value;
-                for (int j = 1; j < AppStatics.TagList.Length; j++)
-                {
-                    if (tx.Tag == AppStatics.TagList.GetValue(j))
-                    {
-                        AppStatics.ValueList.SetValue(t.Value, j);
-                        OpcManager.Instance.Write(j);
-                    }
-                }
-            }
-        }
 
         private void actionButton_Click(object sender, EventArgs e)
         {
@@ -225,7 +286,7 @@ namespace FolderHmi
             Button btn = (Button)sender;
             int index = int.Parse(btn.Tag.ToString().Split(',')[0]);
             int action = int.Parse(btn.Tag.ToString().Split(',')[1]);
-            AppStatics.ValueList.SetValue(action, index);
+            Module1.ValueList.SetValue(action, index);
             OpcManager.Instance.Write(index);
 
             toolStripStatusLabel1.Text = "Listo";
@@ -236,9 +297,9 @@ namespace FolderHmi
             toolStripStatusLabel1.Text = "Procesando...";
 
             NumericUpDown nud = (NumericUpDown)sender;
-            int index = int.Parse(nud.Tag.ToString().Split(',')[0]);
+            int index = int.Parse(nud.Name.Replace("Z", ""));
             decimal action = nud.Value;
-            AppStatics.ValueList.SetValue(action, index);
+            Module1.ValueList.SetValue(action, index);
             OpcManager.Instance.Write(index);
 
             toolStripStatusLabel1.Text = "Listo";
@@ -247,6 +308,16 @@ namespace FolderHmi
         private void connectBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            _frmEthernet.ShowDialog();
         }
     }
 }

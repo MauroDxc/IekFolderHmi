@@ -19,28 +19,37 @@ namespace FolderHmi.Forms
 
         private void Configuraciones_Load(object sender, EventArgs e)
         {
-            DataTable dt = DbManager.GetDataTable("SELECT handle,value FROM limites");
-            foreach (DataRow dr in dt.Rows)
-            {
-                int handle = int.Parse(dr["handle"].ToString());
-                decimal value = decimal.Parse(dr["value"].ToString());
+            OpcManager.Instance.DataChanged += _opcManager_DataChanged;
+        }
 
-                Controls.Find("L" + handle, true).FirstOrDefault().Text = value.ToString();
-            }
+        private void _opcManager_DataChanged(object sender, Objects.OpcItemEventArgs e)
+        {
         }
 
         private void numericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            int index = int.Parse((sender as Control).Tag.ToString());
+            int index = int.Parse((sender as Control).Name.Replace("Z", ""));
             decimal value = (sender as NumericUpDown).Value;
-            AppStatics.ValueList.SetValue(value, index);
+            Module1.ValueList.SetValue(value, index);
             OpcManager.Instance.Write(index);
-            string tag = AppStatics.TagList.GetValue(index).ToString();
+            string tag = Module1.TagList.GetValue(index).ToString();
             DbManager.Update("limites"
                 , new KeyValuePair<string, string>[] { new KeyValuePair<string, string>("value", value.ToString()) }
                 , new KeyValuePair<string, string>[] { new KeyValuePair<string, string>("handle", index.ToString()) }
                 );
 
+        }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            if (sender.GetType() != typeof(Button)) return;
+            Button b = sender as Button;
+            b.ImageIndex = 2;
+            //b.Enabled = false;
+            int handle = int.Parse(b.Tag.ToString().Split(',')[0]);
+            bool value = bool.Parse(b.Tag.ToString().Split(',')[1]);
+            Module1.ValueList.SetValue(!(bool)Module1.ValueList.GetValue(handle), handle);
+            OpcManager.Instance.Write(handle);
         }
     }
 }

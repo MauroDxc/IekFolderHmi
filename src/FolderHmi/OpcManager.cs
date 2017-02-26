@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,7 +38,7 @@ namespace FolderHmi
             try
             {
                 _OPCServer = new OPCAutomation.OPCServer();
-                //_OPCServer.Connect(AppStatics.OPCServerName, "");
+                _OPCServer.Connect(Module1.OPCServerName, "");
 
             }
             catch (Exception ex)
@@ -49,10 +50,10 @@ namespace FolderHmi
             {
                 _OPCServer.OPCGroups.DefaultGroupIsActive = true;
                 _OPCServer.OPCGroups.DefaultGroupDeadband = 0;
-                AppStatics._OPCGroup = _OPCServer.OPCGroups.Add("G1");
-                AppStatics._OPCGroup.UpdateRate = 250;
-                AppStatics._OPCGroup.IsSubscribed = true;
-                AppStatics._OPCGroup.DataChange += OPCGroup_DataChanged;
+                Module1._OPCGroup = _OPCServer.OPCGroups.Add("G1");
+                Module1._OPCGroup.UpdateRate = 250;
+                Module1._OPCGroup.IsSubscribed = true;
+                Module1._OPCGroup.DataChange += OPCGroup_DataChanged;
             }
             catch (Exception ex)
             {
@@ -62,11 +63,11 @@ namespace FolderHmi
             try
             {
                 //_OPCGroup.OPCItems.DefaultIsActive = true;
-                //AppStatics._OPCGroup.OPCItems.AddItems(AppStatics.TagCount, AppStatics.TagList, AppStatics.HandleList, out AppStatics.ItemServerHandles, out AppStatics.ItemServerErrors);
+                Module1._OPCGroup.OPCItems.AddItems(Module1.TagCount, Module1.TagList, Module1.HandleList, out Module1.ItemServerHandles, out Module1.ItemServerErrors);
                 bool itemgood = false;
-                for (int i = 1; i <= AppStatics.TagCount; i++)
+                for (int i = 1; i <= Module1.TagCount; i++)
                 {
-                    int ab = (Int32)AppStatics.ItemServerErrors.GetValue(i);
+                    int ab = (Int32)Module1.ItemServerErrors.GetValue(i);
                     if (ab == 0)
                     {
                         itemgood = true;
@@ -101,8 +102,8 @@ namespace FolderHmi
 
                 // Get the Servers handle for the desired item.  The server handles
                 // were returned in add item subroutine.
-                SyncItemServerHandles[1] = (int)AppStatics.ItemServerHandles.GetValue(index);
-                AnOpcItem = AppStatics._OPCGroup.OPCItems.GetOPCItem((int)AppStatics.ItemServerHandles.GetValue(index));
+                SyncItemServerHandles[1] = (int)Module1.ItemServerHandles.GetValue(index);
+                AnOpcItem = Module1._OPCGroup.OPCItems.GetOPCItem((int)Module1.ItemServerHandles.GetValue(index));
 
                 // Load the value to be written using Item's Canonical Data Type to
                 // convert to correct type. 
@@ -123,10 +124,10 @@ namespace FolderHmi
                 switch (CanonDT)
                 {
                     case (short)CanonicalDataTypes.CanonDtByte:
-                        if ((int)AppStatics.OPCItemIsArray.GetValue(index) > 0)
+                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
                         {
-                            ItsAnArray = Array.CreateInstance(typeof(byte), (int)AppStatics.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)AppStatics.TagList.GetValue(index)))
+                            ItsAnArray = Array.CreateInstance(typeof(byte), (int)Module1.OPCItemIsArray.GetValue(index));
+                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
                             {
                                 return false;
                             }
@@ -134,16 +135,16 @@ namespace FolderHmi
                         }
                         else
                         {
-                            SyncItemValues[1] = Convert.ToByte((string)AppStatics.ValueList.GetValue(index));
+                            SyncItemValues[1] = Convert.ToByte((string)Module1.ValueList.GetValue(index));
                         }
                         break;
                     // End case
 
                     case (short)CanonicalDataTypes.CanonDtChar:
-                        if ((int)AppStatics.OPCItemIsArray.GetValue(index) > 0)
+                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
                         {
-                            ItsAnArray = Array.CreateInstance(typeof(SByte), (int)AppStatics.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)AppStatics.TagList.GetValue(index)))
+                            ItsAnArray = Array.CreateInstance(typeof(SByte), (int)Module1.OPCItemIsArray.GetValue(index));
+                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
                             {
                                 return false;
                             }
@@ -151,16 +152,16 @@ namespace FolderHmi
                         }
                         else
                         {
-                            SyncItemValues[1] = Convert.ToSByte((string)AppStatics.ValueList.GetValue(index));
+                            SyncItemValues[1] = Convert.ToSByte((string)Module1.ValueList.GetValue(index));
                         }
                         break;
                     // End case
 
                     case (short)CanonicalDataTypes.CanonDtWord:
-                        if ((int)AppStatics.OPCItemIsArray.GetValue(index) > 0)
+                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
                         {
-                            ItsAnArray = Array.CreateInstance(typeof(UInt16), (int)AppStatics.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)AppStatics.TagList.GetValue(index)))
+                            ItsAnArray = Array.CreateInstance(typeof(UInt16), (int)Module1.OPCItemIsArray.GetValue(index));
+                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
                             {
                                 return false;
                             }
@@ -168,16 +169,16 @@ namespace FolderHmi
                         }
                         else
                         {
-                            SyncItemValues[1] = Convert.ToUInt16(AppStatics.ValueList.GetValue(index));
+                            SyncItemValues[1] = Convert.ToUInt16(Module1.ValueList.GetValue(index));
                         }
                         break;
                     // End case
 
                     case (short)CanonicalDataTypes.CanonDtShort:
-                        if ((int)AppStatics.OPCItemIsArray.GetValue(index) > 0)
+                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
                         {
-                            ItsAnArray = Array.CreateInstance(typeof(Int16), (int)AppStatics.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)AppStatics.TagList.GetValue(index)))
+                            ItsAnArray = Array.CreateInstance(typeof(Int16), (int)Module1.OPCItemIsArray.GetValue(index));
+                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
                             {
                                 return false;
                             }
@@ -185,16 +186,16 @@ namespace FolderHmi
                         }
                         else
                         {
-                            SyncItemValues[1] = Convert.ToInt16((string)AppStatics.ValueList.GetValue(index));
+                            SyncItemValues[1] = Convert.ToInt16((string)Module1.ValueList.GetValue(index));
                         }
                         break;
                     // End case
 
                     case (short)CanonicalDataTypes.CanonDtDWord:
-                        if ((int)AppStatics.OPCItemIsArray.GetValue(index) > 0)
+                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
                         {
-                            ItsAnArray = Array.CreateInstance(typeof(UInt32), (int)AppStatics.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)AppStatics.TagList.GetValue(index)))
+                            ItsAnArray = Array.CreateInstance(typeof(UInt32), (int)Module1.OPCItemIsArray.GetValue(index));
+                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
                             {
                                 return false;
                             }
@@ -202,16 +203,16 @@ namespace FolderHmi
                         }
                         else
                         {
-                            SyncItemValues[1] = Convert.ToUInt32((string)AppStatics.ValueList.GetValue(index));
+                            SyncItemValues[1] = Convert.ToUInt32((string)Module1.ValueList.GetValue(index));
                         }
                         break;
                     // End case
 
                     case (short)CanonicalDataTypes.CanonDtLong:
-                        if ((int)AppStatics.OPCItemIsArray.GetValue(index) > 0)
+                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
                         {
-                            ItsAnArray = Array.CreateInstance(typeof(Int32), (int)AppStatics.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)AppStatics.TagList.GetValue(index)))
+                            ItsAnArray = Array.CreateInstance(typeof(Int32), (int)Module1.OPCItemIsArray.GetValue(index));
+                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
                             {
                                 return false;
                             }
@@ -219,16 +220,16 @@ namespace FolderHmi
                         }
                         else
                         {
-                            SyncItemValues[1] = Convert.ToInt32((string)AppStatics.ValueList.GetValue(index));
+                            SyncItemValues[1] = Convert.ToInt32((string)Module1.ValueList.GetValue(index));
                         }
                         break;
                     // End case
 
                     case (short)CanonicalDataTypes.CanonDtFloat:
-                        if ((int)AppStatics.OPCItemIsArray.GetValue(index) > 0)
+                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
                         {
-                            ItsAnArray = Array.CreateInstance(typeof(float), (int)AppStatics.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)AppStatics.TagList.GetValue(index)))
+                            ItsAnArray = Array.CreateInstance(typeof(float), (int)Module1.OPCItemIsArray.GetValue(index));
+                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
                             {
                                 return false;
                             }
@@ -236,16 +237,16 @@ namespace FolderHmi
                         }
                         else
                         {
-                            SyncItemValues[1] = Convert.ToSingle((string)AppStatics.ValueList.GetValue(index));
+                            SyncItemValues[1] = Convert.ToSingle((string)Module1.ValueList.GetValue(index));
                         }
                         break;
                     // End case
 
                     case (short)CanonicalDataTypes.CanonDtDouble:
-                        if ((int)AppStatics.OPCItemIsArray.GetValue(index) > 0)
+                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
                         {
-                            ItsAnArray = Array.CreateInstance(typeof(double), (int)AppStatics.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)AppStatics.TagList.GetValue(index)))
+                            ItsAnArray = Array.CreateInstance(typeof(double), (int)Module1.OPCItemIsArray.GetValue(index));
+                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
                             {
                                 return false;
                             }
@@ -253,16 +254,16 @@ namespace FolderHmi
                         }
                         else
                         {
-                            SyncItemValues[1] = AppStatics.ValueList.GetValue(index);
+                            SyncItemValues[1] = Module1.ValueList.GetValue(index);
                         }
                         break;
                     // End case
 
                     case (short)CanonicalDataTypes.CanonDtBool:
-                        if ((int)AppStatics.OPCItemIsArray.GetValue(index) > 0)
+                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
                         {
-                            ItsAnArray = Array.CreateInstance(typeof(bool), (int)AppStatics.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)AppStatics.TagList.GetValue(index)))
+                            ItsAnArray = Array.CreateInstance(typeof(bool), (int)Module1.OPCItemIsArray.GetValue(index));
+                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
                             {
                                 return false;
                             }
@@ -270,16 +271,16 @@ namespace FolderHmi
                         }
                         else
                         {
-                            SyncItemValues[1] = Convert.ToBoolean(AppStatics.ValueList.GetValue(index));
+                            SyncItemValues[1] = Convert.ToBoolean(Module1.ValueList.GetValue(index));
                         }
                         break;
                     // End case
 
                     case (short)CanonicalDataTypes.CanonDtString:
-                        if ((int)AppStatics.OPCItemIsArray.GetValue(index) > 0)
+                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
                         {
-                            ItsAnArray = Array.CreateInstance(typeof(string), (int)AppStatics.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)AppStatics.TagList.GetValue(index)))
+                            ItsAnArray = Array.CreateInstance(typeof(string), (int)Module1.OPCItemIsArray.GetValue(index));
+                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
                             {
                                 return false;
                             }
@@ -287,7 +288,7 @@ namespace FolderHmi
                         }
                         else
                         {
-                            SyncItemValues[1] = Convert.ToString((string)AppStatics.ValueList.GetValue(index));
+                            SyncItemValues[1] = Convert.ToString((string)Module1.ValueList.GetValue(index));
                         }
                         break;
                     // End case
@@ -299,7 +300,7 @@ namespace FolderHmi
                 }
 
                 // Invoke the SyncWrite operation.  Remember this call will wait until completion
-                AppStatics._OPCGroup.SyncWrite(ItemCount, SyncItemServerHandles, SyncItemValues, out SyncItemServerErrors);
+                Module1._OPCGroup.SyncWrite(ItemCount, SyncItemServerHandles, SyncItemValues, out SyncItemServerErrors);
 
                 if ((int)SyncItemServerErrors.GetValue(1) != 0)
                 {
@@ -431,7 +432,7 @@ namespace FolderHmi
                 else if (typeof(bool) == ItemValues.GetValue(i).GetType())
                 {
                     e.ItemValue = ItemValues.GetValue(i) != null ? (bool)ItemValues.GetValue(i) : false;
-                    e.IsFault = (bool)e.ItemValue && (e.ItemHandle <= 9 && e.ItemHandle >= 6);
+                    e.IsFault = (bool)e.ItemValue && ((e.ItemHandle <= 18 && e.ItemHandle >= 15) || (e.ItemHandle <= 98 && e.ItemHandle >= 93));
                 }
                 else if (typeof(byte) == ItemValues.GetValue(i).GetType())
                 {
@@ -441,6 +442,7 @@ namespace FolderHmi
                 {
                     e.ItemValue = ItemValues.GetValue(i) != null ? (string)ItemValues.GetValue(i) : "";
                 }
+                Module1.ValueList.SetValue(e.ItemValue, e.ItemHandle);
                 DataChanged(this, e);
             }
         }
