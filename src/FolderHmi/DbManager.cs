@@ -11,7 +11,7 @@ namespace FolderHmi
 {
     class DbManager
     {
-        private static String sconnection = "server=localhost;User Id=root;password=password;Persist Security Info=True;database=iekfolder; pooling=false";
+        private static String sconnection = "server=localhost;User Id=root;password=password;Persist Security Info=True;database=iekfolder; pooling=true";
 
         public static bool Update(string table, KeyValuePair<string, string> []values, KeyValuePair<string, string>[] filters)
         {
@@ -54,7 +54,14 @@ namespace FolderHmi
             DataTable data = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter(cmd, myConnection);
             MySqlCommandBuilder cb = new MySqlCommandBuilder(da);
-            da.Fill(data);
+            try
+            {
+                da.Fill(data);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
             myConnection.Close();
             return data;
 

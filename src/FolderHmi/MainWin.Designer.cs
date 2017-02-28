@@ -117,8 +117,6 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.connectBtn = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button18 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
@@ -156,7 +154,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Z54)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.toolStrip1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,7 +163,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(137, 199);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 26);
+            this.label1.Size = new System.Drawing.Size(156, 52);
             this.label1.TabIndex = 9;
             this.label1.Text = "Orden ";
             // 
@@ -204,6 +201,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Font = new System.Drawing.Font("Nokia Large", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(359, 31);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -219,10 +217,10 @@
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.pictureBox2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Location = new System.Drawing.Point(8, 67);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1211, 689);
+            this.tabPage1.Size = new System.Drawing.Size(1203, 647);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Slotter";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -235,7 +233,7 @@
             this.groupBox6.Controls.Add(this.button54);
             this.groupBox6.Controls.Add(this.Z156);
             this.groupBox6.Controls.Add(this.bGOf);
-            this.groupBox6.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(968, 411);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(237, 181);
@@ -249,7 +247,7 @@
             this.label7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(6, 88);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 22);
+            this.label7.Size = new System.Drawing.Size(149, 45);
             this.label7.TabIndex = 201;
             this.label7.Text = "Actual:";
             // 
@@ -273,7 +271,7 @@
             0,
             0});
             this.Z150.Name = "Z150";
-            this.Z150.Size = new System.Drawing.Size(152, 32);
+            this.Z150.Size = new System.Drawing.Size(152, 56);
             this.Z150.TabIndex = 7;
             this.Z150.Tag = "113";
             this.Z150.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -299,7 +297,7 @@
             this.Z156.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z156.Location = new System.Drawing.Point(79, 93);
             this.Z156.Name = "Z156";
-            this.Z156.Size = new System.Drawing.Size(48, 16);
+            this.Z156.Size = new System.Drawing.Size(91, 32);
             this.Z156.TabIndex = 13;
             this.Z156.Text = "!###";
             // 
@@ -323,7 +321,7 @@
             this.groupBox5.Controls.Add(this.button33);
             this.groupBox5.Controls.Add(this.Z155);
             this.groupBox5.Controls.Add(this.bGOe);
-            this.groupBox5.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(968, 209);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(237, 181);
@@ -337,7 +335,7 @@
             this.label6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 88);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 22);
+            this.label6.Size = new System.Drawing.Size(149, 45);
             this.label6.TabIndex = 200;
             this.label6.Text = "Actual:";
             // 
@@ -361,7 +359,7 @@
             0,
             0});
             this.Z149.Name = "Z149";
-            this.Z149.Size = new System.Drawing.Size(152, 32);
+            this.Z149.Size = new System.Drawing.Size(152, 56);
             this.Z149.TabIndex = 7;
             this.Z149.Tag = "112";
             this.Z149.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -387,7 +385,7 @@
             this.Z155.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z155.Location = new System.Drawing.Point(79, 92);
             this.Z155.Name = "Z155";
-            this.Z155.Size = new System.Drawing.Size(48, 16);
+            this.Z155.Size = new System.Drawing.Size(91, 32);
             this.Z155.TabIndex = 13;
             this.Z155.Text = "!###";
             // 
@@ -411,7 +409,7 @@
             this.groupBox4.Controls.Add(this.button30);
             this.groupBox4.Controls.Add(this.Z151);
             this.groupBox4.Controls.Add(this.bGOa);
-            this.groupBox4.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(838, 6);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(237, 170);
@@ -425,7 +423,7 @@
             this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 88);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 22);
+            this.label5.Size = new System.Drawing.Size(149, 45);
             this.label5.TabIndex = 199;
             this.label5.Text = "Actual:";
             // 
@@ -449,7 +447,7 @@
             0,
             0});
             this.Z145.Name = "Z145";
-            this.Z145.Size = new System.Drawing.Size(152, 32);
+            this.Z145.Size = new System.Drawing.Size(152, 56);
             this.Z145.TabIndex = 7;
             this.Z145.Tag = "108";
             this.Z145.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -475,7 +473,7 @@
             this.Z151.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z151.Location = new System.Drawing.Point(79, 92);
             this.Z151.Name = "Z151";
-            this.Z151.Size = new System.Drawing.Size(48, 16);
+            this.Z151.Size = new System.Drawing.Size(91, 32);
             this.Z151.TabIndex = 13;
             this.Z151.Text = "!###";
             // 
@@ -499,7 +497,7 @@
             this.groupBox3.Controls.Add(this.button27);
             this.groupBox3.Controls.Add(this.Z152);
             this.groupBox3.Controls.Add(this.bGOb);
-            this.groupBox3.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(582, 6);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(237, 170);
@@ -513,7 +511,7 @@
             this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(6, 88);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 22);
+            this.label4.Size = new System.Drawing.Size(149, 45);
             this.label4.TabIndex = 198;
             this.label4.Text = "Actual:";
             // 
@@ -537,7 +535,7 @@
             0,
             0});
             this.Z146.Name = "Z146";
-            this.Z146.Size = new System.Drawing.Size(152, 32);
+            this.Z146.Size = new System.Drawing.Size(152, 56);
             this.Z146.TabIndex = 7;
             this.Z146.Tag = "109";
             this.Z146.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -563,7 +561,7 @@
             this.Z152.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z152.Location = new System.Drawing.Point(78, 92);
             this.Z152.Name = "Z152";
-            this.Z152.Size = new System.Drawing.Size(48, 16);
+            this.Z152.Size = new System.Drawing.Size(91, 32);
             this.Z152.TabIndex = 13;
             this.Z152.Text = "!###";
             this.Z152.Click += new System.EventHandler(this.label20_Click);
@@ -588,7 +586,7 @@
             this.groupBox2.Controls.Add(this.button24);
             this.groupBox2.Controls.Add(this.Z153);
             this.groupBox2.Controls.Add(this.bGOc);
-            this.groupBox2.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(288, 6);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(237, 170);
@@ -602,7 +600,7 @@
             this.label3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(2, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 22);
+            this.label3.Size = new System.Drawing.Size(149, 45);
             this.label3.TabIndex = 197;
             this.label3.Text = "Actual:";
             // 
@@ -626,7 +624,7 @@
             0,
             0});
             this.Z147.Name = "Z147";
-            this.Z147.Size = new System.Drawing.Size(152, 32);
+            this.Z147.Size = new System.Drawing.Size(152, 56);
             this.Z147.TabIndex = 7;
             this.Z147.Tag = "110";
             this.Z147.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -652,7 +650,7 @@
             this.Z153.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z153.Location = new System.Drawing.Point(74, 88);
             this.Z153.Name = "Z153";
-            this.Z153.Size = new System.Drawing.Size(48, 16);
+            this.Z153.Size = new System.Drawing.Size(91, 32);
             this.Z153.TabIndex = 13;
             this.Z153.Text = "!###";
             // 
@@ -676,7 +674,7 @@
             this.groupBox1.Controls.Add(this.button22);
             this.groupBox1.Controls.Add(this.Z154);
             this.groupBox1.Controls.Add(this.bGOd);
-            this.groupBox1.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(45, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(237, 170);
@@ -690,7 +688,7 @@
             this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(1, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 22);
+            this.label2.Size = new System.Drawing.Size(149, 45);
             this.label2.TabIndex = 196;
             this.label2.Text = "Actual:";
             // 
@@ -714,7 +712,7 @@
             0,
             0});
             this.Z148.Name = "Z148";
-            this.Z148.Size = new System.Drawing.Size(152, 32);
+            this.Z148.Size = new System.Drawing.Size(152, 56);
             this.Z148.TabIndex = 7;
             this.Z148.Tag = "111";
             this.Z148.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -740,7 +738,7 @@
             this.Z154.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z154.Location = new System.Drawing.Point(74, 88);
             this.Z154.Name = "Z154";
-            this.Z154.Size = new System.Drawing.Size(48, 16);
+            this.Z154.Size = new System.Drawing.Size(91, 32);
             this.Z154.TabIndex = 13;
             this.Z154.Text = "!###";
             // 
@@ -774,9 +772,9 @@
             this.tabPage3.Controls.Add(this.groupBox9);
             this.tabPage3.Controls.Add(this.groupBox8);
             this.tabPage3.Controls.Add(this.pictureBox3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
+            this.tabPage3.Location = new System.Drawing.Point(8, 51);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1211, 689);
+            this.tabPage3.Size = new System.Drawing.Size(1203, 663);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Folder";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -786,7 +784,7 @@
             this.groupBox7.Controls.Add(this.label8);
             this.groupBox7.Controls.Add(this.ZZ66);
             this.groupBox7.Controls.Add(this.Z66);
-            this.groupBox7.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(239, 99);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(181, 121);
@@ -800,7 +798,7 @@
             this.label8.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(3, 80);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 22);
+            this.label8.Size = new System.Drawing.Size(149, 45);
             this.label8.TabIndex = 14;
             this.label8.Text = "Actual:";
             // 
@@ -819,7 +817,7 @@
             0,
             -2147483648});
             this.ZZ66.Name = "ZZ66";
-            this.ZZ66.Size = new System.Drawing.Size(152, 32);
+            this.ZZ66.Size = new System.Drawing.Size(152, 56);
             this.ZZ66.TabIndex = 7;
             this.ZZ66.Tag = "56";
             this.ZZ66.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -833,7 +831,7 @@
             this.Z66.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z66.Location = new System.Drawing.Point(75, 85);
             this.Z66.Name = "Z66";
-            this.Z66.Size = new System.Drawing.Size(38, 16);
+            this.Z66.Size = new System.Drawing.Size(72, 32);
             this.Z66.TabIndex = 13;
             this.Z66.Text = "!##";
             // 
@@ -845,7 +843,7 @@
             this.groupBox11.Controls.Add(this.button68);
             this.groupBox11.Controls.Add(this.Z57);
             this.groupBox11.Controls.Add(this.button69);
-            this.groupBox11.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox11.Location = new System.Drawing.Point(124, 484);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(237, 178);
@@ -859,7 +857,7 @@
             this.label12.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(1, 86);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 22);
+            this.label12.Size = new System.Drawing.Size(149, 45);
             this.label12.TabIndex = 198;
             this.label12.Text = "Actual:";
             // 
@@ -878,7 +876,7 @@
             this.Z52.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z52.Location = new System.Drawing.Point(65, 41);
             this.Z52.Name = "Z52";
-            this.Z52.Size = new System.Drawing.Size(152, 32);
+            this.Z52.Size = new System.Drawing.Size(152, 56);
             this.Z52.TabIndex = 7;
             this.Z52.Tag = "36";
             this.Z52.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -904,7 +902,7 @@
             this.Z57.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z57.Location = new System.Drawing.Point(72, 90);
             this.Z57.Name = "Z57";
-            this.Z57.Size = new System.Drawing.Size(38, 16);
+            this.Z57.Size = new System.Drawing.Size(72, 32);
             this.Z57.TabIndex = 13;
             this.Z57.Text = "!##";
             // 
@@ -928,7 +926,7 @@
             this.groupBox10.Controls.Add(this.button65);
             this.groupBox10.Controls.Add(this.Z58);
             this.groupBox10.Controls.Add(this.button66);
-            this.groupBox10.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox10.Location = new System.Drawing.Point(971, 7);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(237, 180);
@@ -942,7 +940,7 @@
             this.label9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(1, 89);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 22);
+            this.label9.Size = new System.Drawing.Size(149, 45);
             this.label9.TabIndex = 15;
             this.label9.Text = "Actual:";
             // 
@@ -961,7 +959,7 @@
             this.Z53.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z53.Location = new System.Drawing.Point(65, 41);
             this.Z53.Name = "Z53";
-            this.Z53.Size = new System.Drawing.Size(152, 32);
+            this.Z53.Size = new System.Drawing.Size(152, 56);
             this.Z53.TabIndex = 7;
             this.Z53.Tag = "37";
             this.Z53.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -987,7 +985,7 @@
             this.Z58.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z58.Location = new System.Drawing.Point(73, 94);
             this.Z58.Name = "Z58";
-            this.Z58.Size = new System.Drawing.Size(38, 16);
+            this.Z58.Size = new System.Drawing.Size(72, 32);
             this.Z58.TabIndex = 13;
             this.Z58.Text = "!##";
             // 
@@ -1011,7 +1009,7 @@
             this.groupBox9.Controls.Add(this.button62);
             this.groupBox9.Controls.Add(this.Z60);
             this.groupBox9.Controls.Add(this.button63);
-            this.groupBox9.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(971, 215);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(237, 175);
@@ -1025,7 +1023,7 @@
             this.label10.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(1, 86);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 22);
+            this.label10.Size = new System.Drawing.Size(149, 45);
             this.label10.TabIndex = 196;
             this.label10.Text = "Actual:";
             // 
@@ -1044,7 +1042,7 @@
             this.Z55.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z55.Location = new System.Drawing.Point(65, 41);
             this.Z55.Name = "Z55";
-            this.Z55.Size = new System.Drawing.Size(152, 32);
+            this.Z55.Size = new System.Drawing.Size(152, 56);
             this.Z55.TabIndex = 7;
             this.Z55.Tag = "39";
             this.Z55.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1070,7 +1068,7 @@
             this.Z60.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z60.Location = new System.Drawing.Point(73, 91);
             this.Z60.Name = "Z60";
-            this.Z60.Size = new System.Drawing.Size(38, 16);
+            this.Z60.Size = new System.Drawing.Size(72, 32);
             this.Z60.TabIndex = 13;
             this.Z60.Text = "!##";
             // 
@@ -1094,7 +1092,7 @@
             this.groupBox8.Controls.Add(this.button59);
             this.groupBox8.Controls.Add(this.Z59);
             this.groupBox8.Controls.Add(this.button60);
-            this.groupBox8.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.Location = new System.Drawing.Point(971, 423);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(237, 179);
@@ -1108,7 +1106,7 @@
             this.label11.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(0, 90);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 22);
+            this.label11.Size = new System.Drawing.Size(149, 45);
             this.label11.TabIndex = 197;
             this.label11.Text = "Actual:";
             // 
@@ -1127,7 +1125,7 @@
             this.Z54.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z54.Location = new System.Drawing.Point(65, 41);
             this.Z54.Name = "Z54";
-            this.Z54.Size = new System.Drawing.Size(152, 32);
+            this.Z54.Size = new System.Drawing.Size(152, 56);
             this.Z54.TabIndex = 7;
             this.Z54.Tag = "38";
             this.Z54.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1153,7 +1151,7 @@
             this.Z59.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z59.Location = new System.Drawing.Point(73, 95);
             this.Z59.Name = "Z59";
-            this.Z59.Size = new System.Drawing.Size(38, 16);
+            this.Z59.Size = new System.Drawing.Size(72, 32);
             this.Z59.TabIndex = 13;
             this.Z59.Text = "!##";
             // 
@@ -1187,13 +1185,14 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectBtn,
             this.toolStripSeparator1});
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.toolStrip1.Location = new System.Drawing.Point(5, 5);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1572, 23);
+            this.toolStrip1.Size = new System.Drawing.Size(1572, 39);
             this.toolStrip1.TabIndex = 176;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -1203,7 +1202,7 @@
             this.connectBtn.Image = ((System.Drawing.Image)(resources.GetObject("connectBtn.Image")));
             this.connectBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.connectBtn.Name = "connectBtn";
-            this.connectBtn.Size = new System.Drawing.Size(23, 20);
+            this.connectBtn.Size = new System.Drawing.Size(36, 36);
             this.connectBtn.Text = "Conectar";
             this.connectBtn.Click += new System.EventHandler(this.connectBtn_Click);
             // 
@@ -1211,23 +1210,6 @@
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 23);
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.statusStrip1.Location = new System.Drawing.Point(5, 838);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1572, 22);
-            this.statusStrip1.TabIndex = 177;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
             // panel1
             // 
@@ -1242,9 +1224,9 @@
             this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button18.Image = global::FolderHmi.Properties.Resources.system_log_out;
             this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(1256, 786);
+            this.button18.Location = new System.Drawing.Point(1256, 762);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(230, 76);
+            this.button18.Size = new System.Drawing.Size(230, 52);
             this.button18.TabIndex = 173;
             this.button18.Text = "Salir";
             this.button18.UseVisualStyleBackColor = true;
@@ -1255,9 +1237,9 @@
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.Image = global::FolderHmi.Properties.Resources.software_update_urgent;
             this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(493, 786);
+            this.button16.Location = new System.Drawing.Point(493, 762);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(230, 76);
+            this.button16.Size = new System.Drawing.Size(230, 52);
             this.button16.TabIndex = 171;
             this.button16.Text = "      Alarmas";
             this.button16.UseVisualStyleBackColor = true;
@@ -1268,9 +1250,9 @@
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.Image = global::FolderHmi.Properties.Resources.preferences_system;
             this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(893, 786);
+            this.button14.Location = new System.Drawing.Point(893, 762);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(230, 76);
+            this.button14.Size = new System.Drawing.Size(230, 52);
             this.button14.TabIndex = 168;
             this.button14.Text = "      Configuraciones";
             this.button14.UseVisualStyleBackColor = true;
@@ -1281,9 +1263,9 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::FolderHmi.Properties.Resources.x_office_document_template;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(102, 786);
+            this.button1.Location = new System.Drawing.Point(102, 762);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 76);
+            this.button1.Size = new System.Drawing.Size(230, 52);
             this.button1.TabIndex = 10;
             this.button1.Text = "     Calibrar";
             this.button1.UseVisualStyleBackColor = true;
@@ -1302,11 +1284,11 @@
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(73, 242);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(206, 39);
+            this.textBox1.Size = new System.Drawing.Size(206, 69);
             this.textBox1.TabIndex = 276;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1334,10 +1316,11 @@
             this.button3.TabIndex = 278;
             this.button3.Text = "     Home";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MainWin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(1582, 865);
@@ -1345,7 +1328,6 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button19);
@@ -1408,8 +1390,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1432,8 +1412,6 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton connectBtn;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.NumericUpDown Z148;

@@ -70,6 +70,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Calibrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Calibrar.Designer.cs">
+      <DependentUpon>Calibrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Ethernet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,11 +157,17 @@
     <EmbeddedResource Include="Forms\Bosquejo.resx">
       <DependentUpon>Bosquejo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Calibrar.resx">
+      <DependentUpon>Calibrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Configuraciones.resx">
       <DependentUpon>Configuraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Ethernet.resx">
       <DependentUpon>Ethernet.cs</DependentUpon>

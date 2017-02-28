@@ -7,24 +7,27 @@ using System.Windows.Forms;
 
 namespace FolderHmi
 {
-    class Tag
+    public class Tag
     {
-        public decimal Value { get; set; }
-        public Control Actual { get; set; }
-        public Control Objetivo { get; set; }
-        public Control MoverA { get; set; }
+        public object Value { get; set; }
+        public int Handle { get; set; }
+        public int FormId { get; set; }
+        public int Corr { get; set; }
+        public string Name { get; set; }
+        public DateTime Timestamp { get; set; }
 
         public Tag()
         {
 
         }
 
-        public Tag(decimal value, Control act, Control obj, Control mova)
+        public Tag(int handle, string name, int formid, int corr)
         {
-            Value = value;
-            Actual = act;
-            Objetivo = obj;
-            MoverA = mova;
+            Handle = handle;
+            Name = name;
+            FormId = formid;
+            Corr = corr;
+            Timestamp = DateTime.Now;
         }
     }
 }

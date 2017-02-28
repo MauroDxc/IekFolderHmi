@@ -27,10 +27,10 @@ namespace FolderHmi.Forms
             Button b = sender as Button;
             b.Enabled = false;
             int handle = int.Parse(b.Name.Replace("B", ""));
-            object prevValue = Module1.ValueList.GetValue(handle);
+            object prevValue = Module1.TagList[handle].Value;
             if (prevValue.GetType() == typeof(bool))
             {
-                Module1.ValueList.SetValue(!(bool)prevValue, handle);
+                Module1.TagList[handle].Value = !(bool)prevValue;
                 OpcManager.Instance.Write(handle);
             }
             b.Enabled = true;

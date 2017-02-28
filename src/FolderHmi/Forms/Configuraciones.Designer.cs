@@ -101,6 +101,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.Z127 = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.Z128 = new System.Windows.Forms.Button();
             this.Z129 = new System.Windows.Forms.Button();
             this.Z130 = new System.Windows.Forms.Button();
@@ -120,7 +121,8 @@
             this.Z83 = new System.Windows.Forms.Button();
             this.Z82 = new System.Windows.Forms.Button();
             this.Z81 = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Z25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Z110)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Z109)).BeginInit();
@@ -146,11 +148,11 @@
             // label107
             // 
             this.label107.AutoSize = true;
-            this.label107.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label107.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label107.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label107.Location = new System.Drawing.Point(642, 56);
             this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(104, 24);
+            this.label107.Size = new System.Drawing.Size(191, 64);
             this.label107.TabIndex = 285;
             this.label107.Text = "Cambiar a";
             // 
@@ -160,7 +162,7 @@
             this.label108.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label108.Location = new System.Drawing.Point(782, 354);
             this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(35, 20);
+            this.label108.Size = new System.Drawing.Size(71, 37);
             this.label108.TabIndex = 284;
             this.label108.Text = "mm";
             // 
@@ -170,7 +172,7 @@
             this.label109.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label109.Location = new System.Drawing.Point(782, 313);
             this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(35, 20);
+            this.label109.Size = new System.Drawing.Size(71, 37);
             this.label109.TabIndex = 283;
             this.label109.Text = "mm";
             // 
@@ -180,7 +182,7 @@
             this.label110.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label110.Location = new System.Drawing.Point(782, 270);
             this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(35, 20);
+            this.label110.Size = new System.Drawing.Size(71, 37);
             this.label110.TabIndex = 282;
             this.label110.Text = "mm";
             // 
@@ -190,7 +192,7 @@
             this.label111.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label111.Location = new System.Drawing.Point(782, 227);
             this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(35, 20);
+            this.label111.Size = new System.Drawing.Size(71, 37);
             this.label111.TabIndex = 281;
             this.label111.Text = "mm";
             // 
@@ -200,7 +202,7 @@
             this.label112.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label112.Location = new System.Drawing.Point(782, 184);
             this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(35, 20);
+            this.label112.Size = new System.Drawing.Size(71, 37);
             this.label112.TabIndex = 280;
             this.label112.Text = "mm";
             // 
@@ -210,7 +212,7 @@
             this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label113.Location = new System.Drawing.Point(782, 138);
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(35, 20);
+            this.label113.Size = new System.Drawing.Size(71, 37);
             this.label113.TabIndex = 279;
             this.label113.Text = "mm";
             // 
@@ -220,7 +222,7 @@
             this.label114.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label114.Location = new System.Drawing.Point(782, 98);
             this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(35, 20);
+            this.label114.Size = new System.Drawing.Size(71, 37);
             this.label114.TabIndex = 278;
             this.label114.Text = "mm";
             // 
@@ -236,11 +238,12 @@
             0,
             0});
             this.Z25.Name = "Z25";
-            this.Z25.Size = new System.Drawing.Size(143, 23);
-            this.Z25.TabIndex = 277;
+            this.Z25.Size = new System.Drawing.Size(143, 39);
+            this.Z25.TabIndex = 20;
             this.Z25.Tag = "16";
             this.Z25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z25.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z25.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z110
             // 
@@ -254,11 +257,12 @@
             0,
             0});
             this.Z110.Name = "Z110";
-            this.Z110.Size = new System.Drawing.Size(143, 23);
-            this.Z110.TabIndex = 276;
+            this.Z110.Size = new System.Drawing.Size(143, 39);
+            this.Z110.TabIndex = 12;
             this.Z110.Tag = "83";
             this.Z110.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z110.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z110.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z109
             // 
@@ -272,11 +276,12 @@
             0,
             0});
             this.Z109.Name = "Z109";
-            this.Z109.Size = new System.Drawing.Size(143, 23);
-            this.Z109.TabIndex = 275;
+            this.Z109.Size = new System.Drawing.Size(143, 39);
+            this.Z109.TabIndex = 10;
             this.Z109.Tag = "82";
             this.Z109.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z109.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z109.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z108
             // 
@@ -290,11 +295,12 @@
             0,
             0});
             this.Z108.Name = "Z108";
-            this.Z108.Size = new System.Drawing.Size(143, 23);
-            this.Z108.TabIndex = 274;
+            this.Z108.Size = new System.Drawing.Size(143, 39);
+            this.Z108.TabIndex = 8;
             this.Z108.Tag = "81";
             this.Z108.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z108.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z108.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z107
             // 
@@ -308,11 +314,12 @@
             0,
             0});
             this.Z107.Name = "Z107";
-            this.Z107.Size = new System.Drawing.Size(143, 23);
-            this.Z107.TabIndex = 273;
+            this.Z107.Size = new System.Drawing.Size(143, 39);
+            this.Z107.TabIndex = 6;
             this.Z107.Tag = "80";
             this.Z107.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z107.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z107.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z106
             // 
@@ -326,11 +333,12 @@
             0,
             0});
             this.Z106.Name = "Z106";
-            this.Z106.Size = new System.Drawing.Size(143, 23);
-            this.Z106.TabIndex = 272;
+            this.Z106.Size = new System.Drawing.Size(143, 39);
+            this.Z106.TabIndex = 4;
             this.Z106.Tag = "79";
             this.Z106.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z106.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z106.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z105
             // 
@@ -344,31 +352,32 @@
             0,
             0});
             this.Z105.Name = "Z105";
-            this.Z105.Size = new System.Drawing.Size(143, 23);
-            this.Z105.TabIndex = 271;
+            this.Z105.Size = new System.Drawing.Size(143, 39);
+            this.Z105.TabIndex = 2;
             this.Z105.Tag = "78";
             this.Z105.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z105.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z105.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // label106
             // 
             this.label106.AutoSize = true;
-            this.label106.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label106.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label106.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label106.Location = new System.Drawing.Point(373, 57);
             this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(104, 24);
+            this.label106.Size = new System.Drawing.Size(191, 64);
             this.label106.TabIndex = 270;
             this.label106.Text = "Cambiar a";
             // 
             // label105
             // 
             this.label105.AutoSize = true;
-            this.label105.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label105.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label105.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label105.Location = new System.Drawing.Point(171, 63);
             this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(70, 24);
+            this.label105.Size = new System.Drawing.Size(131, 64);
             this.label105.TabIndex = 269;
             this.label105.Text = "Actual";
             // 
@@ -384,11 +393,13 @@
             0,
             0});
             this.Z44.Name = "Z44";
-            this.Z44.Size = new System.Drawing.Size(143, 23);
-            this.Z44.TabIndex = 268;
+            this.Z44.Size = new System.Drawing.Size(143, 39);
+            this.Z44.TabIndex = 19;
             this.Z44.Tag = "27";
             this.Z44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Z44.ThousandsSeparator = true;
             this.Z44.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z44.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z134
             // 
@@ -402,11 +413,12 @@
             0,
             0});
             this.Z134.Name = "Z134";
-            this.Z134.Size = new System.Drawing.Size(143, 23);
-            this.Z134.TabIndex = 267;
+            this.Z134.Size = new System.Drawing.Size(143, 39);
+            this.Z134.TabIndex = 11;
             this.Z134.Tag = "97";
             this.Z134.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z134.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z134.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z133
             // 
@@ -420,11 +432,12 @@
             0,
             0});
             this.Z133.Name = "Z133";
-            this.Z133.Size = new System.Drawing.Size(143, 23);
-            this.Z133.TabIndex = 266;
+            this.Z133.Size = new System.Drawing.Size(143, 39);
+            this.Z133.TabIndex = 9;
             this.Z133.Tag = "96";
             this.Z133.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z133.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z133.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z138
             // 
@@ -438,11 +451,12 @@
             0,
             0});
             this.Z138.Name = "Z138";
-            this.Z138.Size = new System.Drawing.Size(143, 23);
-            this.Z138.TabIndex = 265;
+            this.Z138.Size = new System.Drawing.Size(143, 39);
+            this.Z138.TabIndex = 7;
             this.Z138.Tag = "101";
             this.Z138.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z138.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z138.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z137
             // 
@@ -456,11 +470,12 @@
             0,
             0});
             this.Z137.Name = "Z137";
-            this.Z137.Size = new System.Drawing.Size(143, 23);
-            this.Z137.TabIndex = 264;
+            this.Z137.Size = new System.Drawing.Size(143, 39);
+            this.Z137.TabIndex = 5;
             this.Z137.Tag = "100";
             this.Z137.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z137.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z137.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z136
             // 
@@ -474,11 +489,12 @@
             0,
             0});
             this.Z136.Name = "Z136";
-            this.Z136.Size = new System.Drawing.Size(143, 23);
-            this.Z136.TabIndex = 263;
+            this.Z136.Size = new System.Drawing.Size(143, 39);
+            this.Z136.TabIndex = 3;
             this.Z136.Tag = "99";
             this.Z136.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z136.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z136.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z135
             // 
@@ -492,42 +508,43 @@
             0,
             0});
             this.Z135.Name = "Z135";
-            this.Z135.Size = new System.Drawing.Size(143, 23);
-            this.Z135.TabIndex = 262;
+            this.Z135.Size = new System.Drawing.Size(143, 39);
+            this.Z135.TabIndex = 1;
             this.Z135.Tag = "98";
             this.Z135.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z135.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z135.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // label81
             // 
             this.label81.AutoSize = true;
-            this.label81.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label81.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label81.Location = new System.Drawing.Point(21, 468);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(107, 24);
+            this.label81.Size = new System.Drawing.Size(189, 64);
             this.label81.TabIndex = 247;
             this.label81.Text = "Brazo CDR";
             // 
             // label75
             // 
             this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label75.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label75.Location = new System.Drawing.Point(19, 268);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(106, 24);
+            this.label75.Size = new System.Drawing.Size(191, 64);
             this.label75.TabIndex = 246;
             this.label75.Text = "Registro E";
             // 
             // label76
             // 
             this.label76.AutoSize = true;
-            this.label76.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label76.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label76.Location = new System.Drawing.Point(19, 227);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(87, 24);
+            this.label76.Size = new System.Drawing.Size(158, 64);
             this.label76.TabIndex = 245;
             this.label76.Text = "Cuello D";
             // 
@@ -538,81 +555,81 @@
             this.label77.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label77.Location = new System.Drawing.Point(21, 224);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(0, 24);
+            this.label77.Size = new System.Drawing.Size(0, 48);
             this.label77.TabIndex = 244;
             // 
             // label78
             // 
             this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label78.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label78.Location = new System.Drawing.Point(19, 184);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(87, 24);
+            this.label78.Size = new System.Drawing.Size(153, 64);
             this.label78.TabIndex = 243;
             this.label78.Text = "Cuello C";
             // 
             // label79
             // 
             this.label79.AutoSize = true;
-            this.label79.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label79.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label79.Location = new System.Drawing.Point(21, 139);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(87, 24);
+            this.label79.Size = new System.Drawing.Size(157, 64);
             this.label79.TabIndex = 242;
             this.label79.Text = "Cuello B";
             // 
             // label80
             // 
             this.label80.AutoSize = true;
-            this.label80.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label80.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label80.Location = new System.Drawing.Point(19, 95);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(87, 24);
+            this.label80.Size = new System.Drawing.Size(157, 64);
             this.label80.TabIndex = 241;
             this.label80.Text = "Cuello A";
             // 
             // label82
             // 
             this.label82.AutoSize = true;
-            this.label82.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label82.Location = new System.Drawing.Point(619, 15);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(171, 27);
+            this.label82.Size = new System.Drawing.Size(282, 64);
             this.label82.TabIndex = 311;
             this.label82.Text = "Limite Superior";
             // 
             // label83
             // 
             this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label83.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label83.Location = new System.Drawing.Point(355, 15);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(158, 27);
+            this.label83.Size = new System.Drawing.Size(267, 64);
             this.label83.TabIndex = 310;
             this.label83.Text = "Limite Inferior";
             // 
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label73.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label73.Location = new System.Drawing.Point(159, 47);
+            this.label73.Location = new System.Drawing.Point(159, 41);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(88, 24);
+            this.label73.Size = new System.Drawing.Size(166, 64);
             this.label73.TabIndex = 312;
             this.label73.Text = "Posición\r\n";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(21, 311);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 24);
+            this.label1.Size = new System.Drawing.Size(191, 64);
             this.label1.TabIndex = 313;
             this.label1.Text = "Registro F";
             // 
@@ -622,7 +639,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(782, 394);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 20);
+            this.label3.Size = new System.Drawing.Size(71, 37);
             this.label3.TabIndex = 320;
             this.label3.Text = "mm";
             // 
@@ -638,11 +655,12 @@
             0,
             0});
             this.Z26.Name = "Z26";
-            this.Z26.Size = new System.Drawing.Size(143, 23);
-            this.Z26.TabIndex = 319;
+            this.Z26.Size = new System.Drawing.Size(143, 39);
+            this.Z26.TabIndex = 18;
             this.Z26.Tag = "17";
             this.Z26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z26.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z26.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z45
             // 
@@ -656,20 +674,21 @@
             0,
             0});
             this.Z45.Name = "Z45";
-            this.Z45.Size = new System.Drawing.Size(143, 23);
-            this.Z45.TabIndex = 318;
+            this.Z45.Size = new System.Drawing.Size(143, 39);
+            this.Z45.TabIndex = 17;
             this.Z45.Tag = "28";
             this.Z45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z45.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z45.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label4.Location = new System.Drawing.Point(19, 434);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 24);
+            this.label4.Size = new System.Drawing.Size(177, 64);
             this.label4.TabIndex = 315;
             this.label4.Text = "Brazo GM";
             // 
@@ -679,7 +698,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(782, 435);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 20);
+            this.label5.Size = new System.Drawing.Size(71, 37);
             this.label5.TabIndex = 329;
             this.label5.Text = "mm";
             // 
@@ -695,11 +714,12 @@
             0,
             0});
             this.Z27.Name = "Z27";
-            this.Z27.Size = new System.Drawing.Size(143, 23);
-            this.Z27.TabIndex = 328;
+            this.Z27.Size = new System.Drawing.Size(143, 39);
+            this.Z27.TabIndex = 14;
             this.Z27.Tag = "18";
             this.Z27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z27.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z27.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z46
             // 
@@ -714,20 +734,21 @@
             0,
             0});
             this.Z46.Name = "Z46";
-            this.Z46.Size = new System.Drawing.Size(143, 23);
-            this.Z46.TabIndex = 327;
+            this.Z46.Size = new System.Drawing.Size(143, 39);
+            this.Z46.TabIndex = 13;
             this.Z46.Tag = "29";
             this.Z46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z46.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z46.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label6.Location = new System.Drawing.Point(19, 356);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 24);
+            this.label6.Size = new System.Drawing.Size(169, 64);
             this.label6.TabIndex = 324;
             this.label6.Text = "Brazo LO";
             // 
@@ -737,7 +758,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(782, 473);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 20);
+            this.label7.Size = new System.Drawing.Size(71, 37);
             this.label7.TabIndex = 338;
             this.label7.Text = "mm";
             // 
@@ -753,11 +774,12 @@
             0,
             0});
             this.Z28.Name = "Z28";
-            this.Z28.Size = new System.Drawing.Size(143, 23);
-            this.Z28.TabIndex = 337;
+            this.Z28.Size = new System.Drawing.Size(143, 39);
+            this.Z28.TabIndex = 16;
             this.Z28.Tag = "19";
             this.Z28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z28.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z28.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z47
             // 
@@ -771,26 +793,28 @@
             0,
             0});
             this.Z47.Name = "Z47";
-            this.Z47.Size = new System.Drawing.Size(143, 23);
-            this.Z47.TabIndex = 336;
+            this.Z47.Size = new System.Drawing.Size(143, 39);
+            this.Z47.TabIndex = 15;
             this.Z47.Tag = "30";
             this.Z47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Z47.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.Z47.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label8.Location = new System.Drawing.Point(19, 397);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 24);
+            this.label8.Size = new System.Drawing.Size(165, 64);
             this.label8.TabIndex = 333;
             this.label8.Text = "Brazo LT";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(332, 53);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
@@ -803,7 +827,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(518, 472);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 20);
+            this.label2.Size = new System.Drawing.Size(71, 37);
             this.label2.TabIndex = 352;
             this.label2.Text = "mm";
             // 
@@ -813,7 +837,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(518, 434);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 20);
+            this.label9.Size = new System.Drawing.Size(71, 37);
             this.label9.TabIndex = 351;
             this.label9.Text = "mm";
             // 
@@ -823,7 +847,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(518, 393);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(35, 20);
+            this.label10.Size = new System.Drawing.Size(71, 37);
             this.label10.TabIndex = 350;
             this.label10.Text = "mm";
             // 
@@ -833,7 +857,7 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(518, 353);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 20);
+            this.label11.Size = new System.Drawing.Size(71, 37);
             this.label11.TabIndex = 349;
             this.label11.Text = "mm";
             // 
@@ -843,7 +867,7 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(518, 312);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(35, 20);
+            this.label12.Size = new System.Drawing.Size(71, 37);
             this.label12.TabIndex = 348;
             this.label12.Text = "mm";
             // 
@@ -853,7 +877,7 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(518, 269);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(35, 20);
+            this.label13.Size = new System.Drawing.Size(71, 37);
             this.label13.TabIndex = 347;
             this.label13.Text = "mm";
             // 
@@ -863,7 +887,7 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(518, 226);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(35, 20);
+            this.label14.Size = new System.Drawing.Size(71, 37);
             this.label14.TabIndex = 346;
             this.label14.Text = "mm";
             // 
@@ -873,7 +897,7 @@
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(518, 183);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(35, 20);
+            this.label15.Size = new System.Drawing.Size(71, 37);
             this.label15.TabIndex = 345;
             this.label15.Text = "mm";
             // 
@@ -883,7 +907,7 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(518, 137);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(35, 20);
+            this.label16.Size = new System.Drawing.Size(71, 37);
             this.label16.TabIndex = 344;
             this.label16.Text = "mm";
             // 
@@ -893,7 +917,7 @@
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(518, 97);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(35, 20);
+            this.label17.Size = new System.Drawing.Size(71, 37);
             this.label17.TabIndex = 343;
             this.label17.Text = "mm";
             // 
@@ -904,7 +928,7 @@
             this.Z151.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Z151.Location = new System.Drawing.Point(187, 106);
             this.Z151.Name = "Z151";
-            this.Z151.Size = new System.Drawing.Size(31, 13);
+            this.Z151.Size = new System.Drawing.Size(60, 26);
             this.Z151.TabIndex = 353;
             this.Z151.Text = "!##";
             this.Z151.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -916,7 +940,7 @@
             this.Z152.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Z152.Location = new System.Drawing.Point(187, 149);
             this.Z152.Name = "Z152";
-            this.Z152.Size = new System.Drawing.Size(31, 13);
+            this.Z152.Size = new System.Drawing.Size(60, 26);
             this.Z152.TabIndex = 354;
             this.Z152.Text = "!##";
             this.Z152.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -928,7 +952,7 @@
             this.Z154.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Z154.Location = new System.Drawing.Point(187, 235);
             this.Z154.Name = "Z154";
-            this.Z154.Size = new System.Drawing.Size(31, 13);
+            this.Z154.Size = new System.Drawing.Size(60, 26);
             this.Z154.TabIndex = 356;
             this.Z154.Text = "!##";
             this.Z154.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -940,7 +964,7 @@
             this.Z153.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Z153.Location = new System.Drawing.Point(187, 194);
             this.Z153.Name = "Z153";
-            this.Z153.Size = new System.Drawing.Size(31, 13);
+            this.Z153.Size = new System.Drawing.Size(60, 26);
             this.Z153.TabIndex = 355;
             this.Z153.Text = "!##";
             this.Z153.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -952,7 +976,7 @@
             this.Z156.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Z156.Location = new System.Drawing.Point(187, 319);
             this.Z156.Name = "Z156";
-            this.Z156.Size = new System.Drawing.Size(31, 13);
+            this.Z156.Size = new System.Drawing.Size(60, 26);
             this.Z156.TabIndex = 358;
             this.Z156.Text = "!##";
             this.Z156.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -964,7 +988,7 @@
             this.Z155.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Z155.Location = new System.Drawing.Point(187, 278);
             this.Z155.Name = "Z155";
-            this.Z155.Size = new System.Drawing.Size(31, 13);
+            this.Z155.Size = new System.Drawing.Size(60, 26);
             this.Z155.TabIndex = 357;
             this.Z155.Text = "!##";
             this.Z155.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -976,7 +1000,7 @@
             this.Z58.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Z58.Location = new System.Drawing.Point(187, 438);
             this.Z58.Name = "Z58";
-            this.Z58.Size = new System.Drawing.Size(31, 13);
+            this.Z58.Size = new System.Drawing.Size(60, 26);
             this.Z58.TabIndex = 360;
             this.Z58.Text = "!##";
             this.Z58.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -988,7 +1012,7 @@
             this.Z57.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Z57.Location = new System.Drawing.Point(187, 475);
             this.Z57.Name = "Z57";
-            this.Z57.Size = new System.Drawing.Size(31, 13);
+            this.Z57.Size = new System.Drawing.Size(60, 26);
             this.Z57.TabIndex = 359;
             this.Z57.Text = "!##";
             this.Z57.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1000,7 +1024,7 @@
             this.Z60.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Z60.Location = new System.Drawing.Point(187, 402);
             this.Z60.Name = "Z60";
-            this.Z60.Size = new System.Drawing.Size(31, 13);
+            this.Z60.Size = new System.Drawing.Size(60, 26);
             this.Z60.TabIndex = 362;
             this.Z60.Text = "!##";
             this.Z60.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1012,7 +1036,7 @@
             this.Z59.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Z59.Location = new System.Drawing.Point(187, 365);
             this.Z59.Name = "Z59";
-            this.Z59.Size = new System.Drawing.Size(31, 13);
+            this.Z59.Size = new System.Drawing.Size(60, 26);
             this.Z59.TabIndex = 361;
             this.Z59.Text = "!##";
             this.Z59.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1020,22 +1044,22 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label18.Location = new System.Drawing.Point(887, 56);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(132, 24);
+            this.label18.Size = new System.Drawing.Size(246, 64);
             this.label18.TabIndex = 373;
             this.label18.Text = "Referenciado";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Arial Black", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Nokia Standard Multiscript", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label19.Location = new System.Drawing.Point(1051, 57);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(98, 24);
+            this.label19.Size = new System.Drawing.Size(183, 64);
             this.label19.TabIndex = 374;
             this.label19.Text = "Calibrado";
             // 
@@ -1052,6 +1076,14 @@
             this.Z127.Text = " ";
             this.Z127.UseVisualStyleBackColor = true;
             this.Z127.Click += new System.EventHandler(this.button_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "onebit_33.png");
+            this.imageList1.Images.SetKeyName(1, "onebit_34.png");
+            this.imageList1.Images.SetKeyName(2, "onebit_15.png");
             // 
             // Z128
             // 
@@ -1319,19 +1351,33 @@
             this.Z81.UseVisualStyleBackColor = true;
             this.Z81.Click += new System.EventHandler(this.button_Click);
             // 
-            // imageList1
+            // label20
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "onebit_33.png");
-            this.imageList1.Images.SetKeyName(1, "onebit_34.png");
-            this.imageList1.Images.SetKeyName(2, "onebit_15.png");
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Lucida Console", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(389, 535);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(543, 21);
+            this.label20.TabIndex = 417;
+            this.label20.Text = "Presione \'Enter\' para aplicar los cambios";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(359, 527);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(35, 32);
+            this.label21.TabIndex = 418;
+            this.label21.Text = "!";
             // 
             // Configuraciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1196, 530);
+            this.ClientSize = new System.Drawing.Size(1196, 574);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.Z39);
             this.Controls.Add(this.Z6);
             this.Controls.Add(this.Z5);
@@ -1428,8 +1474,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Configuraciones";
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "!##";
+            this.Text = "Limites";
             this.Load += new System.EventHandler(this.Configuraciones_Load);
             this.Click += new System.EventHandler(this.button_Click);
             ((System.ComponentModel.ISupportInitialize)(this.Z25)).EndInit();
@@ -1549,5 +1596,7 @@
         private System.Windows.Forms.Button Z82;
         private System.Windows.Forms.Button Z81;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
     }
 }

@@ -36,6 +36,8 @@ namespace FolderHmi
         String PersonalFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
         private Form _frmConfig = new Forms.Configuraciones();
         private Form _frmEthernet = new Forms.Ethernet();
+        private Form _frmHome = new Forms.Home();
+        private Form _frmFaults = new Forms.Alarmas();
 
         public MainWin()
         {
@@ -44,22 +46,29 @@ namespace FolderHmi
             {
                 OpcManager.Instance.DataChanged += _opcManager_DataChanged;
                 OpcManager.Instance.StatusMessageChanged += _opcManager_StatusMessageChanged;
+                //Set drives limits
                 DataTable dt = DbManager.GetDataTable("SELECT handle,value FROM limites");
                 foreach (DataRow dr in dt.Rows)
                 {
                     int handle = int.Parse(dr["handle"].ToString());
                     decimal value = decimal.Parse(dr["value"].ToString());
-
-                    //_frmConfig.Controls.Find("L" + handle, true).FirstOrDefault().Text = value.ToString();
-                    //(_frmConfig.Controls.Find("Z" + handle, true).FirstOrDefault() as NumericUpDown).Value = value;
-
+                    Module1.TagList[handle].Value = value;
+                    OpcManager.Instance.Write(handle);
+                }
+                //Activate ethernet tags
+                dt = DbManager.GetDataTable("SELECT handle FROM tags where formid=7");
+                foreach (DataRow dr in dt.Rows)
+                {
+                    int handle = int.Parse(dr["handle"].ToString());
+                    Module1.TagList[handle].Value = true;
+                    OpcManager.Instance.Write(handle);
                 }
             }
             catch (Exception e)
             {
                 connectBtn.Image = new Bitmap(FolderHmi.Properties.Resources.light_off);
                 MessageBox.Show("OpcManager desconectado!", "OpcManager", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                toolStripStatusLabel1.Text = "OpcManager desconectado";
+                //toolStripStatusLabel1.Text = "OpcManager desconectado";
 
             }
 
@@ -67,12 +76,12 @@ namespace FolderHmi
 
         private void _opcManager_StatusMessageChanged(object sender, string message)
         {
-            toolStripStatusLabel1.Text = message;
+            //toolStripStatusLabel1.Text = message;
         }
 
         private void _opcManager_DataChanged(object sender, Objects.OpcItemEventArgs e)
         {
-            int formid = Module1.FormHandle.Select(x => x).Where(x => x.Key == e.ItemHandle).FirstOrDefault().Value;
+            int formid = Module1.TagList.Select(x => x).Where(x => x.Handle == e.ItemHandle).FirstOrDefault().FormId;
             switch (formid)
             {
                 case 1:
@@ -99,13 +108,32 @@ namespace FolderHmi
                     break;
                 case 10:
                     break;
+                case 12: //11
+                    switch (e.ItemHandle)
+                    {
+                        case 34:
+                            AssignValueToControl(_frmHome, "B33", "ImageIndex", 2);
+                            break;
+                        case 1:
+                            AssignValueToControl(_frmHome, "B33", "ImageIndex", 0);
+                            break;
+                        case 119:
+                            AssignValueToControl(_frmHome, "B117", "ImageIndex", 2);
+                            break;
+                        case 126:
+                            AssignValueToControl(_frmHome, "B117", "ImageIndex", 0);
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
                 default:
                     break;
             }
             if (e.IsFault)
             {
                 button16.BackColor = Color.Red;
-                string tag = (string)Module1.TagList.GetValue(e.ItemHandle);
+                string tag = (string)Module1.TagList[e.ItemHandle].Name;
                 DateTime date = DateTime.Now;
                 DbManager.Insert("faults", "0,'" + tag + "','" + date.ToString("yyyy-MM-dd hh:mm") + "',1,(SELECT h FROM (SELECT corr as h FROM tags WHERE handle=" + e.ItemHandle + ") AS G)");
             }
@@ -115,6 +143,7 @@ namespace FolderHmi
         {
             if (value == null) return;
             Control ctrl = form.Controls.Find(controlName, true).FirstOrDefault();
+            if (ctrl == null) return;
             if (string.IsNullOrEmpty(controlProperty))
             {
                 if (ctrl?.GetType() == typeof(Label))
@@ -133,13 +162,13 @@ namespace FolderHmi
                 {
                     Button b = ctrl as Button;
                     b.ImageIndex = (bool)value ? 1 : 0;
-                    b.Enabled = true;
                 }
             }
             else
             {
                 ctrl?.GetType().GetProperties().Select(x => x).Where(x => x.Name == controlProperty).FirstOrDefault().SetValue(ctrl, value);
             }
+            ctrl.Enabled = true;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -210,8 +239,7 @@ namespace FolderHmi
 
         private void button16_Click(object sender, EventArgs e)
         {
-            Form a = new Forms.Alarmas();
-            a.ShowDialog();
+            _frmFaults.ShowDialog();
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -226,6 +254,7 @@ namespace FolderHmi
 
         private void button14_Click(object sender, EventArgs e)
         {
+            
             _frmConfig.ShowDialog();
         }
 
@@ -248,7 +277,7 @@ namespace FolderHmi
 
         private void textBox20_TextChanged(object sender, EventArgs e)
         {
-            Module1.ValueList.SetValue(0.0, 1);
+            Module1.TagList[1].Value = 0.0;
             //_opcManager.Write(1);
         }
 
@@ -281,28 +310,28 @@ namespace FolderHmi
 
         private void actionButton_Click(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "Procesando...";
+            //toolStripStatusLabel1.Text = "Procesando...";
 
             Button btn = (Button)sender;
             int index = int.Parse(btn.Tag.ToString().Split(',')[0]);
             int action = int.Parse(btn.Tag.ToString().Split(',')[1]);
-            Module1.ValueList.SetValue(action, index);
+            Module1.TagList[index].Value = action;
             OpcManager.Instance.Write(index);
 
-            toolStripStatusLabel1.Text = "Listo";
+            //toolStripStatusLabel1.Text = "Listo";
         }
 
         private void numUpDown_ValueChanged(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "Procesando...";
+            //toolStripStatusLabel1.Text = "Procesando...";
 
             NumericUpDown nud = (NumericUpDown)sender;
             int index = int.Parse(nud.Name.Replace("Z", ""));
             decimal action = nud.Value;
-            Module1.ValueList.SetValue(action, index);
+            Module1.TagList[index].Value = action;
             OpcManager.Instance.Write(index);
 
-            toolStripStatusLabel1.Text = "Listo";
+            //toolStripStatusLabel1.Text = "Listo";
         }
 
         private void connectBtn_Click(object sender, EventArgs e)
@@ -318,6 +347,11 @@ namespace FolderHmi
         private void button2_Click(object sender, EventArgs e)
         {
             _frmEthernet.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            _frmHome.ShowDialog();
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace FolderHmi
@@ -38,7 +39,7 @@ namespace FolderHmi
             try
             {
                 _OPCServer = new OPCAutomation.OPCServer();
-                _OPCServer.Connect(Module1.OPCServerName, "");
+                _OPCServer.Connect("KEPware.KEPServerEx.V5", "");
 
             }
             catch (Exception ex)
@@ -63,7 +64,7 @@ namespace FolderHmi
             try
             {
                 //_OPCGroup.OPCItems.DefaultIsActive = true;
-                Module1._OPCGroup.OPCItems.AddItems(Module1.TagCount, Module1.TagList, Module1.HandleList, out Module1.ItemServerHandles, out Module1.ItemServerErrors);
+                Module1._OPCGroup.OPCItems.AddItems(Module1.TagCount, Module1.GetTagNameList(), Module1.GetHandleList(), out Module1.ItemServerHandles, out Module1.ItemServerErrors);
                 bool itemgood = false;
                 for (int i = 1; i <= Module1.TagCount; i++)
                 {
@@ -86,235 +87,221 @@ namespace FolderHmi
             }
         }
 
-        public bool Write(int index)
+        public void Write(int index)
         {
-            try
+            new Thread(new ThreadStart(() =>
             {
-                // Write only 1 item
-                short ItemCount = 1;
-
-                // Create some local scope variables to hold the value to be sent.
-                // These arrays could just as easily contain all of the item we have added.
-                int[] SyncItemServerHandles = new int[2];
-                object[] SyncItemValues = new object[2];
-                System.Array SyncItemServerErrors = null;
-                OPCAutomation.OPCItem AnOpcItem = default(OPCAutomation.OPCItem);
-
-                // Get the Servers handle for the desired item.  The server handles
-                // were returned in add item subroutine.
-                SyncItemServerHandles[1] = (int)Module1.ItemServerHandles.GetValue(index);
-                AnOpcItem = Module1._OPCGroup.OPCItems.GetOPCItem((int)Module1.ItemServerHandles.GetValue(index));
-
-                // Load the value to be written using Item's Canonical Data Type to
-                // convert to correct type. 
-                // See Kepware Application note on Canonical Data Types
-                Array ItsAnArray = null;
-                short CanonDT = 0;
-                short vbArray = 8192;
-
-                CanonDT = AnOpcItem.CanonicalDataType;
-
-
-                // If it is an array, figure out the base type
-                if (CanonDT > vbArray)
+                try
                 {
-                    CanonDT -= vbArray;
-                }
+                    // Write only 1 item
+                    short ItemCount = 1;
 
-                switch (CanonDT)
-                {
-                    case (short)CanonicalDataTypes.CanonDtByte:
-                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
-                        {
-                            ItsAnArray = Array.CreateInstance(typeof(byte), (int)Module1.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
+                    // Create some local scope variables to hold the value to be sent.
+                    // These arrays could just as easily contain all of the item we have added.
+                    int[] SyncItemServerHandles = new int[2];
+                    object[] SyncItemValues = new object[2];
+                    System.Array SyncItemServerErrors = null;
+                    OPCAutomation.OPCItem AnOpcItem = default(OPCAutomation.OPCItem);
+
+                    // Get the Servers handle for the desired item.  The server handles
+                    // were returned in add item subroutine.
+                    SyncItemServerHandles[1] = (int)Module1.ItemServerHandles.GetValue(index);
+                    AnOpcItem = Module1._OPCGroup.OPCItems.GetOPCItem((int)Module1.ItemServerHandles.GetValue(index));
+
+                    // Load the value to be written using Item's Canonical Data Type to
+                    // convert to correct type. 
+                    // See Kepware Application note on Canonical Data Types
+                    Array ItsAnArray = null;
+                    short CanonDT = 0;
+                    short vbArray = 8192;
+
+                    CanonDT = AnOpcItem.CanonicalDataType;
+
+
+                    // If it is an array, figure out the base type
+                    if (CanonDT > vbArray)
+                    {
+                        CanonDT -= vbArray;
+                    }
+
+                    switch (CanonDT)
+                    {
+                        case (short)CanonicalDataTypes.CanonDtByte:
+                            if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
                             {
-                                return false;
+                                ItsAnArray = Array.CreateInstance(typeof(byte), (int)Module1.OPCItemIsArray.GetValue(index));
+                                if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList[index].Name))
+                                {
+                                }
+                                SyncItemValues[1] = (object)ItsAnArray;
                             }
-                            SyncItemValues[1] = (object)ItsAnArray;
-                        }
-                        else
-                        {
-                            SyncItemValues[1] = Convert.ToByte((string)Module1.ValueList.GetValue(index));
-                        }
-                        break;
-                    // End case
-
-                    case (short)CanonicalDataTypes.CanonDtChar:
-                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
-                        {
-                            ItsAnArray = Array.CreateInstance(typeof(SByte), (int)Module1.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
+                            else
                             {
-                                return false;
+                                SyncItemValues[1] = Convert.ToByte((string)Module1.TagList[index].Value);
                             }
-                            SyncItemValues[1] = (object)ItsAnArray;
-                        }
-                        else
-                        {
-                            SyncItemValues[1] = Convert.ToSByte((string)Module1.ValueList.GetValue(index));
-                        }
-                        break;
-                    // End case
-
-                    case (short)CanonicalDataTypes.CanonDtWord:
-                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
-                        {
-                            ItsAnArray = Array.CreateInstance(typeof(UInt16), (int)Module1.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
-                            {
-                                return false;
-                            }
-                            SyncItemValues[1] = (object)ItsAnArray;
-                        }
-                        else
-                        {
-                            SyncItemValues[1] = Convert.ToUInt16(Module1.ValueList.GetValue(index));
-                        }
-                        break;
-                    // End case
-
-                    case (short)CanonicalDataTypes.CanonDtShort:
-                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
-                        {
-                            ItsAnArray = Array.CreateInstance(typeof(Int16), (int)Module1.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
-                            {
-                                return false;
-                            }
-                            SyncItemValues[1] = (object)ItsAnArray;
-                        }
-                        else
-                        {
-                            SyncItemValues[1] = Convert.ToInt16((string)Module1.ValueList.GetValue(index));
-                        }
-                        break;
-                    // End case
-
-                    case (short)CanonicalDataTypes.CanonDtDWord:
-                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
-                        {
-                            ItsAnArray = Array.CreateInstance(typeof(UInt32), (int)Module1.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
-                            {
-                                return false;
-                            }
-                            SyncItemValues[1] = (object)ItsAnArray;
-                        }
-                        else
-                        {
-                            SyncItemValues[1] = Convert.ToUInt32((string)Module1.ValueList.GetValue(index));
-                        }
-                        break;
-                    // End case
-
-                    case (short)CanonicalDataTypes.CanonDtLong:
-                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
-                        {
-                            ItsAnArray = Array.CreateInstance(typeof(Int32), (int)Module1.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
-                            {
-                                return false;
-                            }
-                            SyncItemValues[1] = (object)ItsAnArray;
-                        }
-                        else
-                        {
-                            SyncItemValues[1] = Convert.ToInt32((string)Module1.ValueList.GetValue(index));
-                        }
-                        break;
-                    // End case
-
-                    case (short)CanonicalDataTypes.CanonDtFloat:
-                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
-                        {
-                            ItsAnArray = Array.CreateInstance(typeof(float), (int)Module1.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
-                            {
-                                return false;
-                            }
-                            SyncItemValues[1] = (object)ItsAnArray;
-                        }
-                        else
-                        {
-                            SyncItemValues[1] = Convert.ToSingle((string)Module1.ValueList.GetValue(index));
-                        }
-                        break;
-                    // End case
-
-                    case (short)CanonicalDataTypes.CanonDtDouble:
-                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
-                        {
-                            ItsAnArray = Array.CreateInstance(typeof(double), (int)Module1.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
-                            {
-                                return false;
-                            }
-                            SyncItemValues[1] = (object)ItsAnArray;
-                        }
-                        else
-                        {
-                            SyncItemValues[1] = Module1.ValueList.GetValue(index);
-                        }
-                        break;
-                    // End case
-
-                    case (short)CanonicalDataTypes.CanonDtBool:
-                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
-                        {
-                            ItsAnArray = Array.CreateInstance(typeof(bool), (int)Module1.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
-                            {
-                                return false;
-                            }
-                            SyncItemValues[1] = (object)ItsAnArray;
-                        }
-                        else
-                        {
-                            SyncItemValues[1] = Convert.ToBoolean(Module1.ValueList.GetValue(index));
-                        }
-                        break;
-                    // End case
-
-                    case (short)CanonicalDataTypes.CanonDtString:
-                        if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
-                        {
-                            ItsAnArray = Array.CreateInstance(typeof(string), (int)Module1.OPCItemIsArray.GetValue(index));
-                            if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList.GetValue(index)))
-                            {
-                                return false;
-                            }
-                            SyncItemValues[1] = (object)ItsAnArray;
-                        }
-                        else
-                        {
-                            SyncItemValues[1] = Convert.ToString((string)Module1.ValueList.GetValue(index));
-                        }
-                        break;
-                    // End case
-
-                    default:
-                        //MessageBox.Show("OPCItemWriteButton Unknown data type", "Error al escribir", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        return false;
+                            break;
                         // End case
+
+                        case (short)CanonicalDataTypes.CanonDtChar:
+                            if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
+                            {
+                                ItsAnArray = Array.CreateInstance(typeof(SByte), (int)Module1.OPCItemIsArray.GetValue(index));
+                                if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList[index].Name))
+                                {
+                                }
+                                SyncItemValues[1] = (object)ItsAnArray;
+                            }
+                            else
+                            {
+                                SyncItemValues[1] = Convert.ToSByte((string)Module1.TagList[index].Value);
+                            }
+                            break;
+                        // End case
+
+                        case (short)CanonicalDataTypes.CanonDtWord:
+                            if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
+                            {
+                                ItsAnArray = Array.CreateInstance(typeof(UInt16), (int)Module1.OPCItemIsArray.GetValue(index));
+                                if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList[index].Name))
+                                {
+                                }
+                                SyncItemValues[1] = (object)ItsAnArray;
+                            }
+                            else
+                            {
+                                SyncItemValues[1] = Convert.ToUInt16(Module1.TagList[index].Value);
+                            }
+                            break;
+                        // End case
+
+                        case (short)CanonicalDataTypes.CanonDtShort:
+                            if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
+                            {
+                                ItsAnArray = Array.CreateInstance(typeof(Int16), (int)Module1.OPCItemIsArray.GetValue(index));
+                                if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList[index].Name))
+                                {
+                                }
+                                SyncItemValues[1] = (object)ItsAnArray;
+                            }
+                            else
+                            {
+                                SyncItemValues[1] = Convert.ToInt16((string)Module1.TagList[index].Value);
+                            }
+                            break;
+                        // End case
+
+                        case (short)CanonicalDataTypes.CanonDtDWord:
+                            if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
+                            {
+                                ItsAnArray = Array.CreateInstance(typeof(UInt32), (int)Module1.OPCItemIsArray.GetValue(index));
+                                if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList[index].Name))
+                                {
+                                }
+                                SyncItemValues[1] = (object)ItsAnArray;
+                            }
+                            else
+                            {
+                                SyncItemValues[1] = Convert.ToUInt32((string)Module1.TagList[index].Value);
+                            }
+                            break;
+                        // End case
+
+                        case (short)CanonicalDataTypes.CanonDtLong:
+                            if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
+                            {
+                                ItsAnArray = Array.CreateInstance(typeof(Int32), (int)Module1.OPCItemIsArray.GetValue(index));
+                                if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList[index].Name))
+                                {
+                                }
+                                SyncItemValues[1] = (object)ItsAnArray;
+                            }
+                            else
+                            {
+                                SyncItemValues[1] = Convert.ToInt32((string)Module1.TagList[index].Value);
+                            }
+                            break;
+                        // End case
+
+                        case (short)CanonicalDataTypes.CanonDtFloat:
+                            if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
+                            {
+                                ItsAnArray = Array.CreateInstance(typeof(float), (int)Module1.OPCItemIsArray.GetValue(index));
+                                if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList[index].Name))
+                                {
+                                }
+                                SyncItemValues[1] = (object)ItsAnArray;
+                            }
+                            else
+                            {
+                                SyncItemValues[1] = Convert.ToSingle((string)Module1.TagList[index].Value);
+                            }
+                            break;
+                        // End case
+
+                        case (short)CanonicalDataTypes.CanonDtDouble:
+                            if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
+                            {
+                                ItsAnArray = Array.CreateInstance(typeof(double), (int)Module1.OPCItemIsArray.GetValue(index));
+                                if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList[index].Name))
+                                {
+                                }
+                                SyncItemValues[1] = (object)ItsAnArray;
+                            }
+                            else
+                            {
+                                SyncItemValues[1] = Module1.TagList[index].Value;
+                            }
+                            break;
+                        // End case
+
+                        case (short)CanonicalDataTypes.CanonDtBool:
+                            if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
+                            {
+                                ItsAnArray = Array.CreateInstance(typeof(bool), (int)Module1.OPCItemIsArray.GetValue(index));
+                                if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList[index].Name))
+                                {
+                                }
+                                SyncItemValues[1] = (object)ItsAnArray;
+                            }
+                            else
+                            {
+                                SyncItemValues[1] = Convert.ToBoolean(Module1.TagList[index].Value);
+                            }
+                            break;
+                        // End case
+
+                        case (short)CanonicalDataTypes.CanonDtString:
+                            if ((int)Module1.OPCItemIsArray.GetValue(index) > 0)
+                            {
+                                ItsAnArray = Array.CreateInstance(typeof(string), (int)Module1.OPCItemIsArray.GetValue(index));
+                                if (!LoadArray(ref ItsAnArray, CanonDT, (string)Module1.TagList[index].Name))
+                                {
+                                }
+                                SyncItemValues[1] = (object)ItsAnArray;
+                            }
+                            else
+                            {
+                                SyncItemValues[1] = Convert.ToString((string)Module1.TagList[index].Value);
+                            }
+                            break;
+                        // End case
+
+                    }
+
+                    // Invoke the SyncWrite operation.  Remember this call will wait until completion
+                    Module1._OPCGroup.SyncWrite(ItemCount, SyncItemServerHandles, SyncItemValues, out SyncItemServerErrors);
+
+                    if ((int)SyncItemServerErrors.GetValue(1) != 0)
+                    {
+                        //MessageBox.Show("SyncItemServerError: " + SyncItemServerErrors.GetValue(1));
+                    }
                 }
-
-                // Invoke the SyncWrite operation.  Remember this call will wait until completion
-                Module1._OPCGroup.SyncWrite(ItemCount, SyncItemServerHandles, SyncItemValues, out SyncItemServerErrors);
-
-                if ((int)SyncItemServerErrors.GetValue(1) != 0)
+                catch (Exception ex)
                 {
-                    //MessageBox.Show("SyncItemServerError: " + SyncItemServerErrors.GetValue(1));
-                    return false;
+                    // Error handling
+                    //MessageBox.Show("OPC server write item failed with exception: " + ex.Message + " INDEX = " + index.ToString() + " c=" + opcItemValueToWritte[index].Text + "/", "SimpleOPCInterface Exception", MessageBoxButtons.OK);
                 }
-                return true;
-            }
-            catch (Exception ex)
-            {
-                // Error handling
-                //MessageBox.Show("OPC server write item failed with exception: " + ex.Message + " INDEX = " + index.ToString() + " c=" + opcItemValueToWritte[index].Text + "/", "SimpleOPCInterface Exception", MessageBoxButtons.OK);
-                return false;
-            }
+            })).Start();
 
 
         }
@@ -442,8 +429,10 @@ namespace FolderHmi
                 {
                     e.ItemValue = ItemValues.GetValue(i) != null ? (string)ItemValues.GetValue(i) : "";
                 }
-                Module1.ValueList.SetValue(e.ItemValue, e.ItemHandle);
-                DataChanged(this, e);
+                Module1.TagList[e.ItemHandle].Value = e.ItemValue;
+                Module1.TagList[e.ItemHandle].Timestamp = DateTime.Now;
+
+                DataChanged?.Invoke(this, e);
             }
         }
     }
