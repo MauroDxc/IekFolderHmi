@@ -28,7 +28,7 @@ namespace FolderHmi.Forms
             switch (table)
             {
                 case "caja":
-                    _loadQquery = "SELECT idreq as 'Núm Req', descripcion as 'Descripción', apariencia, pzxbulto, v1, v2, v3, v4, v5, v6 FROM caja WHERE type=" + (type < 0 ? "type" : "" + type);
+                    _loadQquery = "SELECT idreq as 'Núm Req', descripcion as 'Descripción', apariencia, pzxbulto, a, b, c, d, e, f FROM caja WHERE type=" + (type < 0 ? "type" : "" + type);
                     break;
                 default:
                     break;
