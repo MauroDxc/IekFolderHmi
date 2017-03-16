@@ -40,6 +40,7 @@ namespace FolderHmi.Forms
             List<Tag> h = Module1.TagList.Select(x => x).Where(x => x.FormId == 2 && (bool)x.Value).ToList();
 
             dataGridView1.Rows.Clear();
+            if (h.Count < 1) return;
             dataGridView1.Rows.Add(h.Count);
             int j = 0;
             foreach (var i in h)

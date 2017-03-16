@@ -12,11 +12,13 @@ namespace FolderHmi
     {
         public static string OPCServerName = "KEPware.KEPServerEx.V5";
         public static List<Tag> TagList = new List<Tag>();
-        public static int TagCount = 158;
+        public static int TagCount = 178;
         public static Array ItemServerHandles;
         public static OPCGroup _OPCGroup;
         public static Array ItemServerErrors;
-        public static int[] OPCItemIsArray = new int[158];
+        public static Array TagNameArray;
+        public static Array HandleArray;
+        public static int[] OPCItemIsArray = new int[178];
         public static decimal ApBrazo = 10;
 
         static Module1()
@@ -27,16 +29,9 @@ namespace FolderHmi
                 TagList.Add(new Tag(int.Parse(dr.ItemArray[0].ToString()), dr.ItemArray[1].ToString(), 
                     int.Parse(dr.ItemArray[2].ToString()), int.Parse(dr.ItemArray[3].ToString())));
             }
+            TagNameArray = TagList.Select(x => x.Name).ToArray();
+            HandleArray = TagList.Select(x => x.Handle).ToArray();
         }
 
-        internal static Array GetTagNameList()
-        {
-            return TagList.Select(x => x.Name).ToArray();
-        }
-
-        internal static Array GetHandleList()
-        {
-            return TagList.Select(x => x.Handle).ToArray();
-        }
     }
 }

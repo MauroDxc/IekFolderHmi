@@ -249,7 +249,7 @@
             // 
             this.Z110.DecimalPlaces = 2;
             this.Z110.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z110.Location = new System.Drawing.Point(634, 310);
+            this.Z110.Location = new System.Drawing.Point(633, 102);
             this.Z110.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Z110.Maximum = new decimal(new int[] {
             1500,
@@ -268,7 +268,7 @@
             // 
             this.Z109.DecimalPlaces = 2;
             this.Z109.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z109.Location = new System.Drawing.Point(634, 267);
+            this.Z109.Location = new System.Drawing.Point(633, 145);
             this.Z109.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Z109.Maximum = new decimal(new int[] {
             1500,
@@ -287,7 +287,7 @@
             // 
             this.Z108.DecimalPlaces = 2;
             this.Z108.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z108.Location = new System.Drawing.Point(634, 224);
+            this.Z108.Location = new System.Drawing.Point(633, 188);
             this.Z108.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Z108.Maximum = new decimal(new int[] {
             1500,
@@ -306,7 +306,7 @@
             // 
             this.Z107.DecimalPlaces = 2;
             this.Z107.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z107.Location = new System.Drawing.Point(634, 180);
+            this.Z107.Location = new System.Drawing.Point(633, 230);
             this.Z107.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Z107.Maximum = new decimal(new int[] {
             1500,
@@ -325,7 +325,7 @@
             // 
             this.Z106.DecimalPlaces = 2;
             this.Z106.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z106.Location = new System.Drawing.Point(634, 137);
+            this.Z106.Location = new System.Drawing.Point(633, 271);
             this.Z106.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Z106.Maximum = new decimal(new int[] {
             1500,
@@ -344,7 +344,7 @@
             // 
             this.Z105.DecimalPlaces = 2;
             this.Z105.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z105.Location = new System.Drawing.Point(634, 95);
+            this.Z105.Location = new System.Drawing.Point(633, 313);
             this.Z105.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Z105.Maximum = new decimal(new int[] {
             1500,
@@ -405,7 +405,7 @@
             // 
             this.Z134.DecimalPlaces = 2;
             this.Z134.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z134.Location = new System.Drawing.Point(370, 310);
+            this.Z134.Location = new System.Drawing.Point(369, 102);
             this.Z134.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Z134.Maximum = new decimal(new int[] {
             1500,
@@ -424,7 +424,7 @@
             // 
             this.Z133.DecimalPlaces = 2;
             this.Z133.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z133.Location = new System.Drawing.Point(370, 267);
+            this.Z133.Location = new System.Drawing.Point(369, 144);
             this.Z133.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Z133.Maximum = new decimal(new int[] {
             1500,
@@ -443,7 +443,7 @@
             // 
             this.Z138.DecimalPlaces = 2;
             this.Z138.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z138.Location = new System.Drawing.Point(370, 224);
+            this.Z138.Location = new System.Drawing.Point(369, 186);
             this.Z138.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Z138.Maximum = new decimal(new int[] {
             1500,
@@ -462,7 +462,7 @@
             // 
             this.Z137.DecimalPlaces = 2;
             this.Z137.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z137.Location = new System.Drawing.Point(370, 180);
+            this.Z137.Location = new System.Drawing.Point(369, 228);
             this.Z137.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Z137.Maximum = new decimal(new int[] {
             1500,
@@ -481,7 +481,7 @@
             // 
             this.Z136.DecimalPlaces = 2;
             this.Z136.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z136.Location = new System.Drawing.Point(370, 137);
+            this.Z136.Location = new System.Drawing.Point(369, 269);
             this.Z136.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Z136.Maximum = new decimal(new int[] {
             1500,
@@ -500,7 +500,7 @@
             // 
             this.Z135.DecimalPlaces = 2;
             this.Z135.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z135.Location = new System.Drawing.Point(370, 95);
+            this.Z135.Location = new System.Drawing.Point(369, 310);
             this.Z135.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Z135.Maximum = new decimal(new int[] {
             1500,
@@ -1067,7 +1067,7 @@
             // 
             this.Z127.ImageIndex = 0;
             this.Z127.ImageList = this.imageList1;
-            this.Z127.Location = new System.Drawing.Point(921, 92);
+            this.Z127.Location = new System.Drawing.Point(921, 306);
             this.Z127.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Z127.Name = "Z127";
             this.Z127.Size = new System.Drawing.Size(44, 36);
@@ -1089,7 +1089,7 @@
             // 
             this.Z128.ImageIndex = 0;
             this.Z128.ImageList = this.imageList1;
-            this.Z128.Location = new System.Drawing.Point(921, 136);
+            this.Z128.Location = new System.Drawing.Point(921, 264);
             this.Z128.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Z128.Name = "Z128";
             this.Z128.Size = new System.Drawing.Size(44, 36);
@@ -1103,7 +1103,7 @@
             // 
             this.Z129.ImageIndex = 0;
             this.Z129.ImageList = this.imageList1;
-            this.Z129.Location = new System.Drawing.Point(921, 179);
+            this.Z129.Location = new System.Drawing.Point(921, 223);
             this.Z129.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Z129.Name = "Z129";
             this.Z129.Size = new System.Drawing.Size(44, 36);
@@ -1117,7 +1117,7 @@
             // 
             this.Z130.ImageIndex = 0;
             this.Z130.ImageList = this.imageList1;
-            this.Z130.Location = new System.Drawing.Point(921, 223);
+            this.Z130.Location = new System.Drawing.Point(921, 181);
             this.Z130.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Z130.Name = "Z130";
             this.Z130.Size = new System.Drawing.Size(44, 36);
@@ -1131,7 +1131,7 @@
             // 
             this.Z131.ImageIndex = 0;
             this.Z131.ImageList = this.imageList1;
-            this.Z131.Location = new System.Drawing.Point(921, 265);
+            this.Z131.Location = new System.Drawing.Point(921, 137);
             this.Z131.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Z131.Name = "Z131";
             this.Z131.Size = new System.Drawing.Size(44, 36);
@@ -1145,7 +1145,7 @@
             // 
             this.Z132.ImageIndex = 0;
             this.Z132.ImageList = this.imageList1;
-            this.Z132.Location = new System.Drawing.Point(921, 311);
+            this.Z132.Location = new System.Drawing.Point(921, 92);
             this.Z132.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Z132.Name = "Z132";
             this.Z132.Size = new System.Drawing.Size(44, 36);
@@ -1164,7 +1164,7 @@
             this.Z7.Name = "Z7";
             this.Z7.Size = new System.Drawing.Size(44, 36);
             this.Z7.TabIndex = 403;
-            this.Z7.Tag = "35,true";
+            this.Z7.Tag = "11,true";
             this.Z7.Text = " ";
             this.Z7.UseVisualStyleBackColor = true;
             this.Z7.Click += new System.EventHandler(this.button_Click);
@@ -1220,7 +1220,7 @@
             this.Z39.Name = "Z39";
             this.Z39.Size = new System.Drawing.Size(44, 36);
             this.Z39.TabIndex = 416;
-            this.Z39.Tag = "11,true";
+            this.Z39.Tag = "35,true";
             this.Z39.Text = " ";
             this.Z39.UseVisualStyleBackColor = true;
             this.Z39.Click += new System.EventHandler(this.button_Click);
@@ -1271,7 +1271,7 @@
             // 
             this.Z86.ImageIndex = 0;
             this.Z86.ImageList = this.imageList1;
-            this.Z86.Location = new System.Drawing.Point(1070, 311);
+            this.Z86.Location = new System.Drawing.Point(1070, 92);
             this.Z86.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Z86.Name = "Z86";
             this.Z86.Size = new System.Drawing.Size(44, 36);
@@ -1285,7 +1285,7 @@
             // 
             this.Z85.ImageIndex = 0;
             this.Z85.ImageList = this.imageList1;
-            this.Z85.Location = new System.Drawing.Point(1070, 265);
+            this.Z85.Location = new System.Drawing.Point(1070, 136);
             this.Z85.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Z85.Name = "Z85";
             this.Z85.Size = new System.Drawing.Size(44, 36);
@@ -1299,7 +1299,7 @@
             // 
             this.Z84.ImageIndex = 0;
             this.Z84.ImageList = this.imageList1;
-            this.Z84.Location = new System.Drawing.Point(1070, 223);
+            this.Z84.Location = new System.Drawing.Point(1070, 178);
             this.Z84.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Z84.Name = "Z84";
             this.Z84.Size = new System.Drawing.Size(44, 36);
@@ -1313,7 +1313,7 @@
             // 
             this.Z83.ImageIndex = 0;
             this.Z83.ImageList = this.imageList1;
-            this.Z83.Location = new System.Drawing.Point(1070, 179);
+            this.Z83.Location = new System.Drawing.Point(1070, 222);
             this.Z83.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Z83.Name = "Z83";
             this.Z83.Size = new System.Drawing.Size(44, 36);
@@ -1327,7 +1327,7 @@
             // 
             this.Z82.ImageIndex = 0;
             this.Z82.ImageList = this.imageList1;
-            this.Z82.Location = new System.Drawing.Point(1070, 136);
+            this.Z82.Location = new System.Drawing.Point(1069, 264);
             this.Z82.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Z82.Name = "Z82";
             this.Z82.Size = new System.Drawing.Size(44, 36);
@@ -1341,7 +1341,7 @@
             // 
             this.Z81.ImageIndex = 0;
             this.Z81.ImageList = this.imageList1;
-            this.Z81.Location = new System.Drawing.Point(1070, 92);
+            this.Z81.Location = new System.Drawing.Point(1070, 306);
             this.Z81.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Z81.Name = "Z81";
             this.Z81.Size = new System.Drawing.Size(44, 36);

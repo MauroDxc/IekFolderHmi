@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Calibrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="Forms\Ethernet.Designer.cs">
       <DependentUpon>Ethernet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PasswordDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PasswordDialog.Designer.cs">
+      <DependentUpon>PasswordDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Module1.cs" />
     <Compile Include="DbManager.cs" />
@@ -151,6 +163,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tag.cs" />
+    <EmbeddedResource Include="Forms\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Alarmas.resx">
       <DependentUpon>Alarmas.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Cargar.resx">
       <DependentUpon>Cargar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasswordDialog.resx">
+      <DependentUpon>PasswordDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Slotter.resx">
       <DependentUpon>Slotter.cs</DependentUpon>

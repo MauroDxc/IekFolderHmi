@@ -40,6 +40,7 @@
             this.B117 = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.B118 = new System.Windows.Forms.Button();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.B79 = new System.Windows.Forms.Button();
@@ -47,10 +48,9 @@
             this.B78 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.B12 = new System.Windows.Forms.Button();
             this.B33 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.B118 = new System.Windows.Forms.Button();
-            this.B12 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -177,6 +177,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Slotter";
             // 
+            // B118
+            // 
+            this.B118.FlatAppearance.BorderSize = 5;
+            this.B118.ImageIndex = 0;
+            this.B118.ImageList = this.imageList1;
+            this.B118.Location = new System.Drawing.Point(570, 76);
+            this.B118.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.B118.Name = "B118";
+            this.B118.Size = new System.Drawing.Size(106, 96);
+            this.B118.TabIndex = 404;
+            this.B118.Tag = "34=2,1=1,";
+            this.B118.Text = " ";
+            this.B118.UseVisualStyleBackColor = true;
+            // 
             // numericUpDown2
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(330, 380);
@@ -263,6 +277,20 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Folder";
             // 
+            // B12
+            // 
+            this.B12.ImageIndex = 0;
+            this.B12.ImageList = this.imageList1;
+            this.B12.Location = new System.Drawing.Point(495, 76);
+            this.B12.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.B12.Name = "B12";
+            this.B12.Size = new System.Drawing.Size(106, 96);
+            this.B12.TabIndex = 402;
+            this.B12.Tag = "117,true";
+            this.B12.Text = " ";
+            this.B12.UseVisualStyleBackColor = true;
+            this.B12.Click += new System.EventHandler(this.button_Click);
+            // 
             // B33
             // 
             this.B33.ImageIndex = 1;
@@ -286,33 +314,6 @@
             this.label2.Size = new System.Drawing.Size(297, 46);
             this.label2.TabIndex = 255;
             this.label2.Text = "Referenciar Todos";
-            // 
-            // B118
-            // 
-            this.B118.FlatAppearance.BorderSize = 5;
-            this.B118.ImageIndex = 0;
-            this.B118.ImageList = this.imageList1;
-            this.B118.Location = new System.Drawing.Point(570, 76);
-            this.B118.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.B118.Name = "B118";
-            this.B118.Size = new System.Drawing.Size(106, 96);
-            this.B118.TabIndex = 404;
-            this.B118.Tag = "34=2,1=1,";
-            this.B118.Text = " ";
-            this.B118.UseVisualStyleBackColor = true;
-            // 
-            // B12
-            // 
-            this.B12.ImageIndex = 0;
-            this.B12.ImageList = this.imageList1;
-            this.B12.Location = new System.Drawing.Point(495, 76);
-            this.B12.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.B12.Name = "B12";
-            this.B12.Size = new System.Drawing.Size(106, 96);
-            this.B12.TabIndex = 402;
-            this.B12.Tag = "117,true";
-            this.B12.Text = " ";
-            this.B12.UseVisualStyleBackColor = true;
             // 
             // Home
             // 

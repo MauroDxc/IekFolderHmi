@@ -24,7 +24,22 @@ namespace FolderHmi.Forms
             List<Tag> h = Module1.TagList.Select(x => x).Where(x => x.FormId == 6).ToList();
             foreach (var i in h)
             {
+<<<<<<< HEAD
                  (this.Controls.Find("Z" + i.Handle, true).FirstOrDefault() as NumericUpDown).Value = (decimal)i.Value;
+=======
+                if (i.Value == null) continue;
+                Control c = this.Controls.Find("Z" + i.Handle, true).FirstOrDefault();
+                if (c == null) continue;
+                if (c.GetType() == typeof(Button))
+                {
+                    (c as Button).ImageIndex = (bool)i.Value ? 1 : 0;
+                    (c as Button).Enabled = !(bool)i.Value;
+                }
+                else if (c.GetType() == typeof(NumericUpDown))
+                {
+                    (c as NumericUpDown).Value = decimal.Parse(i.Value + "");
+                }
+>>>>>>> origin/master
             }
         }
 
@@ -39,10 +54,9 @@ namespace FolderHmi.Forms
             Button b = sender as Button;
             if (b.ImageIndex == 1) return;
             b.ImageIndex = 2;
-            //b.Enabled = false;
+            b.Enabled = false;
             int handle = int.Parse(b.Tag.ToString().Split(',')[0]);
-            bool value = bool.Parse(b.Tag.ToString().Split(',')[1]);
-            Module1.TagList[handle].Value = !(bool)Module1.TagList[handle].Value;
+            Module1.TagList[handle].Value = true;
             OpcManager.Instance.Write(handle);
         }
 

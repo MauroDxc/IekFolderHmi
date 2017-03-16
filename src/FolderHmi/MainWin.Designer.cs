@@ -39,42 +39,42 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button53 = new System.Windows.Forms.Button();
-            this.Z150 = new System.Windows.Forms.NumericUpDown();
+            this.N150 = new System.Windows.Forms.NumericUpDown();
             this.button54 = new System.Windows.Forms.Button();
             this.Z156 = new System.Windows.Forms.Label();
             this.bGOf = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button32 = new System.Windows.Forms.Button();
-            this.Z149 = new System.Windows.Forms.NumericUpDown();
+            this.N149 = new System.Windows.Forms.NumericUpDown();
             this.button33 = new System.Windows.Forms.Button();
             this.Z155 = new System.Windows.Forms.Label();
             this.bGOe = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button29 = new System.Windows.Forms.Button();
-            this.Z145 = new System.Windows.Forms.NumericUpDown();
+            this.N145 = new System.Windows.Forms.NumericUpDown();
             this.button30 = new System.Windows.Forms.Button();
             this.Z151 = new System.Windows.Forms.Label();
             this.bGOa = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button26 = new System.Windows.Forms.Button();
-            this.Z146 = new System.Windows.Forms.NumericUpDown();
+            this.N146 = new System.Windows.Forms.NumericUpDown();
             this.button27 = new System.Windows.Forms.Button();
             this.Z152 = new System.Windows.Forms.Label();
             this.bGOb = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button21 = new System.Windows.Forms.Button();
-            this.Z147 = new System.Windows.Forms.NumericUpDown();
+            this.N147 = new System.Windows.Forms.NumericUpDown();
             this.button24 = new System.Windows.Forms.Button();
             this.Z153 = new System.Windows.Forms.Label();
             this.bGOc = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button20 = new System.Windows.Forms.Button();
-            this.Z148 = new System.Windows.Forms.NumericUpDown();
+            this.N148 = new System.Windows.Forms.NumericUpDown();
             this.button22 = new System.Windows.Forms.Button();
             this.Z154 = new System.Windows.Forms.Label();
             this.bGOd = new System.Windows.Forms.Button();
@@ -82,33 +82,32 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.ZZ66 = new System.Windows.Forms.NumericUpDown();
+            this.N66 = new System.Windows.Forms.NumericUpDown();
             this.Z66 = new System.Windows.Forms.Label();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.button67 = new System.Windows.Forms.Button();
-            this.Z52 = new System.Windows.Forms.NumericUpDown();
+            this.N52 = new System.Windows.Forms.NumericUpDown();
             this.button68 = new System.Windows.Forms.Button();
             this.Z57 = new System.Windows.Forms.Label();
             this.button69 = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button64 = new System.Windows.Forms.Button();
-            this.Z53 = new System.Windows.Forms.NumericUpDown();
+            this.N53 = new System.Windows.Forms.NumericUpDown();
             this.button65 = new System.Windows.Forms.Button();
             this.Z58 = new System.Windows.Forms.Label();
             this.button66 = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.button61 = new System.Windows.Forms.Button();
-            this.Z55 = new System.Windows.Forms.NumericUpDown();
+            this.N55 = new System.Windows.Forms.NumericUpDown();
             this.button62 = new System.Windows.Forms.Button();
             this.Z60 = new System.Windows.Forms.Label();
             this.button63 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.button56 = new System.Windows.Forms.Button();
-            this.Z54 = new System.Windows.Forms.NumericUpDown();
+            this.N54 = new System.Windows.Forms.NumericUpDown();
             this.button59 = new System.Windows.Forms.Button();
             this.Z59 = new System.Windows.Forms.Label();
             this.button60 = new System.Windows.Forms.Button();
@@ -117,6 +116,8 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.connectBtn = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button18 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
@@ -129,29 +130,29 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z150)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N150)).BeginInit();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z149)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N149)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z145)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N145)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z146)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N146)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z147)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N147)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z148)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N148)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ZZ66)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N66)).BeginInit();
             this.groupBox11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N52)).BeginInit();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N53)).BeginInit();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z55)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N55)).BeginInit();
             this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z54)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N54)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -229,7 +230,7 @@
             // 
             this.groupBox6.Controls.Add(this.label7);
             this.groupBox6.Controls.Add(this.button53);
-            this.groupBox6.Controls.Add(this.Z150);
+            this.groupBox6.Controls.Add(this.N150);
             this.groupBox6.Controls.Add(this.button54);
             this.groupBox6.Controls.Add(this.Z156);
             this.groupBox6.Controls.Add(this.bGOf);
@@ -261,23 +262,22 @@
             this.button53.TabIndex = 185;
             this.button53.UseVisualStyleBackColor = true;
             // 
-            // Z150
+            // N150
             // 
-            this.Z150.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z150.Location = new System.Drawing.Point(65, 41);
-            this.Z150.Maximum = new decimal(new int[] {
+            this.N150.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N150.Location = new System.Drawing.Point(65, 41);
+            this.N150.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.Z150.Name = "Z150";
-            this.Z150.Size = new System.Drawing.Size(152, 56);
-            this.Z150.TabIndex = 7;
-            this.Z150.Tag = "113";
-            this.Z150.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Z150.ThousandsSeparator = true;
-            this.Z150.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.Z150.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            this.N150.Name = "N150";
+            this.N150.Size = new System.Drawing.Size(152, 56);
+            this.N150.TabIndex = 7;
+            this.N150.Tag = "113";
+            this.N150.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.N150.ThousandsSeparator = true;
+            this.N150.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // button54
             // 
@@ -317,7 +317,7 @@
             // 
             this.groupBox5.Controls.Add(this.label6);
             this.groupBox5.Controls.Add(this.button32);
-            this.groupBox5.Controls.Add(this.Z149);
+            this.groupBox5.Controls.Add(this.N149);
             this.groupBox5.Controls.Add(this.button33);
             this.groupBox5.Controls.Add(this.Z155);
             this.groupBox5.Controls.Add(this.bGOe);
@@ -349,23 +349,22 @@
             this.button32.TabIndex = 185;
             this.button32.UseVisualStyleBackColor = true;
             // 
-            // Z149
+            // N149
             // 
-            this.Z149.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z149.Location = new System.Drawing.Point(65, 41);
-            this.Z149.Maximum = new decimal(new int[] {
+            this.N149.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N149.Location = new System.Drawing.Point(65, 41);
+            this.N149.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.Z149.Name = "Z149";
-            this.Z149.Size = new System.Drawing.Size(152, 56);
-            this.Z149.TabIndex = 7;
-            this.Z149.Tag = "112";
-            this.Z149.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Z149.ThousandsSeparator = true;
-            this.Z149.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.Z149.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            this.N149.Name = "N149";
+            this.N149.Size = new System.Drawing.Size(152, 56);
+            this.N149.TabIndex = 7;
+            this.N149.Tag = "112";
+            this.N149.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.N149.ThousandsSeparator = true;
+            this.N149.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // button33
             // 
@@ -405,7 +404,7 @@
             // 
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.button29);
-            this.groupBox4.Controls.Add(this.Z145);
+            this.groupBox4.Controls.Add(this.N145);
             this.groupBox4.Controls.Add(this.button30);
             this.groupBox4.Controls.Add(this.Z151);
             this.groupBox4.Controls.Add(this.bGOa);
@@ -437,23 +436,22 @@
             this.button29.TabIndex = 185;
             this.button29.UseVisualStyleBackColor = true;
             // 
-            // Z145
+            // N145
             // 
-            this.Z145.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z145.Location = new System.Drawing.Point(65, 41);
-            this.Z145.Maximum = new decimal(new int[] {
+            this.N145.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N145.Location = new System.Drawing.Point(65, 41);
+            this.N145.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.Z145.Name = "Z145";
-            this.Z145.Size = new System.Drawing.Size(152, 56);
-            this.Z145.TabIndex = 7;
-            this.Z145.Tag = "108";
-            this.Z145.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Z145.ThousandsSeparator = true;
-            this.Z145.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.Z145.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            this.N145.Name = "N145";
+            this.N145.Size = new System.Drawing.Size(152, 56);
+            this.N145.TabIndex = 7;
+            this.N145.Tag = "108";
+            this.N145.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.N145.ThousandsSeparator = true;
+            this.N145.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // button30
             // 
@@ -493,7 +491,7 @@
             // 
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.button26);
-            this.groupBox3.Controls.Add(this.Z146);
+            this.groupBox3.Controls.Add(this.N146);
             this.groupBox3.Controls.Add(this.button27);
             this.groupBox3.Controls.Add(this.Z152);
             this.groupBox3.Controls.Add(this.bGOb);
@@ -525,23 +523,22 @@
             this.button26.TabIndex = 185;
             this.button26.UseVisualStyleBackColor = true;
             // 
-            // Z146
+            // N146
             // 
-            this.Z146.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z146.Location = new System.Drawing.Point(65, 41);
-            this.Z146.Maximum = new decimal(new int[] {
+            this.N146.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N146.Location = new System.Drawing.Point(65, 41);
+            this.N146.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.Z146.Name = "Z146";
-            this.Z146.Size = new System.Drawing.Size(152, 56);
-            this.Z146.TabIndex = 7;
-            this.Z146.Tag = "109";
-            this.Z146.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Z146.ThousandsSeparator = true;
-            this.Z146.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.Z146.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            this.N146.Name = "N146";
+            this.N146.Size = new System.Drawing.Size(152, 56);
+            this.N146.TabIndex = 7;
+            this.N146.Tag = "109";
+            this.N146.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.N146.ThousandsSeparator = true;
+            this.N146.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // button27
             // 
@@ -582,7 +579,7 @@
             // 
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.button21);
-            this.groupBox2.Controls.Add(this.Z147);
+            this.groupBox2.Controls.Add(this.N147);
             this.groupBox2.Controls.Add(this.button24);
             this.groupBox2.Controls.Add(this.Z153);
             this.groupBox2.Controls.Add(this.bGOc);
@@ -614,23 +611,22 @@
             this.button21.TabIndex = 185;
             this.button21.UseVisualStyleBackColor = true;
             // 
-            // Z147
+            // N147
             // 
-            this.Z147.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z147.Location = new System.Drawing.Point(65, 41);
-            this.Z147.Maximum = new decimal(new int[] {
+            this.N147.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N147.Location = new System.Drawing.Point(65, 41);
+            this.N147.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.Z147.Name = "Z147";
-            this.Z147.Size = new System.Drawing.Size(152, 56);
-            this.Z147.TabIndex = 7;
-            this.Z147.Tag = "110";
-            this.Z147.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Z147.ThousandsSeparator = true;
-            this.Z147.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.Z147.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            this.N147.Name = "N147";
+            this.N147.Size = new System.Drawing.Size(152, 56);
+            this.N147.TabIndex = 7;
+            this.N147.Tag = "110";
+            this.N147.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.N147.ThousandsSeparator = true;
+            this.N147.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // button24
             // 
@@ -670,7 +666,7 @@
             // 
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.button20);
-            this.groupBox1.Controls.Add(this.Z148);
+            this.groupBox1.Controls.Add(this.N148);
             this.groupBox1.Controls.Add(this.button22);
             this.groupBox1.Controls.Add(this.Z154);
             this.groupBox1.Controls.Add(this.bGOd);
@@ -702,23 +698,22 @@
             this.button20.TabIndex = 185;
             this.button20.UseVisualStyleBackColor = true;
             // 
-            // Z148
+            // N148
             // 
-            this.Z148.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z148.Location = new System.Drawing.Point(65, 41);
-            this.Z148.Maximum = new decimal(new int[] {
+            this.N148.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N148.Location = new System.Drawing.Point(65, 41);
+            this.N148.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.Z148.Name = "Z148";
-            this.Z148.Size = new System.Drawing.Size(152, 56);
-            this.Z148.TabIndex = 7;
-            this.Z148.Tag = "111";
-            this.Z148.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Z148.ThousandsSeparator = true;
-            this.Z148.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.Z148.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            this.N148.Name = "N148";
+            this.N148.Size = new System.Drawing.Size(152, 56);
+            this.N148.TabIndex = 7;
+            this.N148.Tag = "111";
+            this.N148.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.N148.ThousandsSeparator = true;
+            this.N148.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // button22
             // 
@@ -772,9 +767,9 @@
             this.tabPage3.Controls.Add(this.groupBox9);
             this.tabPage3.Controls.Add(this.groupBox8);
             this.tabPage3.Controls.Add(this.pictureBox3);
-            this.tabPage3.Location = new System.Drawing.Point(8, 51);
+            this.tabPage3.Location = new System.Drawing.Point(8, 67);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1203, 663);
+            this.tabPage3.Size = new System.Drawing.Size(1203, 647);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Folder";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -782,7 +777,7 @@
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.label8);
-            this.groupBox7.Controls.Add(this.ZZ66);
+            this.groupBox7.Controls.Add(this.N66);
             this.groupBox7.Controls.Add(this.Z66);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(239, 99);
@@ -802,28 +797,28 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Actual:";
             // 
-            // ZZ66
+            // N66
             // 
-            this.ZZ66.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ZZ66.Location = new System.Drawing.Point(17, 42);
-            this.ZZ66.Maximum = new decimal(new int[] {
+            this.N66.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N66.Location = new System.Drawing.Point(17, 42);
+            this.N66.Maximum = new decimal(new int[] {
             0,
             0,
             0,
             0});
-            this.ZZ66.Minimum = new decimal(new int[] {
+            this.N66.Minimum = new decimal(new int[] {
             200,
             0,
             0,
             -2147483648});
-            this.ZZ66.Name = "ZZ66";
-            this.ZZ66.Size = new System.Drawing.Size(152, 56);
-            this.ZZ66.TabIndex = 7;
-            this.ZZ66.Tag = "56";
-            this.ZZ66.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ZZ66.ThousandsSeparator = true;
-            this.ZZ66.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.ZZ66.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            this.N66.Name = "N66";
+            this.N66.Size = new System.Drawing.Size(152, 56);
+            this.N66.TabIndex = 7;
+            this.N66.Tag = "56";
+            this.N66.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.N66.ThousandsSeparator = true;
+            this.N66.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.N66.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // Z66
             // 
@@ -838,8 +833,7 @@
             // groupBox11
             // 
             this.groupBox11.Controls.Add(this.label12);
-            this.groupBox11.Controls.Add(this.button67);
-            this.groupBox11.Controls.Add(this.Z52);
+            this.groupBox11.Controls.Add(this.N52);
             this.groupBox11.Controls.Add(this.button68);
             this.groupBox11.Controls.Add(this.Z57);
             this.groupBox11.Controls.Add(this.button69);
@@ -861,28 +855,23 @@
             this.label12.TabIndex = 198;
             this.label12.Text = "Actual:";
             // 
-            // button67
+            // N52
             // 
-            this.button67.Image = ((System.Drawing.Image)(resources.GetObject("button67.Image")));
-            this.button67.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button67.Location = new System.Drawing.Point(21, 38);
-            this.button67.Name = "button67";
-            this.button67.Size = new System.Drawing.Size(38, 39);
-            this.button67.TabIndex = 185;
-            this.button67.UseVisualStyleBackColor = true;
-            // 
-            // Z52
-            // 
-            this.Z52.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z52.Location = new System.Drawing.Point(65, 41);
-            this.Z52.Name = "Z52";
-            this.Z52.Size = new System.Drawing.Size(152, 56);
-            this.Z52.TabIndex = 7;
-            this.Z52.Tag = "36";
-            this.Z52.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Z52.ThousandsSeparator = true;
-            this.Z52.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.Z52.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            this.N52.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N52.Location = new System.Drawing.Point(65, 41);
+            this.N52.Maximum = new decimal(new int[] {
+            2000,
+            0,
+            0,
+            0});
+            this.N52.Name = "N52";
+            this.N52.Size = new System.Drawing.Size(152, 56);
+            this.N52.TabIndex = 7;
+            this.N52.Tag = "1";
+            this.N52.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.N52.ThousandsSeparator = true;
+            this.N52.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.N52.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // button68
             // 
@@ -922,7 +911,7 @@
             // 
             this.groupBox10.Controls.Add(this.label9);
             this.groupBox10.Controls.Add(this.button64);
-            this.groupBox10.Controls.Add(this.Z53);
+            this.groupBox10.Controls.Add(this.N53);
             this.groupBox10.Controls.Add(this.button65);
             this.groupBox10.Controls.Add(this.Z58);
             this.groupBox10.Controls.Add(this.button66);
@@ -954,18 +943,18 @@
             this.button64.TabIndex = 185;
             this.button64.UseVisualStyleBackColor = true;
             // 
-            // Z53
+            // N53
             // 
-            this.Z53.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z53.Location = new System.Drawing.Point(65, 41);
-            this.Z53.Name = "Z53";
-            this.Z53.Size = new System.Drawing.Size(152, 56);
-            this.Z53.TabIndex = 7;
-            this.Z53.Tag = "37";
-            this.Z53.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Z53.ThousandsSeparator = true;
-            this.Z53.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.Z53.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            this.N53.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N53.Location = new System.Drawing.Point(65, 41);
+            this.N53.Name = "N53";
+            this.N53.Size = new System.Drawing.Size(152, 56);
+            this.N53.TabIndex = 7;
+            this.N53.Tag = "37";
+            this.N53.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.N53.ThousandsSeparator = true;
+            this.N53.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.N53.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // button65
             // 
@@ -1005,7 +994,7 @@
             // 
             this.groupBox9.Controls.Add(this.label10);
             this.groupBox9.Controls.Add(this.button61);
-            this.groupBox9.Controls.Add(this.Z55);
+            this.groupBox9.Controls.Add(this.N55);
             this.groupBox9.Controls.Add(this.button62);
             this.groupBox9.Controls.Add(this.Z60);
             this.groupBox9.Controls.Add(this.button63);
@@ -1037,18 +1026,18 @@
             this.button61.TabIndex = 185;
             this.button61.UseVisualStyleBackColor = true;
             // 
-            // Z55
+            // N55
             // 
-            this.Z55.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z55.Location = new System.Drawing.Point(65, 41);
-            this.Z55.Name = "Z55";
-            this.Z55.Size = new System.Drawing.Size(152, 56);
-            this.Z55.TabIndex = 7;
-            this.Z55.Tag = "39";
-            this.Z55.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Z55.ThousandsSeparator = true;
-            this.Z55.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.Z55.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            this.N55.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N55.Location = new System.Drawing.Point(65, 41);
+            this.N55.Name = "N55";
+            this.N55.Size = new System.Drawing.Size(152, 56);
+            this.N55.TabIndex = 7;
+            this.N55.Tag = "39";
+            this.N55.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.N55.ThousandsSeparator = true;
+            this.N55.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.N55.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // button62
             // 
@@ -1088,7 +1077,7 @@
             // 
             this.groupBox8.Controls.Add(this.label11);
             this.groupBox8.Controls.Add(this.button56);
-            this.groupBox8.Controls.Add(this.Z54);
+            this.groupBox8.Controls.Add(this.N54);
             this.groupBox8.Controls.Add(this.button59);
             this.groupBox8.Controls.Add(this.Z59);
             this.groupBox8.Controls.Add(this.button60);
@@ -1120,18 +1109,18 @@
             this.button56.TabIndex = 185;
             this.button56.UseVisualStyleBackColor = true;
             // 
-            // Z54
+            // N54
             // 
-            this.Z54.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Z54.Location = new System.Drawing.Point(65, 41);
-            this.Z54.Name = "Z54";
-            this.Z54.Size = new System.Drawing.Size(152, 56);
-            this.Z54.TabIndex = 7;
-            this.Z54.Tag = "38";
-            this.Z54.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Z54.ThousandsSeparator = true;
-            this.Z54.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
-            this.Z54.ValueChanged += new System.EventHandler(this.numUpDown_ValueChanged);
+            this.N54.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N54.Location = new System.Drawing.Point(65, 41);
+            this.N54.Name = "N54";
+            this.N54.Size = new System.Drawing.Size(152, 56);
+            this.N54.TabIndex = 7;
+            this.N54.Tag = "38";
+            this.N54.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.N54.ThousandsSeparator = true;
+            this.N54.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.N54.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown_KeyDown);
             // 
             // button59
             // 
@@ -1188,7 +1177,9 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectBtn,
-            this.toolStripSeparator1});
+            this.toolStripSeparator1,
+            this.toolStripSeparator2,
+            this.toolStripButton1});
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.toolStrip1.Location = new System.Drawing.Point(5, 5);
             this.toolStrip1.Name = "toolStrip1";
@@ -1210,6 +1201,21 @@
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 23);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 23);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // panel1
             // 
@@ -1354,39 +1360,39 @@
             this.tabPage1.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z150)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N150)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z149)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N149)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z145)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N145)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z146)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N146)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z147)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N147)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z148)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N148)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ZZ66)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N66)).EndInit();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N52)).EndInit();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N53)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z55)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N55)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Z54)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N54)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -1414,7 +1420,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.NumericUpDown Z148;
+        private System.Windows.Forms.NumericUpDown N148;
         private System.Windows.Forms.Label Z154;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button bGOd;
@@ -1422,62 +1428,61 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button button53;
-        private System.Windows.Forms.NumericUpDown Z150;
+        private System.Windows.Forms.NumericUpDown N150;
         private System.Windows.Forms.Button button54;
         private System.Windows.Forms.Label Z156;
         private System.Windows.Forms.Button bGOf;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.NumericUpDown Z149;
+        private System.Windows.Forms.NumericUpDown N149;
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Label Z155;
         private System.Windows.Forms.Button bGOe;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.NumericUpDown Z145;
+        private System.Windows.Forms.NumericUpDown N145;
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Label Z151;
         private System.Windows.Forms.Button bGOa;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.NumericUpDown Z146;
+        private System.Windows.Forms.NumericUpDown N146;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Label Z152;
         private System.Windows.Forms.Button bGOb;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.NumericUpDown Z147;
+        private System.Windows.Forms.NumericUpDown N147;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Label Z153;
         private System.Windows.Forms.Button bGOc;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.Button button67;
-        private System.Windows.Forms.NumericUpDown Z52;
+        private System.Windows.Forms.NumericUpDown N52;
         private System.Windows.Forms.Button button68;
         private System.Windows.Forms.Label Z57;
         private System.Windows.Forms.Button button69;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Button button64;
-        private System.Windows.Forms.NumericUpDown Z53;
+        private System.Windows.Forms.NumericUpDown N53;
         private System.Windows.Forms.Button button65;
         private System.Windows.Forms.Label Z58;
         private System.Windows.Forms.Button button66;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Button button61;
-        private System.Windows.Forms.NumericUpDown Z55;
+        private System.Windows.Forms.NumericUpDown N55;
         private System.Windows.Forms.Button button62;
         private System.Windows.Forms.Label Z60;
         private System.Windows.Forms.Button button63;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Button button56;
-        private System.Windows.Forms.NumericUpDown Z54;
+        private System.Windows.Forms.NumericUpDown N54;
         private System.Windows.Forms.Button button59;
         private System.Windows.Forms.Label Z59;
         private System.Windows.Forms.Button button60;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.NumericUpDown ZZ66;
+        private System.Windows.Forms.NumericUpDown N66;
         private System.Windows.Forms.Label Z66;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
@@ -1493,6 +1498,8 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
 
