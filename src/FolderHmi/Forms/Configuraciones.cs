@@ -24,7 +24,7 @@ namespace FolderHmi.Forms
             List<Tag> h = Module1.TagList.Select(x => x).Where(x => x.FormId == 6).ToList();
             foreach (var i in h)
             {
-                (this.Controls.Find("Z" + i.Handle, true).FirstOrDefault() as NumericUpDown).Value = (decimal)i.Value;
+                 (this.Controls.Find("Z" + i.Handle, true).FirstOrDefault() as NumericUpDown).Value = (decimal)i.Value;
             }
         }
 

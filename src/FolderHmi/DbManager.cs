@@ -11,7 +11,7 @@ namespace FolderHmi
 {
     class DbManager
     {
-        private static String sconnection = "server=localhost;User Id=root;password=password;Persist Security Info=True;database=iekfolder; pooling=true";
+        private static String sconnection = "server=localhost;User Id=root;password=password;Persist Security Info=True;database=iekfolderv2; pooling=true";
 
         public static bool Update(string table, KeyValuePair<string, string> []values, KeyValuePair<string, string>[] filters)
         {
